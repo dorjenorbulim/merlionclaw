@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automating Hawker Order Taking — MerlionClaw</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="../story-template.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-link">← Back to MerlionClaw</a>
+            <h1>🦁 MerlionClaw</h1>
+        </div>
+    </header>
+
+    <main>
+        <article class="story-full">
+            <div class="container">
+                <div class="story-hero">
+                    <div class="story-tags">
+                        <span class="category">Small Business</span>
+                        <span class="language">English</span>
+                    </div>
+                    <h1>Automating Hawker Order Taking with OpenClaw</h1>
+                    <p class="story-subtitle">How a Chinatown hawker reduced order errors by 90% and saved 2 hours daily</p>
+                    
+                    <div class="story-meta-header">
+                        <span class="author">Anonymous • Bedok</span>
+                        <span class="date">March 2026</span>
+                        <span class="reading-time">5 min read</span>
+                    </div>
+                </div>
+
+                <div class="story-content">
+                    <h2>The Problem</h2>
+                    <p>Running a hawker stall in Singapore is no joke. The heat, the rush, the constant stream of customers — and then there are the WhatsApp orders. Every day, I'd receive 50-80 messages from regulars asking for:</p>
+                    
+                    <ul>
+                        <li>"Uncle, tomorrow 12pm want chicken rice 2 packet"</li>
+                        <li>"Add extra chilli, no cucumber"</li>
+                        <li>"My office 5 people, different orders leh"</li>
+                    </ul>
+                    
+                    <p>I was spending 2-3 hours every evening manually writing down orders, checking payment screenshots, and preparing ingredient lists. Errors happened. Customers got upset. I got stressed.</p>
+
+                    <h2>The Solution</h2>
+                    <p>With OpenClaw, I built a simple workflow that handles the entire process:</p>
+                    
+                    <div class="workflow-diagram">
+                        <div class="workflow-step">
+                            <span class="step-number">1</span>
+                            <p>Customer sends WhatsApp order</p>
+                        </div>
+                        <div class="arrow">↓</div>
+                        
+                        <div class="workflow-step">
+                            <span class="step-number">2</span>
+                            <p>OpenClaw parses message, extracts items</p>
+                        </div>
+                        <div class="arrow">↓</div>
+                        
+                        <div class="workflow-step">
+                            <span class="step-number">3</span>
+                            <p>Auto-generates order confirmation with total</p>
+                        </div>
+                        <div class="arrow">↓</div>
+                        
+                        <div class="workflow-step">
+                            <span class="step-number">4>
+                            <p>Creates daily prep list sorted by pickup time</p>
+                        </div>
+                    </div>
+
+                    <h2>The Tools</h2>
+                    
+                    <div class="tools-list">
+                        <div class="tool-item">
+                            <h4>📱 WhatsApp Business API</h4>
+                            <p>For receiving and sending messages</p>
+                        </div>
+                        <div class="tool-item">
+                            <h4>🤖 OpenClaw</h4>
+                            <p>Natural language processing, order extraction</p>
+                        </div>
+                        <div class="tool-item">
+                            <h4>📊 Google Sheets</h4>
+                            <p>Order tracking and prep list generation</p>
+                        </div>
+                        <div class="tool-item">
+                            <h4>🔔 Pushover</h4>
+                            <p>Notifications for new orders</p>
+                        </div>
+                    </div>
+
+                    <h2>The Impact</h2>
+                    
+                    <div class="impact-stats">
+                        <div class="stat">
+                            <span class="stat-number">90%</span>
+                            <span class="stat-label">Reduction in order errors</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">2 hrs</span>
+                            <span class="stat-label">Saved daily</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">150+</span>
+                            <span class="stat-label">Regular customers</span>
+                        </div>
+                    </div>
+
+                    <h2>Ethical Considerations</h2>
+                    
+                    <div class="ethical-box">
+                        <h4>✅ What I Did Right</h4>
+                        <ul>
+                            <li><strong>Transparency:</strong> Customers know it's automated — I tell them "Uncle got robot helper now"</li>
+                            <li><strong>Human oversight:</strong> I review every order before confirming</li>
+                            <li><strong>Data privacy:</strong> No customer data stored beyond what's needed for orders</li>
+                            <li><strong>No deception:</strong> Customers still talk to me when they collect — the personal touch remains</li>
+                        </ul>
+                    </div>
+
+                    <h2>The Code</h2>
+                    <p>Here's a simplified version of my OpenClaw skill:</p>
+                    
+                    <pre class="code-block"><code># Hawker Order Parser Skill
+# Parses WhatsApp messages into structured orders
+
+name: hawker-order-parser
+description: Parse hawker orders from WhatsApp messages
+
+---
+
+When I receive a WhatsApp message like:
+"Uncle tomorrow 12pm want chicken rice 2 packet extra chilli no cucumber"
+
+Extract:
+- Date: tomorrow
+- Time: 12pm  
+- Items: [
+    { name: "chicken rice", qty: 2, modifiers: ["extra chilli", "no cucumber"] }
+  ]
+
+Then:
+1. Calculate total: 2 × $4.50 = $9.00
+2. Generate confirmation message in Singlish:
+   "OK uncle! 2 chicken rice ($9) pickup 12pm. Extra chilli no cucumber. PayNow 9123 4567"
+3. Add to Google Sheet with timestamp
+
+Always confirm unusual orders with me first.
+</code></pre>
+
+                    <div class="cta-box">
+                        <h3>Want to adapt this for your business?</h3>
+                        <p>This approach works for any WhatsApp-based ordering: home bakers, tuition teachers, personal shoppers, etc.</p>
+                        <a href="../index.html#contribute" class="btn-primary">Share Your Adaptation</a>
+                    </div>
+                </div>
+
+                <div class="story-footer">
+                    <div class="tags">
+                        <span>#automation</span>
+                        <span>#small-business</span>
+                        <span>#whatsapp</span>
+                        <span>#singlish</span>
+                        <span>#food-beverage</span>
+                    </div>
+                    
+                    <div class="share">
+                        <p>Found this useful? <a href="#">Share on LinkedIn</a> • <a href="#">Twitter</a></p>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>🦁 MerlionClaw — Made with care in Singapore</p>
+            <p class="license">Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+        </div>
+    </footer>
+</body>
+</html>

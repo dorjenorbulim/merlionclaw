@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Showcase — MerlionClaw</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="skills.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="../index.html" class="back-link">← Back to MerlionClaw</a>
+            <h1>🦁 MerlionClaw</h1>
+        </div>
+    </header>
+
+    <main>
+        <section class="skills-hero">
+            <div class="container">
+                <h2>🛠️ Skills Showcase</h2>
+                <p class="subtitle">Community-built OpenClaw skills for Singapore life</p>
+                
+                <div class="filter-bar">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="finance">💰 Finance</button>
+                    <button class="filter-btn" data-filter="business">🏪 Business</button>
+                    <button class="filter-btn" data-filter="education">📚 Education</button>
+                    <button class="filter-btn" data-filter="productivity">⚡ Productivity</button>
+                    <button class="filter-btn" data-filter="gov">🏛️ GovTech</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills-grid-section">
+            <div class="container">
+                <div class="skills-grid">
+                    
+                    <!-- Skill Card Template -->
+                    <article class="skill-card" data-category="finance">
+                        <div class="skill-header">
+                            <div class="skill-icon">💰</div>
+                            <div class="skill-badges">
+                                <span class="badge verified">✓ Verified</span>
+                            </div>
+                        </div>
+                        
+                        <h3>CPF Calculator</h3>
+                        <p class="skill-desc">Calculate CPF contributions, project retirement payouts, optimize SRS top-ups.</p>
+                        
+                        <div class="skill-meta">
+                            <span class="author">by @singaporefi</span>
+                            <span class="downloads">↓ 234</span>
+                        </div>
+                        
+                        <div class="skill-tags">
+                            <span>finance</span>
+                            <span>cpf</span>
+                            <span>retirement</span>
+                        </div>
+                        
+                        <a href="#" class="btn-secondary">Install</a>
+                    </article>
+
+                    <article class="skill-card" data-category="business">
+                        <div class="skill-header">
+                            <div class="skill-icon">🏪</div>
+                            <div class="skill-badges">
+                                <span class="badge community">👥 Community</span>
+                            </div>
+                        </div>
+                        
+                        <h3>Hawker Order Manager</h3>
+                        <p class="skill-desc">Parse WhatsApp orders, generate prep lists, send confirmations in Singlish.</p>
+                        
+                        <div class="skill-meta">
+                            <span class="author">by @bedokuncle</span>
+                            <span class="downloads">↓ 89</span>
+                        </div>
+                        
+                        <div class="skill-tags">
+                            <span>business</span>
+                            <span>whatsapp</span>
+                            <span>food</span>
+                        </div>
+                        
+                        <a href="../stories/hawker-automation.html" class="btn-secondary">View Story</a>
+                    </article>
+
+                    <article class="skill-card" data-category="education">
+                        <div class="skill-header">
+                            <div class="skill-icon">📚</div>
+                            <div class="skill-badges">
+                                <span class="badge verified">✓ Verified</span>
+                            </div>
+                        </div>
+                        
+                        <h3>PSLE Worksheet Generator</h3>
+                        <p class="skill-desc">Generate personalized Math/Science worksheets aligned with MOE syllabus.</p>
+                        
+                        <div class="skill-meta">
+                            <span class="author">by @tuitionpro</span>
+                            <span class="downloads">↓ 156</span>
+                        </div>
+                        
+                        <div class="skill-tags">
+                            <span>education</span>
+                            <span>psle</span>
+                            <span>moet</span>
+                        </div>
+                        
+                        <a href="#" class="btn-secondary">Install</a>
+                    </article>
+
+                    <article class="skill-card" data-category="productivity">
+                        <div class="skill-header">
+                            <div class="skill-icon">⚡</div>
+                        </div>
+                        
+                        <h3>Singlish Translator</h3>
+                        <p class="skill-desc">Convert formal English to appropriate Singlish tone for casual messages.</p>
+                        
+                        <div class="skill-meta">
+                            <span class="author">by @locallingo</span>
+                            <span class="downloads">↓ 312</span>
+                        </div>
+                        
+                        <div class="skill-tags">
+                            <span>productivity</span>
+                            <span>singlish</span>
+                            <span>communication</span>
+                        </div>
+                        
+                        <a href="#" class="btn-secondary">Install</a>
+                    </article>
+
+                    <article class="skill-card" data-category="gov">
+                        <div class="skill-header">
+                            <div class="skill-icon">🏛️</div>
+                            <div class="skill-badges">
+                                <span class="badge official">Official</span>
+                            </div>
+                        </div>
+                        
+                        <h3>SingPass Helper</h3>
+                        <p class="skill-desc">Navigate government services, check CPF/URA/HDB info via official APIs.</p>
+                        
+                        <div class="skill-meta">
+                            <span class="author">by GovTech</span>
+                            <span class="downloads">↓ 1,203</span>
+                        </div>
+                        
+                        <div class="skill-tags">
+                            <span>gov</span>
+                            <span>singpass</span>
+                            <span>api</span>
+                        </div>
+                        
+                        <a href="#" class="btn-secondary">Install</a>
+                    </article>
+
+                    <article class="skill-card" data-category="business">
+                        <div class="skill-header">
+                            <div class="skill-icon">🛍️</div>
+                        </div>
+                        
+                        <h3>Taobao Agent Assistant</h3>
+                        <p class="skill-desc">Parse Taobao listings, calculate shipping to Singapore, track orders.</p>
+                        
+                        <div class="skill-meta">
+                            <span class="author">by @shoppinghelper</span>
+                            <span class="downloads">↓ 67</span>
+                        </div>
+                        
+                        <div class="skill-tags">
+                            <span>business</span>
+                            <span>taobao</span>
+                            <span>import</span>
+                        </div>
+                        
+                        <a href="#" class="btn-secondary">Install</a>
+                    </article>
+
+                    <article class="skill-card" data-category="finance">
+                        <div class="skill-header">
+                            <div class="skill-icon">📈</div>
+                        </div>
+                        
+                        <h3>SGX Stock Tracker</h3>
+                        <p class="skill-desc">Monitor Singapore stocks, get alerts for price movements, dividend dates.</p>
+                        
+                        <div class="skill-meta">
+                            <span class="author">by @investlocal</span>
+                            <span class="downloads">↓ 178</span>
+                        </div>
+                        
+                        <div class="skill-tags">
+                            <span>finance</span>
+                            <span>sgx</span>
+                            <span>stocks</span>
+                        </div>
+                        
+                        <a href="#" class="btn-secondary">Install</a>
+                    </article>
+
+                    <article class="skill-card" data-category="productivity">
+                        <div class="skill-header">
+                            <div class="skill-icon">🚇</div>
+                        </div>
+                        
+                        <h3>MRT Optimizer</h3>
+                        <p class="skill-desc">Find fastest MRT routes, check crowd levels, get disruption alerts.</p>
+                        
+                        <div class="skill-meta">
+                            <span class="author">by @commuterlife</span>
+                            <span class="downloads">↓ 445</span>
+                        </div>
+                        
+                        <div class="skill-tags">
+                            <span>productivity</span>
+                            <span>mrt</span>
+                            <span>transport</span>
+                        </div>
+                        
+                        <a href="#" class="btn-secondary">Install</a>
+                    </article>
+
+                </div>
+
+                <div class="submit-skill">
+                    <h3>Built a skill?</h3>
+                    <p>Share it with the Singapore OpenClaw community.</p>
+                    <a href="#" class="btn-primary">Submit Your Skill</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>🦁 MerlionClaw — Made with care in Singapore</p>
+            <p class="license">Content licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Simple filter functionality
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+                
+                const filter = btn.dataset.filter;
+                document.querySelectorAll('.skill-card').forEach(card => {
+                    if (filter === 'all' || card.dataset.category === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
