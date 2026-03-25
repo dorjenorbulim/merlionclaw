@@ -64,15 +64,15 @@ merlionclaw/
 - Respect privacy (yours and others')
 - Disclose any commercial relationships
 
-## 📜 License
+## 📜 License & Attribution
 
-- **Content:** [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/)
+- **Content:** © Michael Lim KC
 - **Code:** MIT License
 
 ## Contact
 
-- 📧 Email: hello@merlionclaw.sg
-- 💬 Discord: (coming soon)
+- 📧 Email: dorjenorbulim@gmail.com
+- 💬 Discord: https://discord.gg/hKfcnX23A
 
 ---
 
