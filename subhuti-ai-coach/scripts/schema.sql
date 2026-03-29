@@ -1,8 +1,8 @@
 -- Subhuti AI Coach Database Schema
--- PostgreSQL + pgvector
+-- PostgreSQL (pgvector optional for v1)
 
--- Enable pgvector extension
-CREATE EXTENSION IF NOT EXISTS vector;
+-- Enable pgvector extension (optional - comment out if not available)
+-- CREATE EXTENSION IF NOT EXISTS vector;
 
 -- Users table (synced with Clerk)
 CREATE TABLE users (
@@ -66,12 +66,12 @@ CREATE TABLE session_messages (
   session_id UUID REFERENCES coaching_sessions(id) ON DELETE CASCADE,
   role VARCHAR(20) NOT NULL, -- user, assistant, system
   content TEXT NOT NULL,
-  embedding vector(1536), -- Claude embeddings
+  embedding JSONB, -- Claude embeddings (JSONB for now, vector later)
   created_at TIMESTAMP WITH TIME ZONE DEFAULT NOW()
 );
 
 CREATE INDEX idx_messages_session ON session_messages(session_id);
-CREATE INDEX idx_messages_embedding ON session_messages USING ivfflat (embedding vector_cosine_ops);
+-- CREATE INDEX idx_messages_embedding ON session_messages USING ivfflat (embedding vector_cosine_ops); -- pgvector only
 
 -- User commitments (goals + accountability)
 CREATE TABLE commitments (
@@ -105,7 +105,7 @@ CREATE TABLE nudges (
 );
 
 CREATE INDEX idx_nudges_user ON nudges(user_id);
-CREATE INDEX idx_nudges_scheduled ON nudges(scheduled_at) WHERE sent_at IS NULL;
+CREATE INDEX idx_nudges_scheduled ON nudges(scheduled_for) WHERE sent_at IS NULL;
 
 -- Weekly progress reports
 CREATE TABLE weekly_reports (

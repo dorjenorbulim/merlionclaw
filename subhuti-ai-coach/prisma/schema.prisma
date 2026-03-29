@@ -1,6 +1,5 @@
 generator client {
   provider = "prisma-client-js"
-  binaryTargets = ["native"]
 }
 
 datasource db {
@@ -13,53 +12,34 @@ model User {
   clerkId   String   @unique
   email     String   @unique
   fullName  String?
-  companyId String?
   role      String   @default("user")
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  profile         UserProfile?
-  coachingSessions CoachingSession[]
-  commitments     Commitment[]
-  nudges          Nudge[]
-  weeklyReports   WeeklyReport[]
+  profile            UserProfile?
+  coachingSessions   CoachingSession[]
+  commitments        Commitment[]
+  nudges             Nudge[]
+  weeklyReports      WeeklyReport[]
   burnoutAssessments BurnoutAssessment[]
-  integrations    Integration[]
-  memorySummaries MemorySummary[]
-
-  @@map("users")
-}
-
-model Company {
-  id            String   @id @default(uuid())
-  name          String
-  industry      String?
-  employeeCount Int?
-  planTier      String   @default("standard")
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
-
-  users User[]
-
-  @@map("companies")
+  integrations       Integration[]
+  memorySummaries    MemorySummary[]
 }
 
 model UserProfile {
-  userId      String   @id
-  mindfulnessBaseline Int?
-  stressLevel       Int?
-  burnoutRisk       String?
-  goals             String[]
+  userId               String   @id
+  mindfulnessBaseline  Int?
+  stressLevel          Int?
+  burnoutRisk          String?
+  goals                String[]
   spiritualOrientation String?
-  preferredLanguage String   @default("en")
-  timezone      String   @default("Asia/Singapore")
+  preferredLanguage    String   @default("en")
+  timezone             String   @default("Asia/Singapore")
   onboardingCompletedAt DateTime?
-  createdAt     DateTime @default(now())
-  updatedAt     DateTime @updatedAt
+  createdAt            DateTime @default(now())
+  updatedAt            DateTime @updatedAt
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@map("user_profiles")
 }
 
 model CoachingSession {
@@ -69,13 +49,10 @@ model CoachingSession {
   topic     String?
   moodBefore Int?
   moodAfter Int?
-  durationSeconds Int?
   createdAt DateTime @default(now())
 
   user     User             @relation(fields: [userId], references: [id], onDelete: Cascade)
   messages SessionMessage[]
-
-  @@map("coaching_sessions")
 }
 
 model SessionMessage {
@@ -87,8 +64,6 @@ model SessionMessage {
   createdAt DateTime @default(now())
 
   session CoachingSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
-
-  @@map("session_messages")
 }
 
 model Commitment {
@@ -105,8 +80,6 @@ model Commitment {
   updatedAt   DateTime @updatedAt
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@map("commitments")
 }
 
 model Nudge {
@@ -121,8 +94,6 @@ model Nudge {
   createdAt     DateTime @default(now())
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@map("nudges")
 }
 
 model WeeklyReport {
@@ -141,8 +112,6 @@ model WeeklyReport {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, weekStart])
-
-  @@map("weekly_reports")
 }
 
 model BurnoutAssessment {
@@ -157,8 +126,6 @@ model BurnoutAssessment {
   createdAt DateTime @default(now())
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-  @@map("burnout_assessments")
 }
 
 model Integration {
@@ -175,8 +142,6 @@ model Integration {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, platform])
-
-  @@map("integrations")
 }
 
 model MemorySummary {
@@ -191,6 +156,4 @@ model MemorySummary {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@unique([userId, weekStart])
-
-  @@map("memory_summaries")
 }
