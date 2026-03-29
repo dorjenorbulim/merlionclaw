@@ -1,0 +1,196 @@
+generator client {
+  provider = "prisma-client-js"
+  binaryTargets = ["native"]
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id        String   @id @default(uuid())
+  clerkId   String   @unique
+  email     String   @unique
+  fullName  String?
+  companyId String?
+  role      String   @default("user")
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  profile         UserProfile?
+  coachingSessions CoachingSession[]
+  commitments     Commitment[]
+  nudges          Nudge[]
+  weeklyReports   WeeklyReport[]
+  burnoutAssessments BurnoutAssessment[]
+  integrations    Integration[]
+  memorySummaries MemorySummary[]
+
+  @@map("users")
+}
+
+model Company {
+  id            String   @id @default(uuid())
+  name          String
+  industry      String?
+  employeeCount Int?
+  planTier      String   @default("standard")
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  users User[]
+
+  @@map("companies")
+}
+
+model UserProfile {
+  userId      String   @id
+  mindfulnessBaseline Int?
+  stressLevel       Int?
+  burnoutRisk       String?
+  goals             String[]
+  spiritualOrientation String?
+  preferredLanguage String   @default("en")
+  timezone      String   @default("Asia/Singapore")
+  onboardingCompletedAt DateTime?
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("user_profiles")
+}
+
+model CoachingSession {
+  id        String   @id @default(uuid())
+  userId    String
+  sessionType String
+  topic     String?
+  moodBefore Int?
+  moodAfter Int?
+  durationSeconds Int?
+  createdAt DateTime @default(now())
+
+  user     User             @relation(fields: [userId], references: [id], onDelete: Cascade)
+  messages SessionMessage[]
+
+  @@map("coaching_sessions")
+}
+
+model SessionMessage {
+  id        String   @id @default(uuid())
+  sessionId String
+  role      String
+  content   String
+  embedding Json?
+  createdAt DateTime @default(now())
+
+  session CoachingSession @relation(fields: [sessionId], references: [id], onDelete: Cascade)
+
+  @@map("session_messages")
+}
+
+model Commitment {
+  id          String   @id @default(uuid())
+  userId      String
+  title       String
+  description String?
+  category    String?
+  priority    String   @default("medium")
+  status      String   @default("active")
+  dueDate     DateTime?
+  completedAt DateTime?
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("commitments")
+}
+
+model Nudge {
+  id            String    @id @default(uuid())
+  userId        String
+  nudgeType     String
+  content       String
+  scheduledFor  DateTime
+  sentAt        DateTime?
+  acknowledgedAt DateTime?
+  context       String?
+  createdAt     DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("nudges")
+}
+
+model WeeklyReport {
+  id                 String   @id @default(uuid())
+  userId             String
+  weekStart          DateTime
+  weekEnd            DateTime
+  mindfulnessScore   Int?
+  stressScore        Int?
+  sessionsCount      Int?
+  commitmentsCompleted Int?
+  insights           String[]
+  recommendations    String[]
+  createdAt          DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, weekStart])
+
+  @@map("weekly_reports")
+}
+
+model BurnoutAssessment {
+  id        String   @id @default(uuid())
+  userId    String
+  emotionalExhaustion Int?
+  depersonalization Int?
+  personalAccomplishment Int?
+  overallRisk String
+  whoIcd11Aligned Boolean @default(true)
+  notes     String?
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@map("burnout_assessments")
+}
+
+model Integration {
+  id             String   @id @default(uuid())
+  userId         String
+  platform       String
+  platformUserId String
+  accessToken    String?
+  webhookUrl     String?
+  isActive       Boolean  @default(true)
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, platform])
+
+  @@map("integrations")
+}
+
+model MemorySummary {
+  id        String   @id @default(uuid())
+  userId    String
+  weekStart DateTime
+  summaryText String
+  keyInsights String[]
+  patternsIdentified String[]
+  createdAt DateTime @default(now())
+
+  user User @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, weekStart])
+
+  @@map("memory_summaries")
+}
