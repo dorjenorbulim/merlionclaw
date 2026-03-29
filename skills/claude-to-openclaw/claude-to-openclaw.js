@@ -2,273 +2,172 @@
 /**
  * Claude Code ↔ OpenClaw Integration
  * 
- * Enables sending tasks from Claude Code to OpenClaw and receiving streaming responses.
- * Similar to DeerFlow's claude-to-deerflow skill.
+ * Sends tasks from Claude Code to OpenClaw via session messaging.
+ * OpenClaw processes the task and responds in the same session.
  */
 
-import { spawn } from 'child_process';
-import { readFileSync, writeFileSync, appendFileSync, existsSync } from 'fs';
+import { execSync } from 'child_process';
+import { writeFileSync, readFileSync, existsSync, mkdirSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
+const WORKSPACE = process.env.OPENCLAW_WORKSPACE || '/Users/subhuti/.openclaw/workspace';
+const QUEUE_DIR = join(WORKSPACE, '.claude-queue');
 
-// Configuration
-const OPENCLAW_URL = process.env.OPENCLAW_URL || 'http://localhost:18789';
-const OPENCLAW_TIMEOUT = parseInt(process.env.OPENCLAW_TIMEOUT) || 300;
-const THREAD_FILE = join(__dirname, '.openclaw-thread.json');
-
-/**
- * Get or create thread ID
- */
-function getThreadId() {
-  if (existsSync(THREAD_FILE)) {
-    const data = JSON.parse(readFileSync(THREAD_FILE, 'utf-8'));
-    return data.threadId;
-  }
-  return null;
+// Ensure queue directory exists
+if (!existsSync(QUEUE_DIR)) {
+  mkdirSync(QUEUE_DIR, { recursive: true });
 }
 
 /**
- * Save thread ID
+ * Send message to OpenClaw by writing to queue file
+ * OpenClaw's heartbeat or main session will pick this up
  */
-function saveThreadId(threadId) {
-  writeFileSync(THREAD_FILE, JSON.stringify({ threadId, createdAt: new Date().toISOString() }, null, 2));
-}
-
-/**
- * Send message to OpenClaw
- */
-async function sendMessage(message, options = {}) {
+function sendToOpenClaw(message, options = {}) {
   const {
-    threadId = getThreadId(),
-    model = process.env.OPENCLAW_MODEL || 'qwen3.5:cloud',
-    stream = process.env.OPENCLAW_STREAM !== 'false',
-    mode = 'standard',
-    attachments = []
+    priority = 'normal',
+    category = 'claude-request',
+    model = 'qwen3.5:cloud'
   } = options;
 
-  console.log(`🦌 Sending to OpenClaw (${model})...`);
+  const timestamp = new Date().toISOString();
+  const id = `${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
   
-  const payload = {
-    message,
-    thread_id: threadId,
+  const request = {
+    id,
+    timestamp,
+    from: 'claude-code',
+    category,
+    priority,
     model,
-    mode,
-    attachments
+    message,
+    status: 'pending'
   };
 
-  try {
-    const response = await fetch(`${OPENCLAW_URL}/api/chat`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify(payload),
-      signal: AbortSignal.timeout(OPENCLAW_TIMEOUT * 1000)
-    });
+  const queueFile = join(QUEUE_DIR, `${id}.json`);
+  writeFileSync(queueFile, JSON.stringify(request, null, 2));
 
-    if (!response.ok) {
-      throw new Error(`OpenClaw error: ${response.status} ${response.statusText}`);
-    }
-
-    const data = await response.json();
-    
-    // Save thread ID for future use
-    if (data.thread_id) {
-      saveThreadId(data.thread_id);
-    }
-
-    return data;
-  } catch (error) {
-    console.error(`❌ Error: ${error.message}`);
-    throw error;
-  }
+  console.log('🦌 Task sent to OpenClaw');
+  console.log(`   Queue ID: ${id}`);
+  console.log(`   Priority: ${priority}`);
+  console.log(`   Model: ${model}`);
+  console.log(`\nOpenClaw will process this task shortly.`);
+  console.log(`Check back with: /claude-to-openclaw status ${id}`);
+  
+  return id;
 }
 
 /**
- * Check OpenClaw health
+ * Check status of a request
  */
-async function checkHealth() {
-  try {
-    const response = await fetch(`${OPENCLAW_URL}/api/health`, {
-      signal: AbortSignal.timeout(5000)
-    });
+function checkStatus(requestId) {
+  const queueFile = join(QUEUE_DIR, `${requestId}.json`);
+  
+  if (!existsSync(queueFile)) {
+    console.log('❌ Request not found. It may have been processed and cleaned up.');
+    return null;
+  }
+
+  const request = JSON.parse(readFileSync(queueFile, 'utf-8'));
+  
+  console.log(`Request: ${requestId}`);
+  console.log(`Status: ${request.status || 'pending'}`);
+  console.log(`Sent: ${request.timestamp}`);
+  console.log(`Message: ${request.message.slice(0, 100)}...`);
+  
+  if (request.response) {
+    console.log(`\n📬 Response:`);
+    console.log(request.response);
+  }
+  
+  return request;
+}
+
+/**
+ * List pending requests
+ */
+function listRequests() {
+  const { readdirSync } = require('fs');
+  
+  const files = readdirSync(QUEUE_DIR)
+    .filter(f => f.endsWith('.json'))
+    .sort()
+    .reverse();
+
+  if (files.length === 0) {
+    console.log('📭 No pending requests');
+    return [];
+  }
+
+  console.log(`📬 Pending Requests (${files.length}):\n`);
+  
+  files.forEach(file => {
+    const request = JSON.parse(readFileSync(join(QUEUE_DIR, file), 'utf-8'));
+    const statusIcon = request.status === 'completed' ? '✅' : 
+                       request.status === 'processing' ? '⚙️' : '⏳';
     
-    if (response.ok) {
-      const data = await response.json();
-      console.log('✅ OpenClaw is healthy');
-      console.log(`   Gateway: ${OPENCLAW_URL}`);
-      console.log(`   Version: ${data.version || 'unknown'}`);
-      console.log(`   Models: ${data.models || 'unknown'}`);
+    console.log(`${statusIcon} ${file.replace('.json', '')}`);
+    console.log(`   ${request.timestamp}`);
+    console.log(`   ${request.message.slice(0, 80)}...`);
+    console.log();
+  });
+
+  return files;
+}
+
+/**
+ * Clean up old completed requests
+ */
+function cleanup(oldDays = 7) {
+  const { readdirSync, unlinkSync } = require('fs');
+  
+  const now = Date.now();
+  const maxAge = oldDays * 24 * 60 * 60 * 1000;
+  let cleaned = 0;
+
+  const files = readdirSync(QUEUE_DIR);
+  files.forEach(file => {
+    if (!file.endsWith('.json')) return;
+    
+    const filePath = join(QUEUE_DIR, file);
+    const request = JSON.parse(readFileSync(filePath, 'utf-8'));
+    const age = now - new Date(request.timestamp).getTime();
+    
+    if (request.status === 'completed' && age > maxAge) {
+      unlinkSync(filePath);
+      cleaned++;
+    }
+  });
+
+  console.log(`🧹 Cleaned up ${cleaned} old requests`);
+  return cleaned;
+}
+
+/**
+ * Check if OpenClaw is running
+ */
+function checkOpenClawStatus() {
+  try {
+    const output = execSync('openclaw status 2>&1', { encoding: 'utf-8' });
+    
+    if (output.includes('Gateway') && output.includes('reachable')) {
+      console.log('✅ OpenClaw is running');
+      
+      // Extract gateway info
+      const gatewayMatch = output.match(/Gateway.*reachable (\d+)ms/);
+      if (gatewayMatch) {
+        console.log(`   Latency: ${gatewayMatch[1]}ms`);
+      }
+      
       return true;
     } else {
-      console.log('⚠️  OpenClaw returned non-OK status');
+      console.log('⚠️  OpenClaw may not be fully operational');
       return false;
     }
   } catch (error) {
-    console.log('❌ OpenClaw is not reachable');
-    console.log(`   Error: ${error.message}`);
-    console.log('   Make sure OpenClaw is running: openclaw start');
-    return false;
-  }
-}
-
-/**
- * List available models
- */
-async function listModels() {
-  try {
-    const response = await fetch(`${OPENCLAW_URL}/api/models`);
-    const data = await response.json();
-    
-    console.log('Available Models:');
-    if (data.models && Array.isArray(data.models)) {
-      data.models.forEach(m => {
-        const defaultMarker = m.id === process.env.OPENCLAW_MODEL ? ' (default)' : '';
-        console.log(`  - ${m.id}${defaultMarker}`);
-      });
-    } else {
-      console.log('  No models found or API not available');
-    }
-    
-    return data.models || [];
-  } catch (error) {
-    console.error(`❌ Error: ${error.message}`);
-    return [];
-  }
-}
-
-/**
- * List skills
- */
-async function listSkills() {
-  try {
-    const response = await fetch(`${OPENCLAW_URL}/api/skills`);
-    const data = await response.json();
-    
-    console.log('Installed Skills:');
-    if (data.skills && Array.isArray(data.skills)) {
-      data.skills.forEach(s => {
-        console.log(`  - ${s.name || s.id}`);
-      });
-      console.log(`\nTotal: ${data.skills.length} skills`);
-    } else {
-      console.log('  No skills found or API not available');
-    }
-    
-    return data.skills || [];
-  } catch (error) {
-    console.error(`❌ Error: ${error.message}`);
-    return [];
-  }
-}
-
-/**
- * List threads
- */
-async function listThreads() {
-  try {
-    const response = await fetch(`${OPENCLAW_URL}/api/threads`);
-    const data = await response.json();
-    
-    console.log('Active Threads:');
-    if (data.threads && Array.isArray(data.threads)) {
-      data.threads.forEach(t => {
-        const currentMarker = t.id === getThreadId() ? ' (current)' : '';
-        console.log(`  - ${t.id}${currentMarker}`);
-        console.log(`    Created: ${new Date(t.createdAt).toLocaleString()}`);
-        console.log(`    Messages: ${t.messageCount || 0}`);
-      });
-    } else {
-      console.log('  No threads found');
-    }
-    
-    return data.threads || [];
-  } catch (error) {
-    console.error(`❌ Error: ${error.message}`);
-    return [];
-  }
-}
-
-/**
- * Get thread history
- */
-async function getThreadHistory(threadId) {
-  try {
-    const response = await fetch(`${OPENCLAW_URL}/api/threads/${threadId}`);
-    const data = await response.json();
-    
-    console.log(`Thread: ${threadId}`);
-    console.log(`Messages: ${data.messages?.length || 0}\n`);
-    
-    if (data.messages && Array.isArray(data.messages)) {
-      data.messages.forEach(msg => {
-        const role = msg.role === 'user' ? '👤' : '🤖';
-        console.log(`${role} ${msg.content?.slice(0, 200) || '...'}`);
-        if (msg.content && msg.content.length > 200) {
-          console.log('   ...');
-        }
-        console.log();
-      });
-    }
-    
-    return data;
-  } catch (error) {
-    console.error(`❌ Error: ${error.message}`);
-    return null;
-  }
-}
-
-/**
- * Upload file
- */
-async function uploadFile(filePath) {
-  try {
-    const fileContent = readFileSync(filePath);
-    const fileName = filePath.split('/').pop();
-    
-    const formData = new FormData();
-    formData.append('file', new Blob([fileContent], { type: 'application/octet-stream' }), fileName);
-    
-    const response = await fetch(`${OPENCLAW_URL}/api/files/upload`, {
-      method: 'POST',
-      body: formData
-    });
-    
-    if (response.ok) {
-      const data = await response.json();
-      console.log('✅ File uploaded successfully');
-      console.log(`   File ID: ${data.fileId || 'unknown'}`);
-      console.log(`   Name: ${fileName}`);
-      return data;
-    } else {
-      throw new Error(`Upload failed: ${response.statusText}`);
-    }
-  } catch (error) {
-    console.error(`❌ Error: ${error.message}`);
-    return null;
-  }
-}
-
-/**
- * Delete thread
- */
-async function deleteThread(threadId) {
-  try {
-    const response = await fetch(`${OPENCLAW_URL}/api/threads/${threadId}`, {
-      method: 'DELETE'
-    });
-    
-    if (response.ok) {
-      console.log('✅ Thread deleted');
-      if (threadId === getThreadId()) {
-        writeFileSync(THREAD_FILE, '{}');
-      }
-      return true;
-    } else {
-      throw new Error(`Delete failed: ${response.statusText}`);
-    }
-  } catch (error) {
-    console.error(`❌ Error: ${error.message}`);
+    console.log('❌ OpenClaw is not running');
+    console.log('   Start it with: openclaw start');
     return false;
   }
 }
@@ -285,130 +184,79 @@ Usage:
   /claude-to-openclaw <command> [options]
 
 Commands:
-  send <message>       Send message to OpenClaw
-  status               Check OpenClaw health
-  models               List available models
-  skills               List installed skills
-  threads              List active threads
-  thread <id>          Get thread history
-  upload <file>        Upload file
-  delete-thread [id]   Delete thread (or current)
+  send <message>       Send task to OpenClaw
+  status [id]          Check request status (or list all)
+  list                 List all pending requests
+  cleanup [days]       Clean up old completed requests (default: 7 days)
   help                 Show this help
 
-Options:
-  --model <name>       Specify model
-  --thread <id>        Specify thread
-  --new-thread         Create new thread
-  --mode <mode>        Execution mode (flash|standard|pro|ultra)
-  --attach <file>      Attach file
+Options for 'send':
+  --priority <level>   Priority: low|normal|high (default: normal)
+  --model <name>       Model to use (default: qwen3.5:cloud)
+  --category <cat>     Category for organization
 
 Examples:
-  /claude-to-openclaw send "Research AI frameworks"
-  /claude-to-openclaw send --mode ultra "Complex research task"
-  /claude-to-openclaw models
-  /claude-to-openclaw upload ./document.pdf
+  /claude-to-openclaw send "Research AI agent frameworks"
+  /claude-to-openclaw send --priority high "Urgent: Check email for important message"
+  /claude-to-openclaw send --model deepseek-r1 "Complex reasoning task"
+  /claude-to-openclaw status abc123
+  /claude-to-openclaw list
+  /claude-to-openclaw cleanup 3
   `);
   process.exit(0);
 }
 
 // Command handlers
-(async () => {
-  try {
-    switch (command) {
-      case 'send': {
-        const message = args.slice(1).filter(a => !a.startsWith('--')).join(' ');
-        if (!message) {
-          console.log('❌ Please provide a message');
-          process.exit(1);
-        }
-        
-        const options = {};
-        
-        // Parse options
-        for (let i = 1; i < args.length; i++) {
-          if (args[i] === '--model' && args[i + 1]) {
-            options.model = args[++i];
-          } else if (args[i] === '--thread' && args[i + 1]) {
-            options.threadId = args[++i];
-          } else if (args[i] === '--new-thread') {
-            options.threadId = null; // Force new thread
-          } else if (args[i] === '--mode' && args[i + 1]) {
-            options.mode = args[++i];
-          } else if (args[i] === '--attach' && args[i + 1]) {
-            options.attachments = options.attachments || [];
-            options.attachments.push(args[++i]);
-          }
-        }
-        
-        const result = await sendMessage(message, options);
-        
-        console.log('\n🦌 OpenClaw Response:');
-        console.log(`Thread: ${result.thread_id || 'new'}`);
-        console.log(`Model: ${result.model || 'default'}`);
-        console.log('\n' + '='.repeat(50));
-        
-        if (result.response) {
-          console.log(result.response);
-        } else if (result.streaming) {
-          console.log('[Streaming response - check thread for full output]');
-        }
-        
-        console.log('='.repeat(50));
-        break;
-      }
-      
-      case 'status':
-        await checkHealth();
-        break;
-      
-      case 'models':
-        await listModels();
-        break;
-      
-      case 'skills':
-        await listSkills();
-        break;
-      
-      case 'threads':
-        await listThreads();
-        break;
-      
-      case 'thread': {
-        const threadId = args[1] || getThreadId();
-        if (!threadId) {
-          console.log('❌ No thread ID provided and no current thread');
-          process.exit(1);
-        }
-        await getThreadHistory(threadId);
-        break;
-      }
-      
-      case 'upload': {
-        const filePath = args[1];
-        if (!filePath) {
-          console.log('❌ Please provide a file path');
-          process.exit(1);
-        }
-        await uploadFile(filePath);
-        break;
-      }
-      
-      case 'delete-thread': {
-        const threadId = args[1] || getThreadId();
-        if (!threadId) {
-          console.log('❌ No thread ID provided');
-          process.exit(1);
-        }
-        await deleteThread(threadId);
-        break;
-      }
-      
-      case 'help':
-      default:
-        console.log('Use /claude-to-openclaw without arguments to see help');
+switch (command) {
+  case 'send': {
+    const message = args.slice(1).filter(a => !a.startsWith('--')).join(' ');
+    
+    if (!message) {
+      console.log('❌ Please provide a message');
+      process.exit(1);
     }
-  } catch (error) {
-    console.error(`\n❌ Fatal error: ${error.message}`);
-    process.exit(1);
+    
+    // Parse options
+    const options = {};
+    for (let i = 1; i < args.length; i++) {
+      if (args[i] === '--priority' && args[i + 1]) {
+        options.priority = args[++i];
+      } else if (args[i] === '--model' && args[i + 1]) {
+        options.model = args[++i];
+      } else if (args[i] === '--category' && args[i + 1]) {
+        options.category = args[++i];
+      }
+    }
+    
+    sendToOpenClaw(message, options);
+    break;
   }
-})();
+  
+  case 'status': {
+    const requestId = args[1];
+    if (requestId) {
+      checkStatus(requestId);
+    } else {
+      listRequests();
+    }
+    break;
+  }
+  
+  case 'list':
+    listRequests();
+    break;
+  
+  case 'cleanup': {
+    const days = parseInt(args[1]) || 7;
+    cleanup(days);
+    break;
+  }
+  
+  case 'check':
+    checkOpenClawStatus();
+    break;
+  
+  case 'help':
+  default:
+    console.log('Use /claude-to-openclaw without arguments to see help');
+}

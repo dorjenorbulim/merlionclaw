@@ -1,14 +1,16 @@
 # Claude Code ↔ OpenClaw Integration
 
-**Send tasks from Claude Code to OpenClaw and get streaming responses**
+**Send tasks from Claude Code to OpenClaw via session messaging**
 
 ## Overview
 
 This skill enables bidirectional communication between Claude Code (Anthropic's CLI agent) and OpenClaw. Use it to:
 - Send research tasks to OpenClaw from Claude Code
-- Get streaming responses back to your terminal
+- Get responses back to your terminal
 - Leverage OpenClaw's sub-agent orchestration for complex tasks
 - Access OpenClaw's memory, skills, and tools from Claude Code
+
+**Architecture:** Uses OpenClaw's `sessions_send` tool to communicate between Claude Code and OpenClaw sessions.
 
 ## Prerequisites
 
@@ -20,7 +22,6 @@ This skill enables bidirectional communication between Claude Code (Anthropic's 
 2. **OpenClaw running:**
    ```bash
    openclaw start
-   # Or: openclaw gateway start
    ```
 
 3. **Both authenticated:**
@@ -34,8 +35,8 @@ This skill enables bidirectional communication between Claude Code (Anthropic's 
 ### Option 1: Install as Claude Code Skill
 
 ```bash
-cd ~/.claude/skills  # Or your Claude Code skills directory
-git clone https://github.com/your-org/claude-to-openclaw.git
+cd ~/.claude/skills
+cp -r /Users/subhuti/.openclaw/workspace/skills/claude-to-openclaw .
 ```
 
 ### Option 2: Manual Setup
@@ -61,13 +62,8 @@ Once installed, use `/claude-to-openclaw` in Claude Code:
 
 | Command | Description |
 |---------|-------------|
-| `/claude-to-openclaw send <message>` | Send message to OpenClaw |
-| `/claude-to-openclaw status` | Check OpenClaw health |
-| `/claude-to-openclaw models` | List available models |
-| `/claude-to-openclaw skills` | List available skills |
-| `/claude-to-openclaw threads` | List active threads |
-| `/claude-to-openclaw thread <id>` | Get thread history |
-| `/claude-to-openclaw upload <file>` | Upload file to OpenClaw |
+| `/claude-to-openclaw send <message>` | Send task to OpenClaw main session |
+| `/claude-to-openclaw status` | Check if OpenClaw is accessible |
 | `/claude-to-openclaw help` | Show help |
 
 ---
