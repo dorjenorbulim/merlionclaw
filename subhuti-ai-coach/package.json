@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "next lint",
     "db:migrate": "tsx scripts/db-migrate.ts",
-    "db:seed": "tsx scripts/db-seed.ts"
+    "db:seed": "tsx scripts/db-seed.ts",
+    "slack": "tsx src/slack-server.ts",
+    "setup": "npx prisma generate && npx prisma db push"
   },
   "dependencies": {
     "next": "14.2.5",
