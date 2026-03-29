@@ -1,0 +1,129 @@
+{
+  "version": 1,
+  "skills": {
+    "auto-updater-skill": {
+      "version": "1.2.0",
+      "installedAt": 1774052892633
+    },
+    "agent-browser": {
+      "version": "0.2.0",
+      "installedAt": 1774053122356
+    },
+    "summarize": {
+      "version": "1.0.0",
+      "installedAt": 1774053189423
+    },
+    "obsidian": {
+      "version": "1.0.0",
+      "installedAt": 1774062301548
+    },
+    "humanize-ai-text": {
+      "version": "1.0.1",
+      "installedAt": 1774062543627
+    },
+    "proactive-agent": {
+      "version": "3.1.0",
+      "installedAt": 1774062662419
+    },
+    "decision-journal": {
+      "version": "1.0.0",
+      "installedAt": 1774067222501
+    },
+    "4to1-planner": {
+      "version": "2.0.0",
+      "installedAt": 1774067944691
+    },
+    "sonoscli": {
+      "version": "1.0.0",
+      "installedAt": 1774076281685
+    },
+    "nano-banana-pro": {
+      "version": "1.0.1",
+      "installedAt": 1774076348052
+    },
+    "find-skills": {
+      "version": "0.1.0",
+      "installedAt": 1774076461917
+    },
+    "code-planning-agent": {
+      "version": "1.0.0",
+      "installedAt": 1774084914581
+    },
+    "agent-daily-planner": {
+      "version": "1.0.0",
+      "installedAt": 1774084920028
+    },
+    "code-generator": {
+      "version": "2.3.4",
+      "installedAt": 1774085013198
+    },
+    "explain-code": {
+      "version": "1.0.0",
+      "installedAt": 1774085026177
+    },
+    "openclaw-code-stats": {
+      "version": "1.0.0",
+      "installedAt": 1774085030491
+    },
+    "productivity": {
+      "version": "1.0.4",
+      "installedAt": 1774085043712
+    },
+    "personal-productivity": {
+      "version": "1.0.0",
+      "installedAt": 1774085048882
+    },
+    "ai-productivity-audit": {
+      "version": "1.1.0",
+      "installedAt": 1774085053337
+    },
+    "learn": {
+      "version": "1.0.2",
+      "installedAt": 1774085062756
+    },
+    "writing": {
+      "version": "1.1.0",
+      "installedAt": 1774085395561
+    },
+    "business-writing": {
+      "version": "0.1.0",
+      "installedAt": 1774085400118
+    },
+    "book-writing": {
+      "version": "1.0.0",
+      "installedAt": 1774085407336
+    },
+    "social-pack": {
+      "version": "1.0.0",
+      "installedAt": 1774085418909
+    },
+    "portfolio-monitor": {
+      "version": "1.1.0",
+      "installedAt": 1774235352098
+    },
+    "qmd": {
+      "version": "1.0.0",
+      "installedAt": 1774285300681
+    },
+    "calendar": {
+      "version": "1.0.0",
+      "installedAt": 1774629919210
+    },
+    "in-depth-research": {
+      "version": "1.0.0",
+      "installedAt": 1774629955174
+    },
+    "gmail-2": {
+      "version": "0.1.1",
+      "installedAt": 1774661729473
+    },
+    "gcalcli-calendar": {
+      "version": "3.0.0",
+      "installedAt": 1774661741766
+    },
+    "google-drive": {
+      "version": "1.0.6",
+      "installedAt": 1774661752101
+    }
+  }
+}

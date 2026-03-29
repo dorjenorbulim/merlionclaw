@@ -1,0 +1,361 @@
+Source: /Volumes/Subhuti Main/Dharma/FPMT Basic Programs/bp2/Lorig/Transcript/lesson14.doc
+Extracted: 2026-03-26T22:53:23.994178
+================================================================================
+
+
+The concept of generality and instance
+Illustration of a generality would be an object of knowledge. An object of
+knowledge is the generality.
+Why is it called the generality? Because an object of knowledge pervades
+many types of phenomena.
+Example: A horse is an instance of an object of knowledge.
+A horse is pervaded by an object of knowledge. Object of knowledge pervades
+horse.
+What makes something an instance of a particular generality?
+A horse is an instance of an object of knowledge not because of it being an
+existent.
+How do we then determine that horse is an instance of object of knowledge?
+There are three criteria to determine something to be an instance of a
+generality.
+1. Horse has to be an object of knowledge
+2. Horse has to be related to object of knowledge by reason of being one
+  entity
+3. It must be able to posit something that is non-horse but is an object of
+  knowledge
+If these three characteristics are present, then horse can be an instance
+of object of knowledge.
+For the time being, just keep this in mind and try to understand the
+concept of generality and instance based on the example of a horse being an
+instance of an object of knowledge due to the presence of these three
+characteristics.
+As explaining the relationship between generality and instance, there are
+two kinds of relationships.
+They are either:
+   1. Causally related or
+   2. Related of being one entity [Generality is not separate entity from
+      its instance]
+If there is interest, we will talk more about these two types of
+relationships in the future; not now as it may complicate things.
+There seems to be some confusion between a generality and a meaning
+generality; they are not the same.
+Is someone were to ask you, “Is horse a generality?” what would you say?
+Earlier, we saw how horse is an instance of object of knowledge. Is horse a
+generality?
+Yes, horse is a generality.  If horse is a generality, what would be an
+instance of horse?
+You can say “White horse.”
+[Horse is a generality and a white horse is an instance of this
+generality.]
+Some students were asking about generalities and instances, so this is
+something for you to think about.
+
+We were talking about inferential cognizer. How is an inferential cognizer
+produced?
+Inferential cognizer is produced in dependence upon a correct sign.
+If an inferential cognizer is generated in dependence upon a correct sign,
+then what is a correct sign?
+A correct sign is that which is the three modes. If the three modes are
+present then you have a correct sign/reason.
+When we state a syllogism, there are three elements:
+    • Subject
+    • Predicate to be proven
+    • The sign
+When a syllogism is stated, you have a subject and a predicate to be
+proven.
+So, you are trying to prove that the subject is the predicate to be proven
+in dependence upon stating a sign.
+How do you determine whether it is a correct sign or not? You analyze
+whether the three modes are fulfilled/present. The three modes have to be
+established in order for the sign to be a correct sign.
+Of the three modes, first mode is the property of the subject.
+How is the property of the subject established?
+To establish the property of the subject, there are three things to look
+out for:
+1. The subject in a particular syllogism and the sign that is stated in the
+  same syllogism must be different.
+2. The sign stated in the syllogism must exist with the subject. (The
+  subject is the sign.)
+3. The person to whom you are stating this syllogism has to be:
+  - someone who has ascertained through a valid cognition that the subject
+  is the sign and
+  - someone who wishes to know whether the subject is the predicate to be
+  proven.
+If these three things are fulfilled then you can say the first mode -the
+property of the subject- is established.
+Syllogism: The subject, sound, is an impermanent phenomenon because of
+being a product.
+Subject - sound
+Sign/ reason - product
+Predicate to be proven - impermanent phenomenon.
+This syllogism contains correct sign. Therefore the three modes are
+established.
+Let’s use this to see how the three modes are established.
+
+From this you can see that if you don’t have some rough understanding of
+what is an impermanent phenomenon, what is a product, what is sound, the
+definition then really there is no way to analyze.
+How is the property of the subject established in this syllogism?
+In order for the property of the subject to be established, there are three
+criteria to be fulfilled:
+1. Are the subject and the sign stated different? Subject is sound. Sign is
+  product. Sound and product are different.
+2. Do the sign exist with the subject OR is the subject the sign?  Sound
+  [subject] is the product [sign].
+3. It is possible that there exist a person who has ascertained with valid
+  cognition that sound is a product and who wishes to know whether sound is
+  a impermanent phenomenon or not.
+If these three are present then the property of the subject is established.
+The second mode is forward pervasion
+The easiest ways to see whether the forward pervasion is established or not
+is to see whether the sign exist exclusively in the similar class or not.
+Syllogism: The subject, sound, is an impermanent phenomenon because of
+being a product.
+Does product exist exclusively in the class of impermanent phenomenon?
+When we say the similar class, we are talking about the predicate to be
+proven.
+The predicate to be proven is impermanent phenomenon.
+So we have to establish whether the sign, product, accords with to
+impermanent phenomenon or not.
+The third mode is counter pervasion
+In this syllogism, predicate to be proven is impermanent phenomenon.
+The impermanent phenomenon is the similar class.
+The opposite of impermanent phenomenon, non-impermanent phenomenon, is the
+dissimilar class.
+To check whether the counter pervasion is established or not, then you
+check whether the sign is universally absence from the dissimilar class or
+not.
+Syllogism: The subject, sound, is an impermanent phenomenon because of
+being a product.
+Subject - sound
+Sign/ reason - product
+Predicate to be proven - impermanent phenomenon
+The similar or dissimilar class is related to the predicate to be proven
+The similar class is impermanent phenomenon. All impermanent phenomena are
+the similar class.
+The dissimilar class has to be something that is not accord with
+impermanent phenomenon.
+The dissimilar class is the opposite of impermanent phenomenon which is
+permanent phenomenon.
+If you know what the dissimilar class is, do the sign exist in the
+dissimilar class or not?
+One the easiest way to see whether the counter pervasion is established or
+not is to see whether the sign is universally absence from the dissimilar
+class or not.
+Is product absence from the dissimilar class? [Sign - product. Dissimilar
+class -permanent phenomenon]
+Does product exist among permanent phenomenon?
+To see whether it exists or not in the dissimilar class is to see whether
+there is a common locus between product and permanent phenomenon. There is
+nothing that is both a product and a permanent phenomenon.
+• You have to stick to one example of the syllogism that we have been using
+  here.
+• Using that as the basis, you think about it over and over again until you
+  are very clear about the three modes.
+• Only then you can change the sign.
+We try to prove something and whatever we try to prove we use different
+reasons. First you have to understand the concept of the three modes before
+you can practically apply and see whether that is a correct reason or
+incorrect reason. It is complicated.
+If somebody were to say: “The subject, sound, is permanent because of being
+a product”.
+He is trying to prove that sound is permanent by using the reason that
+sound is a product.
+Subject - sound
+Sign/ reason - product
+Predicate to be proven - permanent
+Here the sign, product, is a contradictory reason because whatever is a
+product, it is necessarily impermanent.
+So how can he use this reason to establish that sound is permanent? The
+reason is contradictory because product is necessarily impermanent.
+In the syllogism: The subject sound is an impermanent phenomenon because of
+being a product.
+Subject - sound
+Sign/ reason - product
+Predicate to be proven - impermanent phenomenon
+In this syllogism, the sign, product, is a valid/correct reason because
+product is definitely impermanent.
+Somebody also try to prove to you: “Sound is impermanent because it is an
+existent”.
+One can try to prove the same thing by using all sorts of reasons but not
+all the reasons are fantastic.
+Syllogism: The subject, sound, is impermanent because it is an existent.
+Subject - sound
+Sign/ reason - existent
+Predicate to be proven - impermanent phenomenon
+In this syllogism, the sign, existent, is an indefinite reason. You cannot
+establish with full certainty that sound is an impermanent phenomenon just
+by the fact that it is an existent. This is because whatever is an existent
+is not necessarily impermanent; it could be impermanent but it is not
+necessarily impermanent [as existent can be permanent and impermanent
+phenomena].
+Syllogism: The subject, sound, is an impermanent phenomenon because being a
+product.
+Subject - sound
+Sign/ reason - product
+Predicate to be proven - impermanent phenomenon
+The sign, product, is a definite reason because the pervasion is definite
+and necessarily so. The product as a reason is not a contradictory reason.
+It is definite reason because whatever is the product is necessarily
+impermanent.
+The way to learn is hold onto one chosen correct syllogism, for example,
+“The subject, sound, is an impermanent phenomenon because being a product”.
+
+• Using this particular syllogism then you try to understand the three
+  modes. By just understanding the three modes based on this syllogism
+  doesn’t mean that you have understood everything. That is only starting.
+• Once you know what the three modes are, then on the basis of this
+  syllogism, you change the sign to a contradictory reason, for example,
+  permanent.
+• Then you try to understand why the three modes are not established.
+• Then you change the sign to an indefinite reason such as an existent.
+• Then you try to understand why the three modes are not established as
+  well.
+If you are someone who has memorized the sevenfold division of
+consciousnesses and their respective definitions, then you can use this
+information to state a syllogism, for example:
+Syllogism: The subject, the sense consciousness to which one moon appears
+as two moons, is a wrong consciousness because it is a knower that engages
+in its object erroneously.
+Subject - sense consciousness
+Sign/ reason - a knower that engages in its object erroneously
+If we state the sign [a knower that engages in its object erroneously] to
+establish that the sense consciousness to which one moon appears as two
+moons is a wrong consciousness, then this is a correct sign.
+Someone then comes along and try to prove to you:
+Syllogism: The sense consciousness to which one moon appears as two moons
+is a direct perceiver because it is a sense consciousness.
+Sign - a sense consciousness. In this case, it is incorrect.
+If sense consciousness is posited to be the sign in proving that the sense
+consciousness to which one moon appears as two moons is a direct perceiver,
+then the sign [a sense consciousness] is an indefinite reason because
+whatever is a sense consciousness is not necessarily a direct perceiver.
+There is no pervasion.
+When it comes to stating reason, one can state whatever kind of reasons but
+it doesn’t necessarily mean a correct reason.
+Syllogism: The sense consciousness to which one moon appears as two moons
+is a direct valid cognizer because it is a wrong consciousness.
+In this case, the sign is completely wrong because there is no way a wrong
+consciousness can be a valid cognizer.
+As long as you have a rough idea of what a correct sign is then it is
+sufficient for the time being. You should be able to differentiate whether
+something is a correct sign or an incorrect sign.
+A correct sign has to be that which is the three modes. I think it is fine
+as long as you have some understanding of what the three modes are. You
+need to know this because an inferential valid cognizer is generated in
+dependence upon a correct sign which is its basis. So in order to have some
+ideas on how an inference is generated, it is important to have some ideas
+on what constitute a correct reason.
+Here we are trying to understand the concept and in order to understand the
+concept, we have the example:
+The subject sound is impermanent because it is a product.
+At the end of day, is that really matters? Are you so interested to find
+out whether sound is impermanent or not? It is good to so but the main
+purpose is to understand the concept and then apply it to our own mind, to
+our own existent, whether we are impermanent or whether we are product, but
+first we have to understand the concept and the correct reason. Once we
+know the concept, we then apply in the Lamrim meditation such as meditation
+on death and impermanence. Then you change the subject to yourself: “I am
+definitely going to die.”  You are going to prove to yourself that “I am
+definitely going to die” because of the reasons in the nine-point on death
+and impermanence in the Lamrim. Example: “I am definitely going to die
+because there is nothing that can stop death”. Is the reason a correct
+sign? You can change to another reason as there are three reasons that
+prove that death is definite such as; “I am definitely going to die because
+my lifespan is constantly depleting and there is nothing being added on”.
+The main purpose is to apply it to meditation.
+Or you can say: “There is no certainty when I will die, the time of my
+death is uncertain, because the lifespan of the beings in this world is not
+fixed.” Is this a definite reason?
+In the course of the study and in order to understand the concept, there is
+a lot of analysis and debates.  The classic example that is always being
+used “Sound is impermanent because of this and this” and a lot of debate
+going on to establish it. There is a saying’ “At end of the day, despite of
+being able to establish that sound is impermanent because of the many
+reasons but yet at the same time that person establishing it feels that he
+will never die and thinking: “I am permanent.” If that happen, then that
+becomes the most amazing thing.
+Khen Rinpoche spoke in English: Most surprising thing and that mean no
+good.
+When we talk about past and future lives, reincarnation, and for most
+people it is not something that is directly perceivable. So the only way,
+the first step in realizing reincarnation is through inference i.e. you
+have to realize it by an inferential cognizer. If that is the case, then
+you have to posit a correct reason to establish in your own mind that
+reincarnation definitely exists.
+If we state a syllogism like this: The subject, mind of an infant at the
+time of conception, was preceded by a mind of similar type because it is
+mind.
+This is posited to be a correct sign as this is what being mentioned in the
+treatises. This is how one establishes past lives.
+In order to prove future life: The subject, the last moment of the mind of
+an ordinary person at the time of death, this mind will continue and lead
+on to a mind in the future which is its effect because it is a continuum of
+an awareness that is accompanied by attachment.
+Subject: the last moment of the mind of an ordinary person at the time of
+death
+The predicate to be proven: there is an effect mind/consciousness. It is
+the effect of the subject. The effect has to exist after the cause, i.e.,
+in the future.
+The sign/ reason: because is a continuum of an awareness that is
+accompanied by attachment.
+State it simply but not technically fully correct: The mind at the time of
+death, which is the last moment of the mind of an ordinary person, will
+continue because it is mind.
+It is the same as in the previous proof of past lives, why don’t we simply
+state it in such a way? Because the inclusion of certain words are there to
+eliminate arguments.
+Khen Rinpoche: Okay that is it. Syllogism is done. Anything you want to
+know syllogism? Ask if you don’t understand about syllogism.
+Student: Please explain the meaning of the illustrations of the inferential
+cognizer through renown. Why inferential cognizer through renown is
+necessarily an inferential cognizer by power of the fact?
+Khen Rinpoche:  There are these different signs as well.
+[Handout dated 24 July page 2: Inferential cognizer by power of the fact:
+e.g. an inferential cognizer which realizes that sound is impermanent
+through the sign of being a product.]
+Power of the fact means that in reality it exists.
+You are stating a fact as the reason therefore it is termed by power of
+fact.
+[Handout dated 24 July page 2: Inferential cognizer through renown: e.g. an
+inferential cognizer which realizes that it is suitable to express the
+rabbit-possessor by the term moon from the sign of its existing among
+objects of thought.]
+Syllogism: The subject, the rabbit-possessor, is suitable to be expressed
+by the term moon because it exists among objects of thought.
+[Note: In Tibetan tradition, rabbit-possessor is referring to a moon]
+Here rabbit possessor is suitable to be expressed by the term moon because
+it is widely known as that.
+[Handout dated 24 July page 2: Inferential cognizer through belief: e.g an
+inferential cognizer which realizes that the scripture, “From giving,
+resources, from ethics, a happy migration,” is incontrovertible with
+respect to the meaning indicated by it by the sign of its being a scripture
+free from the three contradictions.]
+For now we will just leave it as that; otherwise it is going to be
+complicated. What we have been discussing so far is an instance of more to
+do with the inferential cognizer by power of the fact. Try to understand
+that well first, and in the future if there is an interest, perhaps we can
+look at inferential cognizer through renown and through belief.
+As to what is a scripture that is free from the three contradictions, that
+can be complicated. We will just leave it for now.
+That is about it for the sevenfold division of consciousnesses. We will
+move on to the Mind and Mental Factors. We will attempt to give you the
+textbook. Please register with the office if you are interested to have
+one.
+Khen Rinpoche spoke in English: If you need to know more about the seven
+minds, then we can do some question and answer in the next class, only if
+you have. Otherwise, we will start the 51 mental factors.
+As we have only finished the first two divisions of the sevenfold
+consciousnesses - direct valid cognizer and inferential valid cognizer- and
+if you are interested with the remaining consciousnesses, starting from
+subsequent cognizer and so forth which they do have their own divisions,
+then we can look at them.
+Khen Rinpoche spoke in English: Do you want to know the divisions or
+enough?
+Student:  Yes, because we want to be fully enlightened.
+Ven Gyurme: It is enough to get fully enlightened by understanding a direct
+valid cognizer and inferential valid cognizer because the rest are not
+valid consciousnesses.
+Khen Rinpoche spoke in English: Okay then we will have one or two classes
+to look at the divisions, if you know the divisions, I think that make a
+little clear about the minds, on the different minds. Okay maybe one or two
+classes for that so you can be fully enlightened.

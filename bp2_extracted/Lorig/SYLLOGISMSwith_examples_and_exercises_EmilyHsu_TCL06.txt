@@ -1,0 +1,194 @@
+Source: /Volumes/Subhuti Main/Dharma/FPMT Basic Programs/bp2/Lorig/Reference material/SYLLOGISMSwith_examples_and_exercises_EmilyHsu_TCL06.pdf
+Extracted: 2026-03-26T22:53:24.667620
+================================================================================
+
+SYLLOGISMS
+with examples and an exercise
+Extracted from the pres entation by Emily Hsu 
+Mind and Cognit ion part1:Awarenesses and Knowers
+for the Basic Programs at Tse Chen Ling and
+Gyalwa Gyatso Buddhist Center
+© Emily Hsu and Tse Chen Ling, October 2006
+Two forms of argument
+Two forms of argument are used to defeat 
+wrong conceptions and generate clear 
+understanding
+–syllogisms – consist of a thesis and a sign/reason 
+stated together in a single sentence
+–consequences – an argument structurally similar 
+to a syllogism but containing a word indicating a 
+logical outflow of an opponent’s own assertions
+Syllogisms
+Thesis to be proven : Sound is impermanent
+Syllogism : Sound is impermanent because of 
+being a product
+Syllogism – three parts
+Sound is impermanent because of being a product
+Subject
+(1)Predicate to 
+be proven
+(2)Sign/reason
+(3)Syllogism:
+Thesis (subject + 
+predicate)
+(that which is to be 
+proven)Sign/reason
+(proof )
+Correct sign
+z“In order to inferentially understand that sound is 
+impermanent, for example, a  perfect reason (correct sign) has to be found, stated to and established 
+within the mind.”
+z“Simply to state this reason is not sufficient for a 
+comprehension to occur.”
+z“The reason must first be established as being both applicable to the subject (property of the subject) and congruent with the predicate (forward and 
+counter-pervasions).”
+from Mind and Its Functions, Geshe Rabten
+Correct sign – three modes
+Definition of a correct sign : that which is the three 
+modes*
+Three modes:
+zProperty of the subject – establishing that the sign/reason 
+applies to the subject
+zForward pervasion – understanding that the sign/reason is 
+pervaded by the predicate
+zCounter pervasion – understanding that the non-predicate is 
+pervaded by the non-sign/reason.
+*from Perdue, Debate in Tibetan Buddhism
+Correct sign – three modes
+Sound is impermanent because of being a product
+Subject Predicate to 
+be provenSign/reason
+1.Property of the subject – establishing that the sign/reason 
+applies to the subject  
+Æsound is a product
+2.Forward pervasion – understanding that the sign/reason is 
+pervaded by the predicate 
+Æwhatever is a product is necessarily impermanent
+3.Counter pervasion – understanding that the non-predicate is 
+pervaded by the non-sign/reason 
+Æwhatever is not impermanent is necessarily not a product.
+Another example
+Thesis to be proven : People change from 
+moment to moment
+Another example
+Syllogism : 
+People change from moment to moment 
+because of arising from causes and 
+conditions.
+Another example
+Syllogism : 
+People (subject ) change from moment to moment
+(predicate ) because of arising from causes and 
+conditions (sign)
+What are the three modes?
+1.Property of the subject
+2.Forward pervasion
+3.Counter-pervasion
+An incorrect sign
+Sound is impermanent because of being an existent
+Subject Predicate to 
+be provenSign/reason
+An incorrect sign
+Sound is impermanent because of being an existent
+Subject Predicate to 
+be provenSign/reason
+1.Property of the subject – establishing that the sign/reason 
+applies to the subject  
+Æ
+2.Forward pervasion – understanding that the sign/reason is 
+pervaded by the predicate 
+Æ
+3.Counter pervasion – understanding that the non-predicate is 
+pervaded by the non-sign/reason 
+Æ
+An incorrect sign
+Sound is impermanent because of being an existent
+Subject Predicate to 
+be provenSign/reason
+1.Property of the subject – establishing that the sign/reason 
+applies to the subject  
+Æsound is an existent
+2.Forward pervasion – understanding that the sign/reason is 
+pervaded by the predicate 
+Æwhatever is an existent is necessarily impermanent – NO 
+PERVASION
+3.Counter pervasion – understanding that the non-predicate is 
+pervaded by the non-sign/reason 
+Æwhatever is not impermanent is necessarily not an existent 
+–NO PERVASIO N
+Exercise – syllogisms 
+z With regard to the syllogisms:
+a.Sound is impermanent because of being a product
+b.Sound is an existent because of being a product
+c.Sound is a product because of being an existent
+d.Sentient beings will suffer again and again in samsara because 
+of being under the control of karma and afflictions
+e.Sentient beings are empty of inherent existence because of being dependent-arisings
+• Identify the subject, the predic ate, and the sign/reason. What 
+is the property of the subject? What is the forward pervasion? 
+What is the counter-pervasion?
+Another example
+Thesis to be proven : Today is Friday.
+Another example
+Syllogism : 
+Today is Friday because the Awarenesses & 
+Knowers class is meeting at Tse Chen Ling.
+Another example
+Syllogism : 
+Today (subject ) is Friday (predicate ) because the 
+Awarenesses & Knowers class is meeting at Tse
+Chen Ling (sign)
+What are the three modes?
+zProperty of the subject
+zForward pervasion
+zCounter-pervasion
+An incorrect sign
+Today is Friday because of being a weekday
+Subject Predicate to 
+be proven Sign/reason
+An incorrect sign
+Today is Friday because of being a weekday
+Subject Predicate to 
+be provenSign/reason
+1.Property of the subject – establishing that the sign/reason 
+applies to the subject  
+Æ
+2.Forward pervasion – understanding that the sign/reason is 
+pervaded by the predicate 
+Æ
+3.Counter pervasion – understanding that the non-predicate is 
+pervaded by the non-sign/reason 
+Æ
+An incorrect sign
+Today is Friday because of being a weekday
+Subject Predicate to 
+be provenSign/reason
+1.Property of the subject – establishing that the sign/reason 
+applies to the subject  
+ÆToday is a weekday
+2.Forward pervasion – understanding that the sign/reason is 
+pervaded by the predicate 
+Æif it is a weekday, it is necessarily Friday – NO 
+PERVASION
+3.Counter pervasion – understanding that the non-predicate is 
+pervaded by the non-sign/reason 
+Æif it is not Friday, it is necessarily not a weekday – NO 
+PERVASIO N
+Another incorrect sign
+Today is Saturday because tomorrow is Sunday
+Subject Predicate to 
+be proven Sign/reason
+zWhat is the property of the subject?
+zWhat is the forward pervasion?
+zWhat is the counter-pervasion?
+Exercise – syllogisms 
+z With regard to the syllogisms:
+a.Today is Friday because tomorrow is Saturday.
+b.Today is Friday because it is a weekday.
+c.Today is a weekday because it is Friday.
+d.Sentient beings will suffer again and again in samsara because 
+of being under the control of karma and afflictions
+e.Sentient beings are empty of inherent existence because of being dependent-arisings
+• Identify the subject, the predic ate, and the sign/reason. What 
+is the property of the subject? What is the forward pervasion? 
+What is the counter-pervasion?

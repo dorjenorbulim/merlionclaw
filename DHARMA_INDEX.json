@@ -1,0 +1,482 @@
+{
+  "metadata": {
+    "title": "Subhuti Dharma Collection Index",
+    "location": "/Volumes/Subhuti Main/Dharma/",
+    "created": "2026-03-22",
+    "totalFiles": 3000,
+    "version": "1.0"
+  },
+  "categories": [
+    {
+      "id": "fpmt-bp1",
+      "name": "FPMT Basic Program (BP1)",
+      "description": "Foundational curriculum covering sutra and tantra",
+      "path": "FPMT Basic Programs/bP1",
+      "modules": [
+        {
+          "id": "bp1-mod1",
+          "name": "Lam Rim",
+          "number": 1,
+          "title": "Stages of the Path",
+          "path": "FPMT Basic Programs/bP1/Module 1 Lam Rim",
+          "topics": ["graduated path to enlightenment", "renunciation", "bodhicitta", "wisdom"],
+          "contents": [
+            {"type": "transcript", "subtype": "edited", "format": "text"},
+            {"type": "audio", "format": "mp3", "description": "Lam Rim Audio teachings"},
+            {"type": "transcript", "subtype": "original", "format": "text"}
+          ]
+        },
+        {
+          "id": "bp1-mod2",
+          "name": "Lo Rig",
+          "number": 2,
+          "title": "Presentation of Mind & Awareness",
+          "path": "FPMT Basic Programs/bP1/Module 2 Lorig",
+          "topics": ["buddhist psychology", "mind", "mental factors"],
+          "contents": [
+            {"type": "notes", "subtype": "handouts", "format": "document"},
+            {"type": "audio", "format": "mp3", "description": "Lorig Audio"},
+            {"type": "transcript", "format": "text"}
+          ]
+        },
+        {
+          "id": "bp1-mod3",
+          "name": "Tenets & Heart Sutra",
+          "number": 3,
+          "title": "Philosophical Tenets & Heart Sutra",
+          "path": "FPMT Basic Programs/bP1/Module 3 Tenets Heart Sutra",
+          "topics": ["four buddhist schools", "emptiness", "perfection of wisdom"],
+          "subcategories": [
+            {
+              "name": "Tenets",
+              "path": "Tenets",
+              "topics": ["vaibhashika", "sautrantika", "cittamatra", "madhyamaka"],
+              "contents": [
+                {"type": "audio", "format": "mp3"},
+                {"type": "handout", "format": "document"},
+                {"type": "transcript", "format": "text"}
+              ]
+            },
+            {
+              "name": "Heart Sutra",
+              "path": "Heart Sutra by Tsering Rinpoche",
+              "teacher": "Tsering Rinpoche",
+              "contents": [
+                {"type": "transcript", "format": "text"},
+                {"type": "audio", "format": "mp3", "description": "HeartSutra Audio"}
+              ]
+            }
+          ]
+        },
+        {
+          "id": "bp1-mod4",
+          "name": "Middle Length Lam Rim",
+          "number": 4,
+          "title": "Middle Length Lam Rim",
+          "path": "FPMT Basic Programs/bP1/Module 4 Middle Length Lam RIm",
+          "topics": ["lamrim", "stages of the path", "tsongkhapa"],
+          "contents": [
+            {"type": "audio", "format": "mp3", "description": "Middle Length Lam Rim Audio"},
+            {"type": "transcript", "format": "text", "note": "Multiple versions: original and edited"}
+          ]
+        },
+        {
+          "id": "bp1-mod5",
+          "name": "Bodhisattva Deeds I",
+          "number": 5,
+          "title": "Engaging in the Bodhisattva Deeds (Part I)",
+          "path": "FPMT Basic Programs/bP1/Module 5  Engaging in the Bodhisattva Deed Part I",
+          "topics": ["six perfections", "bodhisattva ethics", "shantideva", "bodhicaryavatara"],
+          "contents": [
+            {"type": "audio", "format": "mp3", "description": "Audio For Engaging in Bodhisattva I"},
+            {"type": "transcript", "subtype": "edited", "format": "text"},
+            {"type": "handout", "format": "document"},
+            {"type": "transcript", "format": "text"}
+          ]
+        },
+        {
+          "id": "bp1-mod6",
+          "name": "Wheel of Sharp Weapons",
+          "number": 6,
+          "title": "Wheel of Sharp Weapons",
+          "path": "FPMT Basic Programs/bP1/Module 6 Wheel of Sharp Weapons",
+          "topics": ["mind training", "lojong", "exchanging self and others"],
+          "contents": [
+            {"type": "transcript", "subtype": "edited", "format": "text"},
+            {"type": "audio", "format": "mp3", "description": "Wheel of Sharp Weapon Audio"},
+            {"type": "text", "description": "Module 6 Text"},
+            {"type": "transcript", "format": "text"}
+          ]
+        },
+        {
+          "id": "bp1-mod789",
+          "name": "Bodhisattva Deeds II",
+          "number": "7, 8, 9",
+          "title": "Engaging In the Bodhisattva Deeds (Part II)",
+          "path": "FPMT Basic Programs/bP1/Module 7, 8 & 9 Engaging In the Bodhisattva Deed part II",
+          "topics": ["dependent origination", "emptiness", "compassion", "bodhicitta"],
+          "subcategories": [
+            {
+              "name": "Dependent Origination",
+              "path": "Dependent Origination",
+              "teacher": "His Holiness Dalai Lama",
+              "contents": [
+                {"type": "teaching", "description": "Dependent Origination by HHDL"}
+              ]
+            }
+          ],
+          "contents": [
+            {"type": "audio", "format": "mp3", "description": "Audio for Engaging in Bodhisattva II"},
+            {"type": "transcript", "subtype": "edited", "format": "text", "note": "Edited Transcript Module 7 & 8 & 9"},
+            {"type": "handout", "format": "document"},
+            {"type": "transcript", "format": "text"}
+          ]
+        },
+        {
+          "id": "bp1-mod10",
+          "name": "Tathagata Essence",
+          "number": 10,
+          "title": "Tathagata Essence (Buddha Nature)",
+          "path": "FPMT Basic Programs/bP1/Module 10 Tathagata Essence",
+          "topics": ["buddha nature", "mahayana", "uttaratantra shastra"],
+          "contents": [
+            {"type": "text", "description": "BP Text"},
+            {"type": "transcript", "subtype": "edited", "format": "text"},
+            {"type": "audio", "format": "mp3", "description": "Tathagata Essence Audio"},
+            {"type": "reference", "description": "Reference Material"},
+            {"type": "transcript", "format": "text"}
+          ]
+        },
+        {
+          "id": "bp1-mod11",
+          "name": "Ornament",
+          "number": 11,
+          "title": "Ornament for Clear Realization",
+          "path": "FPMT Basic Programs/bP1/Module 11 Ornament for Clear Realization",
+          "topics": ["abhisamayalamkara", "paths and grounds", "prajnaparamita"],
+          "contents": [
+            {"type": "transcript", "subtype": "edited", "format": "text"},
+            {"type": "audio", "format": "mp3", "description": "Ornament Audio"},
+            {"type": "transcript", "format": "text"}
+          ]
+        },
+        {
+          "id": "bp1-mod12",
+          "name": "Tantric Path",
+          "number": 12,
+          "title": "Tantric Path & Ground",
+          "path": "FPMT Basic Programs/bP1/Module 12 Tantric Path & Ground",
+          "topics": ["tantra", "vajrayana", "paths and grounds"],
+          "contents": [
+            {"type": "transcript", "subtype": "edited", "format": "text"},
+            {"type": "audio", "format": "mp3", "description": "Tantric Path & ground Audio"}
+          ]
+        },
+        {
+          "id": "bp1-mind2008",
+          "name": "Mind 2008",
+          "number": null,
+          "title": "Mind 2008",
+          "path": "FPMT Basic Programs/bP1/Mind 2008",
+          "topics": ["mind", "awareness"],
+          "contents": [
+            {"type": "document", "description": "Edited materials"},
+            {"type": "audio", "format": "mp3", "description": "Mind 2008 Audio"}
+          ]
+        },
+        {
+          "id": "bp1-wisdom",
+          "name": "Wisdom Exposition",
+          "number": null,
+          "title": "Lama Tsongkhapa's Final Exposition of Wisdom",
+          "path": "FPMT Basic Programs/bP1/Lama Tsongkhapa's Final Exposition of Wisdom",
+          "topics": ["wisdom", "special insight", "tsongkhapa"],
+          "contents": [
+            {"type": "audio", "description": "Special Insight Audio"},
+            {"type": "document", "description": "Edited materials"}
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fpmt-bp2",
+      "name": "FPMT Basic Program (BP2)",
+      "description": "Second cycle of foundational studies",
+      "path": "FPMT Basic Programs/bp2",
+      "modules": [
+        {
+          "id": "bp2-37aspects",
+          "name": "37 Aspects",
+          "title": "37 Aspects of Path to Enlightenment",
+          "path": "FPMT Basic Programs/bp2/37 Aspects of Path to Enlightenment",
+          "topics": ["37 practices", "bodhisattva path"],
+          "contents": [
+            {"type": "document", "description": "Master materials"},
+            {"type": "chart", "format": "image/pdf"},
+            {"type": "notes", "description": "Personal notes"},
+            {"type": "transcript", "format": "pdf"}
+          ]
+        },
+        {
+          "id": "bp2-bodhisattva",
+          "name": "Bodhisattva Deeds",
+          "title": "Engaging in the Deeds of a Bodhisattva",
+          "path": "FPMT Basic Programs/bp2/Engaging in the Deeds of a Bodhisattva",
+          "topics": ["shantideva", "bodhicitta", "six perfections"]
+        },
+        {
+          "id": "bp2-heartsutra",
+          "name": "Heart Sutra",
+          "title": "Heart Sutra",
+          "path": "FPMT Basic Programs/bp2/HeartSutra",
+          "topics": ["prajnaparamita", "emptiness"]
+        },
+        {
+          "id": "bp2-lamrim",
+          "name": "Lamrim BP2",
+          "title": "Lamrim (Great Treatise)",
+          "path": "FPMT Basic Programs/bp2/Lamrim",
+          "topics": ["lamrim chenmo", "stages of the path"],
+          "contents": [
+            {"type": "document", "subtype": "edited", "format": "docx/pdf"},
+            {"type": "audio", "format": "mp3", "description": "Lamrim Audio"},
+            {"type": "text", "description": "Lamrim Chenmo"},
+            {"type": "reference", "description": "Reference Material"},
+            {"type": "assessment", "description": "Quiz"}
+          ]
+        },
+        {
+          "id": "bp2-lorig",
+          "name": "Lorig BP2",
+          "title": "Lorig (Mind & Awareness)",
+          "path": "FPMT Basic Programs/bp2/Lorig",
+          "topics": ["buddhist psychology", "mind", "awareness"],
+          "contents": [
+            {"type": "document", "subtype": "edited", "format": "docx/pdf"},
+            {"type": "handout", "format": "document"},
+            {"type": "audio", "format": "mp3"},
+            {"type": "reference", "description": "Reference material"},
+            {"type": "transcript", "format": "text"}
+          ]
+        },
+        {
+          "id": "bp2-sixperfections",
+          "name": "Six Perfections",
+          "title": "Six Perfections",
+          "path": "FPMT Basic Programs/bp2/SixPerfections",
+          "topics": ["paramitas", "generosity", "ethics", "patience", "joyful effort", "concentration", "wisdom"]
+        },
+        {
+          "id": "bp2-tantra",
+          "name": "Tantra BP2",
+          "title": "Tantra",
+          "path": "FPMT Basic Programs/bp2/Tantra",
+          "topics": ["vajrayana", "deity yoga", "generation stage", "completion stage", "grounds and paths"],
+          "contents": [
+            {"type": "lesson", "count": 70, "format": "docx", "pattern": "L##.docx or BP2 M10 L##.docx"},
+            {"type": "chart", "description": "Grounds & Paths charts"},
+            {"type": "workshop", "description": "Tantra workshop materials"}
+          ]
+        },
+        {
+          "id": "bp2-tathagata",
+          "name": "Tathagata Essence BP2",
+          "title": "Tathagata's Essence",
+          "path": "FPMT Basic Programs/bp2/Tathagatas Essence",
+          "topics": ["buddha nature", "uttaratantra"]
+        },
+        {
+          "id": "bp2-tenets",
+          "name": "Tenets BP2",
+          "title": "Tenets (Philosophical Schools)",
+          "path": "FPMT Basic Programs/bp2/Tenet",
+          "topics": ["vaibhashika", "sautrantika", "cittamatra", "madhyamaka"],
+          "contents": [
+            {"type": "audio", "format": "mp3", "description": "Audio recordings"}
+          ]
+        },
+        {
+          "id": "bp2-wheelweapon",
+          "name": "Wheel Weapon BP2",
+          "title": "Wheel of Sharp Weapons",
+          "path": "FPMT Basic Programs/bp2/WheelWeapon",
+          "topics": ["lojong", "mind training", "exchanging self and others"]
+        }
+      ]
+    },
+    {
+      "id": "fpmt-masters",
+      "name": "FPMT Masters Program",
+      "description": "Advanced Buddhist studies",
+      "path": "FPMT Masters Program",
+      "contents": [
+        {"type": "media", "description": "Ornament of Clear Realisation media"},
+        {"type": "text", "description": "Advanced commentaries"}
+      ]
+    },
+    {
+      "id": "tantric-practices",
+      "name": "Tantric Initiation Practices",
+      "description": "Vajrayana practice materials",
+      "path": "Tantric Initiation practises",
+      "deities": [
+        {
+          "name": "Vajrayogini",
+          "contents": [
+            {"type": "text", "title": "Vajrayogini commentary by Lama Yeshe", "format": "pdf"},
+            {"type": "image", "title": "16 Drops mandala", "format": "jpg"},
+            {"type": "text", "title": "16-drops-of-Kadam", "format": "pdf"}
+          ]
+        },
+        {
+          "name": "Yamantaka",
+          "contents": [
+            {"type": "text", "title": "Yamantaka teachings", "format": "pdf"},
+            {"type": "text", "title": "Yamantaka - LZR", "format": "pdf"},
+            {
+              "type": "collection",
+              "name": "Khen Rinpoche",
+              "path": "Khen Rinpoche",
+              "contents": [
+                {"type": "document", "files": ["Yam GC 01-04.doc"], "format": "doc"},
+                {"type": "archive", "files": ["Yam001-004.zip"], "format": "zip"},
+                {"type": "workshop", "files": ["Tantra_Workshop_Part_A_01.05.07.zip", "Tantra_Workshop_Part_B_01.05.07.zip"]},
+                {"type": "sadhana", "title": "Yamantaka short Sadhana commentary", "format": "zip"}
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Guru Puja",
+          "path": "Guru Puja",
+          "contents": [
+            {"type": "audio", "title": "Guru Puja - Lama Lhundrup", "format": "mp3"},
+            {"type": "audio", "title": "Guru Puja full", "format": "mp3"},
+            {"type": "audio", "title": "je wa trag gyai (short)", "format": "mp3"},
+            {"type": "audio", "title": "je wa trag gyai (full)", "format": "mp3"},
+            {"type": "audio", "title": "ngo sham yi trul", "format": "mp3"}
+          ]
+        }
+      ],
+      "visualizations": [
+        {"type": "image", "title": "sur visualisation", "format": "jpg"},
+        {"type": "image", "title": "16 Drops", "format": "jpg"}
+      ]
+    },
+    {
+      "id": "buddhist-books",
+      "name": "Buddhist Books",
+      "description": "Digital library of Buddhist texts",
+      "path": "Buddhist Books",
+      "subcategories": [
+        {
+          "name": "HHDL",
+          "description": "His Holiness Dalai Lama's works",
+          "path": "Buddhist Books/HHDL"
+        }
+      ]
+    },
+    {
+      "id": "ven-george",
+      "name": "Ven. George Teachings",
+      "description": "Teachings from Ven. George",
+      "path": "Ven George",
+      "subdirectories": 25
+    }
+  ],
+  "notableFiles": [
+    {
+      "path": "/Volumes/Subhuti Main/Dharma/Heart Sutra in Tibetan by HHDL.mp3",
+      "title": "Heart Sutra in Tibetan by HHDL",
+      "format": "mp3",
+      "artist": "His Holiness Dalai Lama",
+      "type": "audio",
+      "language": "tibetan",
+      "text": "Heart Sutra"
+    }
+  ],
+  "fileTypeDistribution": {
+    "documents": {
+      "extensions": [".pdf", ".doc", ".docx"],
+      "estimatedCount": 800
+    },
+    "audio": {
+      "extensions": [".mp3", ".m4a"],
+      "estimatedCount": 1200
+    },
+    "images": {
+      "extensions": [".jpg", ".png"],
+      "estimatedCount": 200
+    },
+    "archives": {
+      "extensions": [".zip"],
+      "estimatedCount": 100
+    },
+    "transcripts": {
+      "extensions": [".txt", ".rtf"],
+      "estimatedCount": 700
+    }
+  },
+  "studyPaths": [
+    {
+      "name": "Beginner",
+      "description": "Introduction to Buddhist practice",
+      "modules": ["bp1-mod1", "bp1-mod2", "bp1-mod3"],
+      "topics": ["lamrim", "mind", "emptiness"]
+    },
+    {
+      "name": "Intermediate",
+      "description": "Deepening bodhisattva practice",
+      "modules": ["bp1-mod5", "bp1-mod6", "bp1-mod789", "bp1-mod10"],
+      "topics": ["bodhicitta", "lojong", "buddha nature"]
+    },
+    {
+      "name": "Advanced",
+      "description": "Profound wisdom teachings",
+      "modules": ["bp1-mod11", "bp1-mod12", "bp2-37aspects"],
+      "topics": ["prajnaparamita", "tantra", "37 practices"]
+    },
+    {
+      "name": "Tantra",
+      "description": "Vajrayana path",
+      "modules": ["bp1-mod12", "bp2-tantra", "tantric-practices"],
+      "topics": ["deity yoga", "generation stage", "guru puja"]
+    }
+  ],
+  "topicIndex": {
+    "emptiness": {
+      "modules": ["bp1-mod3", "bp1-mod10", "bp1-mod11"],
+      "texts": ["Heart Sutra", "Tathagata Essence", "Ornament for Clear Realization"]
+    },
+    "bodhicitta": {
+      "modules": ["bp1-mod5", "bp1-mod789", "bp2-bodhisattva"],
+      "texts": ["Engaging in Bodhisattva Deeds"]
+    },
+    "mindTraining": {
+      "modules": ["bp1-mod6", "bp2-wheelweapon", "bp2-37aspects"],
+      "texts": ["Wheel of Sharp Weapons", "37 Practices"]
+    },
+    "tantra": {
+      "modules": ["bp1-mod12", "bp2-tantra"],
+      "practices": ["Vajrayogini", "Yamantaka", "Guru Puja"]
+    },
+    "lamrim": {
+      "modules": ["bp1-mod1", "bp1-mod4", "bp2-lamrim"],
+      "texts": ["Lam Rim", "Middle Length Lam Rim", "Lamrim Chenmo"]
+    },
+    "philosophy": {
+      "modules": ["bp1-mod2", "bp1-mod3", "bp2-lorig", "bp2-tenets"],
+      "topics": ["tenets", "mind", "awareness", "buddhist psychology"]
+    }
+  },
+  "searchableFields": [
+    "name",
+    "title",
+    "topics",
+    "description",
+    "teacher",
+    "text",
+    "category",
+    "format"
+  ]
+}

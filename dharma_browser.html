@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🪷 Dharma Browser - Subhuti's Collection</title>
+    <style>
+        :root {
+            --primary: #8B4513;
+            --primary-light: #D2691E;
+            --secondary: #2C3E50;
+            --bg: #FDF5E6;
+            --card-bg: #FFFFFF;
+            --text: #2C3E50;
+            --text-muted: #6C757D;
+            --border: #E0D5C5;
+            --shadow: 0 2px 8px rgba(0,0,0,0.1);
+            --shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+            --accent: #CD853F;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 1.5rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow);
+        }
+
+        .header-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .logo-icon {
+            font-size: 2rem;
+        }
+
+        .search-box {
+            position: relative;
+            flex: 1;
+            max-width: 400px;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 0.75rem 1rem 0.75rem 2.5rem;
+            border: none;
+            border-radius: 25px;
+            font-size: 1rem;
+            background: rgba(255,255,255,0.9);
+        }
+
+        .search-box::before {
+            content: "🔍";
+            position: absolute;
+            left: 0.75rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+
+        /* Navigation */
+        nav {
+            background: var(--card-bg);
+            border-bottom: 1px solid var(--border);
+            padding: 0.75rem 1.5rem;
+            position: sticky;
+            top: 70px;
+            z-index: 90;
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-btn {
+            padding: 0.5rem 1rem;
+            border: none;
+            background: transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            border-radius: 20px;
+            font-size: 0.95rem;
+            transition: all 0.2s;
+        }
+
+        .nav-btn:hover, .nav-btn.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        /* Main Content */
+        main {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem;
+        }
+
+        /* Dashboard Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: var(--shadow);
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: var(--primary);
+            display: block;
+        }
+
+        .stat-label {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-top: 0.25rem;
+        }
+
+        /* Category Cards */
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .category-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            cursor: pointer;
+            transition: all 0.2s;
+            border-left: 4px solid var(--primary);
+        }
+
+        .category-card:hover {
+            box-shadow: var(--shadow-hover);
+            transform: translateY(-2px);
+        }
+
+        .category-card h3 {
+            font-size: 1.2rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .category-card p {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .category-meta {
+            display: flex;
+            gap: 1rem;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .category-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        /* Module Cards */
+        .module-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 1rem;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .module-card:hover {
+            box-shadow: var(--shadow-hover);
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .module-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .module-number {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+        }
+
+        .module-topics {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+            margin-top: 0.75rem;
+        }
+
+        .topic-tag {
+            background: var(--bg);
+            color: var(--text-muted);
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+        }
+
+        .module-contents {
+            display: flex;
+            gap: 0.75rem;
+            margin-top: 0.75rem;
+            font-size: 0.85rem;
+        }
+
+        .content-type {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+            color: var(--text-muted);
+        }
+
+        /* Study Paths */
+        .study-paths {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        .path-flow {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            flex-wrap: wrap;
+            margin-top: 1rem;
+        }
+
+        .path-step {
+            background: var(--bg);
+            padding: 1rem;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 120px;
+        }
+
+        .path-step.active {
+            background: var(--primary);
+            color: white;
+        }
+
+        .path-arrow {
+            font-size: 1.5rem;
+            color: var(--text-muted);
+        }
+
+        /* Search Results */
+        .search-results {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: var(--shadow);
+        }
+
+        .result-item {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .result-item:hover {
+            background: var(--bg);
+        }
+
+        .result-item:last-child {
+            border-bottom: none;
+        }
+
+        .result-type {
+            font-size: 0.75rem;
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .result-title {
+            font-size: 1.1rem;
+            margin: 0.25rem 0;
+        }
+
+        .result-path {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        /* Detail View */
+        .detail-view {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+        }
+
+        .detail-header {
+            margin-bottom: 1.5rem;
+        }
+
+        .detail-title {
+            font-size: 1.75rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .detail-meta {
+            display: flex;
+            gap: 1rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            flex-wrap: wrap;
+        }
+
+        .content-list {
+            margin-top: 1.5rem;
+        }
+
+        .content-item {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            padding: 0.75rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 0.5rem;
+        }
+
+        .content-icon {
+            font-size: 1.5rem;
+        }
+
+        .content-info {
+            flex: 1;
+        }
+
+        .content-name {
+            font-weight: 500;
+        }
+
+        .content-desc {
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+
+        .content-action {
+            padding: 0.5rem 1rem;
+            background: var(--primary);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        /* Footer */
+        footer {
+            background: var(--secondary);
+            color: white;
+            padding: 1.5rem;
+            margin-top: 3rem;
+            text-align: center;
+        }
+
+        footer p {
+            opacity: 0.8;
+        }
+
+        /* Loading */
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--text-muted);
+        }
+
+        .spinner {
+            display: inline-block;
+            width: 40px;
+            height: 40px;
+            border: 3px solid var(--border);
+            border-top-color: var(--primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        /* Hidden */
+        .hidden {
+            display: none !important;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-content {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .search-box {
+                max-width: none;
+            }
+
+            .categories-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .path-flow {
+                flex-direction: column;
+            }
+
+            .path-arrow {
+                transform: rotate(90deg);
+            }
+
+            nav {
+                top: auto;
+                position: relative;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <span class="logo-icon">🪷</span>
+                <span>Dharma Browser</span>
+            </div>
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search teachings, topics, modules...">
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <button class="nav-btn active" data-view="dashboard">📊 Dashboard</button>
+            <button class="nav-btn" data-view="categories">📚 Categories</button>
+            <button class="nav-btn" data-view="paths">🎓 Study Paths</button>
+            <button class="nav-btn" data-view="topics">🔍 Topics</button>
+        </div>
+    </nav>
+
+    <main id="mainContent">
+        <div class="loading">
+            <div class="spinner"></div>
+            <p>Loading Dharma collection...</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>🪷 Subhuti's Dharma Collection | 3,000 teachings indexed</p>
+    </footer>
+
+    <script>
+        // Dharma Collection Data (embedded from DHARMA_INDEX.json)
+        const dharmaData = {"metadata":{"title":"Subhuti Dharma Collection Index","location":"/Volumes/Subhuti Main/Dharma/","created":"2026-03-22","totalFiles":3000,"version":"1.0"},"categories":[{"id":"fpmt-bp1","name":"FPMT Basic Program (BP1)","description":"Foundational curriculum covering sutra and tantra","path":"FPMT Basic Programs/bP1","modules":[{"id":"bp1-mod1","name":"Lam Rim","number":1,"title":"Stages of the Path","path":"FPMT Basic Programs/bP1/Module 1 Lam Rim","topics":["graduated path to enlightenment","renunciation","bodhicitta","wisdom"],"contents":[{"type":"transcript","subtype":"edited","format":"text"},{"type":"audio","format":"mp3","description":"Lam Rim Audio teachings"},{"type":"transcript","subtype":"original","format":"text"}]},{"id":"bp1-mod2","name":"Lo Rig","number":2,"title":"Presentation of Mind & Awareness","path":"FPMT Basic Programs/bP1/Module 2 Lorig","topics":["buddhist psychology","mind","mental factors"],"contents":[{"type":"notes","subtype":"handouts","format":"document"},{"type":"audio","format":"mp3","description":"Lorig Audio"},{"type":"transcript","format":"text"}]},{"id":"bp1-mod3","name":"Tenets & Heart Sutra","number":3,"title":"Philosophical Tenets & Heart Sutra","path":"FPMT Basic Programs/bP1/Module 3 Tenets Heart Sutra","topics":["four buddhist schools","emptiness","perfection of wisdom"],"subcategories":[{"name":"Tenets","path":"Tenets","topics":["vaibhashika","sautrantika","cittamatra","madhyamaka"],"contents":[{"type":"audio","format":"mp3"},{"type":"handout","format":"document"},{"type":"transcript","format":"text"}]},{"name":"Heart Sutra","path":"Heart Sutra by Tsering Rinpoche","teacher":"Tsering Rinpoche","contents":[{"type":"transcript","format":"text"},{"type":"audio","format":"mp3","description":"HeartSutra Audio"}]}]},{"id":"bp1-mod4","name":"Middle Length Lam Rim","number":4,"title":"Middle Length Lam Rim","path":"FPMT Basic Programs/bP1/Module 4 Middle Length Lam RIm","topics":["lamrim","stages of the path","tsongkhapa"],"contents":[{"type":"audio","format":"mp3","description":"Middle Length Lam Rim Audio"},{"type":"transcript","format":"text","note":"Multiple versions: original and edited"}]},{"id":"bp1-mod5","name":"Bodhisattva Deeds I","number":5,"title":"Engaging in the Bodhisattva Deeds (Part I)","path":"FPMT Basic Programs/bP1/Module 5  Engaging in the Bodhisattva Deed Part I","topics":["six perfections","bodhisattva ethics","shantideva","bodhicaryavatara"],"contents":[{"type":"audio","format":"mp3","description":"Audio For Engaging in Bodhisattva I"},{"type":"transcript","subtype":"edited","format":"text"},{"type":"handout","format":"document"},{"type":"transcript","format":"text"}]},{"id":"bp1-mod6","name":"Wheel of Sharp Weapons","number":6,"title":"Wheel of Sharp Weapons","path":"FPMT Basic Programs/bP1/Module 6 Wheel of Sharp Weapons","topics":["mind training","lojong","exchanging self and others"],"contents":[{"type":"transcript","subtype":"edited","format":"text"},{"type":"audio","format":"mp3","description":"Wheel of Sharp Weapon Audio"},{"type":"text","description":"Module 6 Text"},{"type":"transcript","format":"text"}]},{"id":"bp1-mod789","name":"Bodhisattva Deeds II","number":"7, 8, 9","title":"Engaging In the Bodhisattva Deeds (Part II)","path":"FPMT Basic Programs/bP1/Module 7, 8 & 9 Engaging In the Bodhisattva Deed part II","topics":["dependent origination","emptiness","compassion","bodhicitta"],"subcategories":[{"name":"Dependent Origination","path":"Dependent Origination","teacher":"His Holiness Dalai Lama","contents":[{"type":"teaching","description":"Dependent Origination by HHDL"}]}],"contents":[{"type":"audio","format":"mp3","description":"Audio for Engaging in Bodhisattva II"},{"type":"transcript","subtype":"edited","format":"text","note":"Edited Transcript Module 7 & 8 & 9"},{"type":"handout","format":"document"},{"type":"transcript","format":"text"}]},{"id":"bp1-mod10","name":"Tathagata Essence","number":10,"title":"Tathagata Essence (Buddha Nature)","path":"FPMT Basic Programs/bP1/Module 10 Tathagata Essence","topics":["buddha nature","mahayana","uttaratantra shastra"],"contents":[{"type":"text","description":"BP Text"},{"type":"transcript","subtype":"edited","format":"text"},{"type":"audio","format":"mp3","description":"Tathagata Essence Audio"},{"type":"reference","description":"Reference Material"},{"type":"transcript","format":"text"}]},{"id":"bp1-mod11","name":"Ornament","number":11,"title":"Ornament for Clear Realization","path":"FPMT Basic Programs/bP1/Module 11 Ornament for Clear Realization","topics":["abhisamayalamkara","paths and grounds","prajnaparamita"],"contents":[{"type":"transcript","subtype":"edited","format":"text"},{"type":"audio","format":"mp3","description":"Ornament Audio"},{"type":"transcript","format":"text"}]},{"id":"bp1-mod12","name":"Tantric Path","number":12,"title":"Tantric Path & Ground","path":"FPMT Basic Programs/bP1/Module 12 Tantric Path & Ground","topics":["tantra","vajrayana","paths and grounds"],"contents":[{"type":"transcript","subtype":"edited","format":"text"},{"type":"audio","format":"mp3","description":"Tantric Path & ground Audio"}]},{"id":"bp1-mind2008","name":"Mind 2008","number":null,"title":"Mind 2008","path":"FPMT Basic Programs/bP1/Mind 2008","topics":["mind","awareness"],"contents":[{"type":"document","description":"Edited materials"},{"type":"audio","format":"mp3","description":"Mind 2008 Audio"}]},{"id":"bp1-wisdom","name":"Wisdom Exposition","number":null,"title":"Lama Tsongkhapa's Final Exposition of Wisdom","path":"FPMT Basic Programs/bP1/Lama Tsongkhapa's Final Exposition of Wisdom","topics":["wisdom","special insight","tsongkhapa"],"contents":[{"type":"audio","description":"Special Insight Audio"},{"type":"document","description":"Edited materials"}]}]},{"id":"fpmt-bp2","name":"FPMT Basic Program (BP2)","description":"Second cycle of foundational studies","path":"FPMT Basic Programs/bp2","modules":[{"id":"bp2-37aspects","name":"37 Aspects","title":"37 Aspects of Path to Enlightenment","path":"FPMT Basic Programs/bp2/37 Aspects of Path to Enlightenment","topics":["37 practices","bodhisattva path"],"contents":[{"type":"document","description":"Master materials"},{"type":"chart","format":"image/pdf"},{"type":"notes","description":"Personal notes"},{"type":"transcript","format":"pdf"}]},{"id":"bp2-bodhisattva","name":"Bodhisattva Deeds","title":"Engaging in the Deeds of a Bodhisattva","path":"FPMT Basic Programs/bp2/Engaging in the Deeds of a Bodhisattva","topics":["shantideva","bodhicitta","six perfections"]},{"id":"bp2-heartsutra","name":"Heart Sutra","title":"Heart Sutra","path":"FPMT Basic Programs/bp2/HeartSutra","topics":["prajnaparamita","emptiness"]},{"id":"bp2-lamrim","name":"Lamrim BP2","title":"Lamrim (Great Treatise)","path":"FPMT Basic Programs/bp2/Lamrim","topics":["lamrim chenmo","stages of the path"],"contents":[{"type":"document","subtype":"edited","format":"docx/pdf"},{"type":"audio","format":"mp3","description":"Lamrim Audio"},{"type":"text","description":"Lamrim Chenmo"},{"type":"reference","description":"Reference Material"},{"type":"assessment","description":"Quiz"}]},{"id":"bp2-lorig","name":"Lorig BP2","title":"Lorig (Mind & Awareness)","path":"FPMT Basic Programs/bp2/Lorig","topics":["buddhist psychology","mind","awareness"],"contents":[{"type":"document","subtype":"edited","format":"docx/pdf"},{"type":"handout","format":"document"},{"type":"audio","format":"mp3"},{"type":"reference","description":"Reference material"},{"type":"transcript","format":"text"}]},{"id":"bp2-sixperfections","name":"Six Perfections","title":"Six Perfections","path":"FPMT Basic Programs/bp2/SixPerfections","topics":["paramitas","generosity","ethics","patience","joyful effort","concentration","wisdom"]},{"id":"bp2-tantra","name":"Tantra BP2","title":"Tantra","path":"FPMT Basic Programs/bp2/Tantra","topics":["vajrayana","deity yoga","generation stage","completion stage","grounds and paths"],"contents":[{"type":"lesson","count":70,"format":"docx","pattern":"L##.docx or BP2 M10 L##.docx"},{"type":"chart","description":"Grounds & Paths charts"},{"type":"workshop","description":"Tantra workshop materials"}]},{"id":"bp2-tathagata","name":"Tathagata Essence BP2","title":"Tathagata's Essence","path":"FPMT Basic Programs/bp2/Tathagatas Essence","topics":["buddha nature","uttaratantra"]},{"id":"bp2-tenets","name":"Tenets BP2","title":"Tenets (Philosophical Schools)","path":"FPMT Basic Programs/bp2/Tenet","topics":["vaibhashika","sautrantika","cittamatra","madhyamaka"],"contents":[{"type":"audio","format":"mp3","description":"Audio recordings"}]},{"id":"bp2-wheelweapon","name":"Wheel Weapon BP2","title":"Wheel of Sharp Weapons","path":"FPMT Basic Programs/bp2/WheelWeapon","topics":["lojong","mind training","exchanging self and others"]}]},{"id":"fpmt-masters","name":"FPMT Masters Program","description":"Advanced Buddhist studies","path":"FPMT Masters Program","contents":[{"type":"media","description":"Ornament of Clear Realisation media"},{"type":"text","description":"Advanced commentaries"}]},{"id":"tantric-practices","name":"Tantric Initiation Practices","description":"Vajrayana practice materials","path":"Tantric Initiation practises","deities":[{"name":"Vajrayogini","contents":[{"type":"text","title":"Vajrayogini commentary by Lama Yeshe","format":"pdf"},{"type":"image","title":"16 Drops mandala","format":"jpg"},{"type":"text","title":"16-drops-of-Kadam","format":"pdf"}]},{"name":"Yamantaka","contents":[{"type":"text","title":"Yamantaka teachings","format":"pdf"},{"type":"text","title":"Yamantaka - LZR","format":"pdf"},{"type":"collection","name":"Khen Rinpoche","path":"Khen Rinpoche","contents":[{"type":"document","files":["Yam GC 01-04.doc"],"format":"doc"},{"type":"archive","files":["Yam001-004.zip"],"format":"zip"},{"type":"workshop","files":["Tantra_Workshop_Part_A_01.05.07.zip","Tantra_Workshop_Part_B_01.05.07.zip"]},{"type":"sadhana","title":"Yamantaka short Sadhana commentary","format":"zip"}]}]},{"name":"Guru Puja","path":"Guru Puja","contents":[{"type":"audio","title":"Guru Puja - Lama Lhundrup","format":"mp3"},{"type":"audio","title":"Guru Puja full","format":"mp3"},{"type":"audio","title":"je wa trag gyai (short)","format":"mp3"},{"type":"audio","title":"je wa trag gyai (full)","format":"mp3"},{"type":"audio","title":"ngo sham yi trul","format":"mp3"}]}],"visualizations":[{"type":"image","title":"sur visualisation","format":"jpg"},{"type":"image","title":"16 Drops","format":"jpg"}]},{"id":"buddhist-books","name":"Buddhist Books","description":"Digital library of Buddhist texts","path":"Buddhist Books","subcategories":[{"name":"HHDL","description":"His Holiness Dalai Lama's works","path":"Buddhist Books/HHDL"}]},{"id":"ven-george","name":"Ven. George Teachings","description":"Teachings from Ven. George","path":"Ven George","subdirectories":25}],"notableFiles":[{"path":"/Volumes/Subhuti Main/Dharma/Heart Sutra in Tibetan by HHDL.mp3","title":"Heart Sutra in Tibetan by HHDL","format":"mp3","artist":"His Holiness Dalai Lama","type":"audio","language":"tibetan","text":"Heart Sutra"}],"fileTypeDistribution":{"documents":{"extensions":[".pdf",".doc",".docx"],"estimatedCount":800},"audio":{"extensions":[".mp3",".m4a"],"estimatedCount":1200},"images":{"extensions":[".jpg",".png"],"estimatedCount":200},"archives":{"extensions":[".zip"],"estimatedCount":100},"transcripts":{"extensions":[".txt",".rtf"],"estimatedCount":700}},"studyPaths":[{"name":"Beginner","description":"Introduction to Buddhist practice","modules":["bp1-mod1","bp1-mod2","bp1-mod3"],"topics":["lamrim","mind","emptiness"]},{"name":"Intermediate","description":"Deepening bodhisattva practice","modules":["bp1-mod5","bp1-mod6","bp1-mod789","bp1-mod10"],"topics":["bodhicitta","lojong","buddha nature"]},{"name":"Advanced","description":"Profound wisdom teachings","modules":["bp1-mod11","bp1-mod12","bp2-37aspects"],"topics":["prajnaparamita","tantra","37 practices"]},{"name":"Tantra","description":"Vajrayana path","modules":["bp1-mod12","bp2-tantra","tantric-practices"],"topics":["deity yoga","generation stage","guru puja"]}],"topicIndex":{"emptiness":{"modules":["bp1-mod3","bp1-mod10","bp1-mod11"],"texts":["Heart Sutra","Tathagata Essence","Ornament for Clear Realization"]},"bodhicitta":{"modules":["bp1-mod5","bp1-mod789","bp2-bodhisattva"],"texts":["Engaging in Bodhisattva Deeds"]},"mindTraining":{"modules":["bp1-mod6","bp2-wheelweapon","bp2-37aspects"],"texts":["Wheel of Sharp Weapons","37 Practices"]},"tantra":{"modules":["bp1-mod12","bp2-tantra"],"practices":["Vajrayogini","Yamantaka","Guru Puja"]},"lamrim":{"modules":["bp1-mod1","bp1-mod4","bp2-lamrim"],"texts":["Lam Rim","Middle Length Lam Rim","Lamrim Chenmo"]},"philosophy":{"modules":["bp1-mod2","bp1-mod3","bp2-lorig","bp2-tenets"],"topics":["tenets","mind","awareness","buddhist psychology"]}},"searchableFields":["name","title","topics","description","teacher","text","category","format"]};
+
+        // State management
+        let currentView = 'dashboard';
+        let currentCategory = null;
+        let currentModule = null;
+
+        // Initialize
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                renderDashboard();
+                setupEventListeners();
+            }, 500);
+        });
+
+        function setupEventListeners() {
+            // Navigation
+            document.querySelectorAll('.nav-btn').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+                    e.target.classList.add('active');
+                    
+                    const view = e.target.dataset.view;
+                    switch(view) {
+                        case 'dashboard': renderDashboard(); break;
+                        case 'categories': renderCategories(); break;
+                        case 'paths': renderStudyPaths(); break;
+                        case 'topics': renderTopics(); break;
+                    }
+                });
+            });
+
+            // Search
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', debounce((e) => {
+                if (e.target.value.length > 2) {
+                    performSearch(e.target.value);
+                } else if (e.target.value.length === 0) {
+                    renderDashboard();
+                }
+            }, 300));
+        }
+
+        function debounce(func, wait) {
+            let timeout;
+            return function executedFunction(...args) {
+                const later = () => {
+                    clearTimeout(timeout);
+                    func(...args);
+                };
+                clearTimeout(timeout);
+                timeout = setTimeout(later, wait);
+            };
+        }
+
+        // Render Functions
+        function renderDashboard() {
+            const main = document.getElementById('mainContent');
+            
+            const stats = dharmaData.metadata;
+            const fileTypes = dharmaData.fileTypeDistribution;
+            
+            let html = `
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <span class="stat-number">${(stats.totalFiles / 1000).toFixed(1)}K</span>
+                        <div class="stat-label">Total Files</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">${dharmaData.categories.reduce((sum, c) => sum + (c.modules?.length || 0), 0)}</span>
+                        <div class="stat-label">Modules</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">${fileTypes.audio.estimatedCount / 1000}K</span>
+                        <div class="stat-label">Audio Files</div>
+                    </div>
+                    <div class="stat-card">
+                        <span class="stat-number">${dharmaData.studyPaths.length}</span>
+                        <div class="stat-label">Study Paths</div>
+                    </div>
+                </div>
+                
+                <h2 class="section-title">📚 Browse by Category</h2>
+                <div class="categories-grid">
+            `;
+            
+            dharmaData.categories.forEach(cat => {
+                const moduleCount = cat.modules?.length || 0;
+                const audioCount = cat.modules?.reduce((sum, m) => {
+                    return sum + (m.contents?.filter(c => c.type === 'audio').length || 0);
+                }, 0) || 0;
+                
+                html += `
+                    <div class="category-card" onclick="showCategory('${cat.id}')">
+                        <h3>${cat.name}</h3>
+                        <p>${cat.description}</p>
+                        <div class="category-meta">
+                            <span>📁 ${moduleCount} modules</span>
+                            <span>🎵 ${audioCount} audio</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            
+            // Featured: Heart Sutra
+            html += `
+                <h2 class="section-title">⭐ Featured Teaching</h2>
+                <div class="module-card" style="background: linear-gradient(135deg, #8B4513 0%, #D2691E 100%); color: white;">
+                    <div class="module-header">
+                        <div>
+                            <div class="module-title">🎵 Heart Sutra in Tibetan</div>
+                            <div style="margin-top: 0.5rem; opacity: 0.9;">Recited by His Holiness the Dalai Lama</div>
+                        </div>
+                    </div>
+                    <div class="module-topics">
+                        <span class="topic-tag" style="background: rgba(255,255,255,0.2); color: white;">Sanskrit</span>
+                        <span class="topic-tag" style="background: rgba(255,255,255,0.2); color: white;">Prajnaparamita</span>
+                        <span class="topic-tag" style="background: rgba(255,255,255,0.2); color: white;">Emptiness</span>
+                    </div>
+                </div>
+            `;
+            
+            main.innerHTML = html;
+        }
+
+        function renderCategories() {
+            const main = document.getElementById('mainContent');
+            
+            let html = '<h2 class="section-title">📚 All Categories</h2>';
+            
+            dharmaData.categories.forEach(cat => {
+                html += `
+                    <div style="margin-bottom: 2rem;">
+                        <h3 style="font-size: 1.3rem; margin-bottom: 1rem; color: var(--primary);">${cat.name}</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">${cat.description}</p>
+                `;
+                
+                if (cat.modules && cat.modules.length > 0) {
+                    html += '<div style="display: grid; gap: 0.75rem;">';
+                    cat.modules.forEach(mod => {
+                        html += renderModuleCard(mod);
+                    });
+                    html += '</div>';
+                }
+                
+                html += '</div>';
+            });
+            
+            main.innerHTML = html;
+        }
+
+        function renderModuleCard(module, isDetail = false) {
+            const topics = module.topics?.slice(0, 3) || [];
+            const hasAudio = module.contents?.some(c => c.type === 'audio');
+            const hasText = module.contents?.some(c => c.type === 'text' || c.type === 'transcript');
+            
+            return `
+                <div class="module-card" onclick="showModuleDetail('${module.id}')">
+                    <div class="module-header">
+                        <div class="module-title">${module.title}</div>
+                        ${module.number ? `<span class="module-number">Module ${module.number}</span>` : ''}
+                    </div>
+                    <div class="module-topics">
+                        ${topics.map(t => `<span class="topic-tag">${t}</span>`).join('')}
+                    </div>
+                    <div class="module-contents">
+                        ${hasAudio ? '<span class="content-type">🎵 Audio</span>' : ''}
+                        ${hasText ? '<span class="content-type">📄 Text</span>' : ''}
+                        ${module.contents ? `<span class="content-type">📚 ${module.contents.length} items</span>` : ''}
+                    </div>
+                </div>
+            `;
+        }
+
+        function renderStudyPaths() {
+            const main = document.getElementById('mainContent');
+            
+            let html = '<h2 class="section-title">🎓 Study Paths</h2>';
+            
+            dharmaData.studyPaths.forEach((path, index) => {
+                html += `
+                    <div class="study-paths" style="margin-bottom: 1.5rem;">
+                        <h3 style="font-size: 1.2rem; margin-bottom: 0.5rem;">${path.name}</h3>
+                        <p style="color: var(--text-muted); margin-bottom: 1rem;">${path.description}</p>
+                        <div class="path-flow">
+                            ${path.modules.map((modId, i) => {
+                                const mod = findModule(modId);
+                                return mod ? `
+                                    <div class="path-step ${i === 0 ? 'active' : ''}" onclick="showModuleDetail('${modId}')">
+                                        <div style="font-weight: 600;">${mod.name}</div>
+                                        <div style="font-size: 0.8rem; opacity: 0.8; margin-top: 0.25rem;">${mod.topics?.[0] || ''}</div>
+                                    </div>
+                                    ${i < path.modules.length - 1 ? '<span class="path-arrow">→</span>' : ''}
+                                ` : '';
+                            }).join('')}
+                        </div>
+                    </div>
+                `;
+            });
+            
+            main.innerHTML = html;
+        }
+
+        function renderTopics() {
+            const main = document.getElementById('mainContent');
+            
+            let html = '<h2 class="section-title">🔍 Browse by Topic</h2>';
+            html += '<div class="categories-grid">';
+            
+            Object.entries(dharmaData.topicIndex).forEach(([topic, data]) => {
+                const moduleCount = data.modules?.length || 0;
+                const textCount = data.texts?.length || 0;
+                
+                html += `
+                    <div class="category-card" onclick="showTopicDetail('${topic}')">
+                        <h3 style="text-transform: capitalize;">${topic.replace(/([A-Z])/g, ' $1').trim()}</h3>
+                        <p>${data.texts?.[0] || data.topics?.[0] || 'Buddhist teachings'}</p>
+                        <div class="category-meta">
+                            <span>📚 ${moduleCount} modules</span>
+                            <span>📖 ${textCount} texts</span>
+                        </div>
+                    </div>
+                `;
+            });
+            
+            html += '</div>';
+            main.innerHTML = html;
+        }
+
+        function performSearch(query) {
+            const main = document.getElementById('mainContent');
+            const results = searchCollection(query);
+            
+            let html = `
+                <div class="search-results">
+                    <h2 class="section-title">🔍 Search Results: "${query}" (${results.length} found)</h2>
+            `;
+            
+            if (results.length === 0) {
+                html += `
+                    <p style="text-align: center; padding: 2rem; color: var(--text-muted);">
+                        No results found. Try searching for:<br>
+                        emptiness, bodhicitta, tantra, lamrim, Heart Sutra
+                    </p>
+                `;
+            } else {
+                results.forEach(result => {
+                    html += `
+                        <div class="result-item" onclick="${result.type === 'module' ? `showModuleDetail('${result.id}')` : result.type === 'category' ? `showCategory('${result.id}')` : ''}">
+                            <div class="result-type">${result.type}</div>
+                            <div class="result-title">${result.title || result.name}</div>
+                            <div class="result-path">${result.path || result.topics?.join(', ') || ''}</div>
+                        </div>
+                    `;
+                });
+            }
+            
+            html += '</div>';
+            main.innerHTML = html;
+        }
+
+        function searchCollection(query) {
+            query = query.toLowerCase();
+            const results = [];
+            
+            dharmaData.categories.forEach(cat => {
+                if (cat.name.toLowerCase().includes(query) || cat.description.toLowerCase().includes(query)) {
+                    results.push({ type: 'category', id: cat.id, name: cat.name, description: cat.description });
+                }
+                
+                cat.modules?.forEach(mod => {
+                    if (mod.title.toLowerCase().includes(query) || 
+                        mod.name.toLowerCase().includes(query) ||
+                        mod.topics?.some(t => t.toLowerCase().includes(query))) {
+                        results.push({ type: 'module', id: mod.id, title: mod.title, path: mod.path, topics: mod.topics });
+                    }
+                });
+            });
+            
+            return results;
+        }
+
+        function showCategory(catId) {
+            const cat = dharmaData.categories.find(c => c.id === catId);
+            if (!cat) return;
+            
+            const main = document.getElementById('mainContent');
+            
+            let html = `
+                <div class="detail-view">
+                    <div class="detail-header">
+                        <div class="detail-title">📚 ${cat.name}</div>
+                        <div class="detail-meta">
+                            <span>📁 ${cat.modules?.length || 0} modules</span>
+                            <span>📍 ${cat.path}</span>
+                        </div>
+                        <p style="margin-top: 1rem; color: var(--text-muted);">${cat.description}</p>
+                    </div>
+                    <h3 style="margin-bottom: 1rem;">Modules</h3>
+            `;
+            
+            if (cat.modules) {
+                cat.modules.forEach(mod => {
+                    html += renderModuleCard(mod);
+                });
+            }
+            
+            html += `
+                    <button onclick="renderDashboard()" style="margin-top: 1.5rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; border: none; border-radius: 6px; cursor: pointer;">
+                        ← Back to Dashboard
+                    </button>
+                </div>
+            `;
+            
+            main.innerHTML = html;
+        }
+
+        function showModuleDetail(modId) {
+            let module = null;
+            let category = null;
+            
+            for (const cat of dharmaData.categories) {
+                const found = cat.modules?.find(m => m.id === modId);
+                if (found) {
+                    module = found;
+                    category = cat;
+                    break;
+                }
+            }
+            
+            if (!module) return;
+            
+            const main = document.getElementById('mainContent');
+            
+            let html = `
+                <div class="detail-view">
+                    <div class="detail-header">
+                        <div class="detail-title">${module.title}</div>
+                        <div class="detail-meta">
+                            <span>📚 ${category.name}</span>
+                            ${module.number ? `<span>🔢 Module ${module.number}</span>` : ''}
+                            <span>📍 ${module.path}</span>
+                        </div>
+                    </div>
+                    
+                    <div class="module-topics" style="margin: 1rem 0;">
+                        ${module.topics?.map(t => `<span class="topic-tag">${t}</span>`).join('') || ''}
+                    </div>
+                    
+                    <h3 style="margin-top: 1.5rem; margin-bottom: 1rem;">📖 Contents</h3>
+                    <div class="content-list">
+            `;
+            
+            const iconMap = {
+                'audio': '🎵',
+                'text': '📄',
+                'transcript': '📝',
+                'document': '📄',
+                'handout': '📋',
+                'reference': '📚',
+                'pdf': '📕',
+                'image': '🖼️',
+                'video': '🎬',
+                'archive': '📦',
+                'chart': '📊',
+                'notes': '📝'
+            };
+            
+            module.contents?.forEach(content => {
+                const icon = iconMap[content.type] || '📄';
+                const desc = content.description || content.title || content.type;
+                html += `
+                    <div class="content-item">
+                        <span class="content-icon">${icon}</span>
+                        <div class="content-info">
+                            <div class="content-name">${desc}</div>
+                            <div class="content-desc">${content.format ? `Format: ${content.format}` : ''} ${content.subtype ? `• ${content.subtype}` : ''}</div>
+                        </div>
+                        <button class="content-action" onclick="alert('Open: ${module.path}/${desc.replace(/'/g, "\\'")}')">Open</button>
+                    </div>
+                `;
+            });
+            
+            html += `
+                    </div>
+                    <button onclick="renderDashboard()" style="margin-top: 1.5rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; border: none; border-radius: 6px; cursor: pointer;">
+                        ← Back to Dashboard
+                    </button>
+                </div>
+            `;
+            
+            main.innerHTML = html;
+        }
+
+        function showTopicDetail(topic) {
+            const topicData = dharmaData.topicIndex[topic];
+            if (!topicData) return;
+            
+            const main = document.getElementById('mainContent');
+            
+            let html = `
+                <div class="detail-view">
+                    <div class="detail-header">
+                        <div class="detail-title" style="text-transform: capitalize;">${topic.replace(/([A-Z])/g, ' $1').trim()}</div>
+                    </div>
+            `;
+            
+            if (topicData.modules?.length) {
+                html += `<h3 style="margin: 1.5rem 0 1rem;">📚 Related Modules</h3>`;
+                topicData.modules.forEach(modId => {
+                    const mod = findModule(modId);
+                    if (mod) {
+                        html += renderModuleCard(mod);
+                    }
+                });
+            }
+            
+            if (topicData.texts?.length) {
+                html += `
+                    <h3 style="margin: 1.5rem 0 1rem;">📖 Key Texts</h3>
+                    <ul style="margin-left: 1.5rem;">
+                        ${topicData.texts.map(t => `<li style="margin-bottom: 0.5rem;">${t}</li>`).join('')}
+                    </ul>
+                `;
+            }
+            
+            if (topicData.practices?.length) {
+                html += `
+                    <h3 style="margin: 1.5rem 0 1rem;">🙏 Practices</h3>
+                    <ul style="margin-left: 1.5rem;">
+                        ${topicData.practices.map(p => `<li style="margin-bottom: 0.5rem;">${p}</li>`).join('')}
+                    </ul>
+                `;
+            }
+            
+            html += `
+                    <button onclick="renderDashboard()" style="margin-top: 1.5rem; padding: 0.75rem 1.5rem; background: var(--primary); color: white; border: none; border-radius: 6px; cursor: pointer;">
+                        ← Back to Dashboard
+                    </button>
+                </div>
+            `;
+            
+            main.innerHTML = html;
+        }
+
+        function findModule(modId) {
+            for (const cat of dharmaData.categories) {
+                const found = cat.modules?.find(m => m.id === modId);
+                if (found) return found;
+            }
+            return null;
+        }
+    </script>
+</body>
+</html>

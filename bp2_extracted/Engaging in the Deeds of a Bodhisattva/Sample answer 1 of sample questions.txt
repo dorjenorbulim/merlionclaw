@@ -1,0 +1,526 @@
+Source: /Volumes/Subhuti Main/Dharma/FPMT Basic Programs/bp2/Engaging in the Deeds of a Bodhisattva/Sample answer 1 of sample questions.pdf
+Extracted: 2026-03-26T22:52:18.071664
+================================================================================
+
+In depth discussion of sample questions
+      Shows the change of subject, predicate or sign:
+QThesisSignT/
+FReasonSubjectPredicate
+1Our bodyis an object of
+abandonmentbecause it arose from the ignorance
+belonging to the twelve links of
+dependent origination.TWhatever arises from ignorance
+of the twelve links is necessarily
+an object of abandonment.
+1aOur mindis an object of
+abandonmentbecause it arose from the ignorance
+belonging to the twelve links of
+dependent origination.
+1bOur bodyis not an object of
+abandonmentbecause it arose from the ignorance
+belonging to the twelve links of
+dependent origination.
+1cOur bodyis not an object of
+abandonmentbecause it did not arise from the
+ignorance belonging to the twelve links
+of dependent origination.
+QThesisSignT/
+FReasonSubjectPredicate
+2Our bodyis not an object of
+abandonmentbecause it is the propelled result of
+virtuous karma.FWhatever is the result of
+propelled karma is necessarily
+an object of abandonment.
+2aOur mindis not an object of
+abandonmentbecause it is the propelled result of
+virtuous karma.
+2bOur bodyis an object of
+abandonmentbecause it is the propelled result of
+virtuous karma.
+2cOur bodyis not an object of
+abandonmentbecause it is not the propelled result of
+virtuous karma.
+QThesisSignT/
+FReasonSubjectPredicate
+3 It [we]will be impossible to get
+another good rebirthonce we fall into the lower realms. FWhatever is a contaminated
+phenomena is necessarily
+impermanent.
+3aIt [we]will not be impossible to
+get another good rebirthonce we fall into the lower realms.
+1
+QThesisSignT/
+FReasonSubjectPredicate
+4The perfection of
+generosityis completedonce we are free of attachment to our
+possessions.FArhats are also free of
+attachment to possessions.
+4aGenerosityis completedonce we are free of attachment to our
+possessions.
+4bThe perfection of
+generosityis not completedeven if we are free of attachment to our
+possessions.
+4cThe perfection of
+generosityis completedeven if we are not free of attachment to
+our possessions.
+QThesis T/
+FReasonSubject Predicate
+5The manner by which we are harmed
+by our external enemyis similar to our internal enemy. FOur external enemy cannot
+throw us into the lower realms,
+whereas our internal enemy can.
+5aThe manner by which we are not
+harmed by our external enemyis similar to our internal enemy.
+5bThe manner by which we are harmed
+by our external enemyis not similar to our internal enemy.
+QThesis T
+/
+FReasonSubject Predicate
+6Our body, which is
+by nature uncleanis inappropriate to be
+offered to the Three
+Jewels.FBy offering one's body to the Three Jewels, one willingly
+accomplishes their wishes, which is to use one's body to work
+fearlessly for others and avoid negativities.
+6aOur mind, which is
+by nature uncleanis inappropriate to be
+offered to the Three
+Jewels.
+6bOur body, which is
+by nature uncleanis appropriate to be
+offered to the Three
+Jewels.
+QThesisT/F ReasonSubjectPredicate
+7Vigilance arises from
+mindfulness.TIf one places mindfulness on an object, the vigilance checking
+whether such a mind stays with its object naturally arises.
+7aMindfulness arises  from vigilance.
+7bVigilance does not arise from
+mindfulness.
+2
+QThesisSignT/
+FReasonSubjectPredicate
+8Sleep cannot be virtuous because it is a derivative of
+ignorance.FWhatever is a derivative of ignorance
+is not necessarily nonvirtuous.
+8aConsciousness cannot be virtuous because it is a derivative of
+ignorance.
+8bSleep can be virtuous because it is a derivative of
+ignorance.
+8cSleep can be virtuous because it is not a derivative of
+ignorance.
+QThesis T/
+FReasonSubject Predicate
+9When others speak true and pleasant
+words to us, we are supposed to remain silent
+like a piece of wood.T'silent' refers to the mind not engaging
+in the object of nonvirtue , here not
+engaging in the object of pride.
+9aWhen others speak false and
+unpleasant words to us, we are supposed to remain silent
+like a piece of wood.
+9bWhen others speak true and pleasant
+words to us, we are not supposed to remain
+silent like a piece of wood.
+QThesis T
+/FReasonSubjectPredicate
+10Ethical
+disciplineis more exalted than
+generosity.TWhen one has a generosity that is disinterested in and unattached to resources,
+one is better able to cultivate ethical discipline, which is to restrain oneself
+from possessing what one does not possess.
+10aGenerosityis more exalted than
+ethical discipline.
+10bEthical
+disciplineis not more exalted
+than generosity.
+QThesis T/
+FReasonSubject Predicate
+11If it is a root
+of virtue,it is necessarily a root of virtue that
+can be destroyed by anger.FIt is said that, roots of virtue that are included in the
+collection of merit is subject to destruction by anger, but the
+roots of virtue included in the collection of wisdom are not.
+11aIf it is a root
+of nonvirtue,it is necessarily a root of nonvirtue that
+can be purified by opponent powers.
+11bIf it is a root
+of virtue,it is not necessarily a root of virtue that
+can be destroyed by anger.
+11cIf it is a root
+of virtue,it is necessarily not a root of virtue that
+can be destroyed by anger.
+3
+QThesis T/
+FReasonSubject Predicate
+12The object at which
+one gets angrycan be an arya bodhisattva TIt is said that, anger generated by a lower bodhisattva towards a
+higher bodhisattva, which can include an arya bodhisattva,
+destroys roots of virtue accumulated over many eons.
+12aThe object at which
+one cultivates patiencecan be an arya bodhisattva
+12bThe object at which
+one gets angrycan be a Buddha
+QThesis T/
+FReasonSubject Predicate
+13It is appropriate to get
+angry atsomeone who creates obstacles to
+one's own virtuous actionFFor one cultivating virtue, especially patience,
+someone who creates obstacles to one's own virtuous
+action is in fact, an object of one's patience, hence, is
+one's object for accumulating virtue of patience.
+13aIt is inappropriate to get
+angry atsomeone who creates obstacles to
+one's own virtuous action
+13bIt is appropriate to get
+angry atsomeone who creates obstacles to
+one's own nonvirtuous action
+QThesis T/
+FReasonSubject Predicate
+14A bodhisattva who has already
+directly realized emptiness never gets
+angry.TWhoever has direct realization of emptiness will never accumulate
+fresh projecting karma for rebirth in cyclic existence.
+14aA bodhisattva who has not
+directly realized emptiness never gets
+angry.
+14bA bodhisattva who has already
+directly realized emptiness can get
+angry.
+QThesis T/
+FReasonSubjectPredicate
+15As fields of
+merit, the Buddhas and sentient
+beings are not similar.FWhether it is Buddha or sentient beings, one necessarily needs them
+as one's object to accumulate merit.
+15aAs not fields
+of merit, the Buddhas and sentient
+beings are hence not similar.
+15bAs fields of
+merit, the Buddhas and sentient
+beings are similar.
+4
+QThesis T
+/FReasonSubject Predicate
+16The objects to which
+we practice patience are rarer than the objects to
+which we practice generosity.TSince bodhisattvas do not harm others, it is generally
+unlikely for them to encounter enemies, much rarer than
+to encounter beggars.
+16aThe objects to which
+we practice  generosityare rarer than the objects to
+which we practice patience.
+16bThe objects to which
+we practice patience are not rarer than the objects to
+which we practice generosity.
+QThesis T/
+FReasonSubject Predicate
+17The enemy, in acting as the observed
+object condition for our patience, is as worthy of our offerings
+as the holy Dharma.TWithout enemy, one can never practice
+patience and bring it to completion.
+17aThe friend, in acting as the observed
+object condition for our patience, is as worthy of our offerings
+as the holy Dharma.
+17bThe enemy, in acting as the observed
+object condition for our patience, is not as worthy of our
+offerings as the holy Dharma.
+QThesis T/
+FReasonSubject Predicate
+18Someone who has generated
+bodhicitta in his continuum does not suffer when he
+gives away his body.FOnly bodhisattva superiors do not experience pain when
+giving away his body.
+18aSomeone who has not generated
+bodhicitta in his continuum does not suffer when he
+gives away his body.
+18bSomeone who has generated
+bodhicitta in his continuum does suffer when he
+gives away his body.
+QThesis T/
+FReasonSubjectPredicate
+19If I engage in some virtuous
+work and then find it difficult,I should
+not give up.TOne sets a bad habit of not finishing one's task. One will also
+experience the causally concordant behavioral results in future lives.
+19aIf I engage in some virtuous
+work and then find it difficult,I should
+give up.
+QThesis T/
+FReasonSubject Predicate
+20If someone hits
+me with a stick, it is wise for me to get angry at
+the person instead of the stick.FEven though the stick is the actual condition that caused the
+pain, but one does not get angry at the stick because one knows
+the stick is without choice. Likewise, the person is also without
+choice as he is under the control of his anger
+20aIf someone hits
+me with a stick, it is wise for me to get angry at
+the stick instead of the person.
+5
+1. In the verse of homage at the beginning of Shantideva's text, prostrations are made to the Buddhas and bodhisattvas. This 
+indicates that the text belongs to the:
+Vinaya collection Because, if it is a vinaya collection, homage is made to the All Omniscient One.
+Sutra collection Because, if it is a sutra collection, homage is made to the Buddhas and bodhisattvas.
+Abhidharma collection Because, if it is an abhidharma collection, homage is made to the Youthful Manjushri.
+2. The realizational Sugata refers to:
+The mind that directly realizes emptiness
+The mind that directly realizes conventional truth
+The great compassion in the mental continuum of
+a Buddha superiorBecause a Sugata is necessarily a Buddha, who realizes all phenomena.
+3. The final Sangha Jewel:
+Is the true cessation in the mental continuum of a
+Buddha superior
+Is our Teacher, Shakyamuni Buddha Because the final Sangha Jewel refers to a Buddha superior.
+Refers to all superior beings
+4. The Dharma Jewel:
+Is the altruistic intention to become enlightened
+Is the great compassion in the mental continuum
+of Buddha superiors
+Is the mind that realizes emptinessBecause the Dharma Jewel refers to the realization of final reality, 
+emptiness, in the continuum of a superior.
+5. “It is the quintessential butter from the churning of the milk of Dharma”. “It” refers to:
+The  altruistic  intention  to  become
+enlightenedBecause butter is likened to the very essence of milk when it is churned, likewise 
+bodhicitta is like the very essence of all of Buddha's teachings, once developed, it is 
+able to benefit all.
+Great compassion
+The mind that realizes emptiness
+6. When bodhicitta is generated in one's mental continuum:
+Self grasping is stopped
+Self cherishing is stopped Because bodhicitta is the mind that only cherishes others
+The obstruction to liberation will 
+not be generated
+The obstruction to omniscience will
+not be generated
+6
+7. The antidote to the laziness of procrastination is:
+Contemplating on the difficulty of finding the leisures and 
+endowmentsBecause once one reflects on this well, one would then stop 
+wasting the precious opportunity that one has gained.
+Contemplating that if one relies on joyous perseverance, 
+enlightenment will not be difficult to attain.
+Contemplating that the holy Dharma is the cause of 
+accomplishing the purposes of this and future lives
+8. The antidote to the attachment to ignoble activities is:
+Contemplating that the body quickly disintegrates
+Contemplating that ignoble activities are the causes of 
+manifold sufferings in future livesBecause, with the faith of conviction in the Law of karma and
+its effects, one realizes that such activities are only the causes 
+of suffering in future lives.
+Contemplating that those who are inferior to myself can 
+attain enlightenment
+9. There is no suffering feeling in the continuum of an arya bodhisattva because of having:
+Directly realizes emptiness
+Abandoned negativities Because without negativities, one would never experience its effects, suffering.
+Generated bodhicitta
+10. The method for meditating on the patience of accepting suffering is:
+Contemplating that the contaminated does 
+not pass beyond the nature of sufferingSince one usually creates more nonvirtues than virtues, the result would only be 
+more suffering than happiness. If one reflects  on this well, one would be more 
+likely to accept one's suffering and not let it disturb one's mind.
+Contemplating that since anger arises in 
+dependence on causes, it has no self-power
+Contemplating on compassion
+11. The method for meditating on the patience of certitude about the teachings is:
+Contemplating on the benefits of 
+meditating on suffering
+Contemplating that the harm done by 
+others to oneself is one's own fault
+Contemplating that anger does not arise 
+according to one's wishesBecause both the anger and the  harmdoer who is angry at oneself all rely upon 
+causes, therefore they are not independent.
+12. The method for meditating on the patience of disregarding harm done to you is:
+Contemplating that the arising of undesired suffering is one's 
+own faultOnce one gains faith of conviction in the Law of karma and 
+its effects, one realizes that whatever harm done to one is due 
+to one's own negativities accumulated in the past, one then 
+willingly disregards the harm done.
+Contemplating that if one familiarizes with patience then one 
+will be able to bear even huge sufferings
+Contemplating that undesired sufferings arise from conditions
+7
+1. Chapter 1: “So the wise should understand respectively t he distinction between these two .”
+State: The analogy that is referred to by this statement. What is it an analogy of? 
+           
+1.16(cd):
+The  analogy refers to wishing to go and actually going. It is an  analogy distinguishing  between aspirational mind  
+generation and engaged mind generation, the former merely wishing to go towards enlightenment and the latter actually 
+embarking on the journey towards enlightenment.
+2. What are the benefits of aspirational mind generation?
+1.17:
+a) It is a cause for enlightenment 
+b) One attains temporal high status
+c) One eliminates all poverty
+d) It gives rise to great results even in the present life
+e) One immediately outshines all the Hearers and Solitary Realizers
+f) One acquires the name “Bodhisattva”.
+3. What are the benefits of engaged mind generation?
+1.18 – 1.19:
+a) A more powerful force of merit equaling to the sky will arise and be accumulated at all times.
+b) One's mental virtues will also increase.
+c) It completes the causes for enlightenment.
+4. Explain the line:
+“This is also the supreme ambrosia t hat overcomes the lord of death of migrating beings.”
+3.29(a):
+Bodhicitta can overcome the lord of death. With it, if one shows the path and teach sentient beings, they can be placed in the
+undying state of Great/ Full Enlightenment. Bodhicitta is like the nectar that bestows this undying state. Bodhicitta can also 
+stop one's own untimely death: In most cases, untimely death is caused by self-cherishing. Therefore, if one has bodhicitta, 
+one will be able to avoid untimely deaths.
+5. What are the faults of asserting that negative emotions exist inherently within the object and the sense powers?
+4.47(ab): 
+If the afflictions are coming from the side of the object like one innately believes, then according to such a logic, it follows 
+that, whenever an arhat or ordinary being comes into contact with the object, he would necessarily develop afflictions of 
+attachment or anger. It would also absurdly follows that, as long as it is a consciousness, a mind, there will always be an 
+affliction manifesting.
+If the afflictions are existing inherently within the sense powers, then according to such a logic, it would absurdly follow 
+that, whenever the sense powers are in operation, whether  they belong to an arhat or an  ordinary being, they would  
+necessarily be in an afflicted state. Also, whenever one sees or hears things, these experiences are necessary afflicted.
+6. In Chapter 4, it is said that:
+“There can be no greater deception other than this; there can be no greater confusion other than this .” 
+What is the deception and confusion that is being referred to?
+4.23(cd):
+If one has obtained a human life of freedoms and endowments, met the teachings of Buddha, understood it and has met 
+with a Mahayana virtuous friend, one has all the favorable conditions to practice. Yet, with all such fortunes, if one does 
+not practice them but instead spends one's entire life being under the control of one's ignorance, anger, attachment and 
+living a life filled with the eight worldly dharmas, then at the time of death , one will die with great regret.  One has then 
+deceived oneself to the fullest and there is no greater confusion than this.
+8
+7. What is the example mentioned in the text about the inappropriateness of being attached to one's body? 
+5.59 – 5.60:
+The example is that, when the body being dragged around and fed to the vultures, one would not be attached to it. So why is
+one so attached to one's body now?
+8. What is the definition of patience? 
+Patience is the mind that:
+a) V oluntarily accepts suffering 
+b) Has certitude about the teachings
+c) Intentionally not retaliate against those who cause harm
+9. What is the main result of meditating on patience? 
+6.133(a) : Full enlightenment
+10. Through meditation on patience, what is the result to be experienced in this life? 
+6.133(cd): One will have great glory, fame and happiness.
+11. Through meditation on patience, what is the fruitional result?
+6.134:
+a) High status
+b) Pleasant appearance
+c) Fame
+d) Good health
+e) Enjoys the possessions and happiness of a wheel-turning king
+f) Full enlightenment
+12. What is the definition of joyous perseverance?
+7.2(a) The mind that is enthusiastic about engaging in virtue .
+13. What are the three types of joyous perseverance?
+7.16:
+Three-fold division:
+a) Armour-like joyous perseverance
+b) Joyous perseverance of gathering virtue
+c) Joyous perseverance of acting for the welfare of sentient beings
+[If the question asked for] Four-fold division:
+a) Armour-like joyous perseverance
+b) Joyous perseverance of application
+c) Joyous perseverance  of non-discouragement/ non-inferiority/ non-disturbance
+d) Joyous perseverance  of non-contentment/ non-complacency
+14. What are the four forces of the favorable conditions of joyous perseverance?
+7.33 – 7.67:
+a) Power of aspirational
+b) Power of steadfastness
+c) Power of joy
+d) Power of relinquishment
+9
+Quotations for memorizing
+3) The power to accomplish whatever one wishes [1.8]:
+1.8 Those who wish to destroy the multitudes of sufferings of existence, 
+Those who wish to dispel the unhappiness of sentient beings, 
+And those who wish to enjoy multitudes of happiness, 
+Should never forsake the mind of enlightenment. 
+A. Explaining the benefits of mind generation [1.6 – 1.14]
+b. Explaining the divisions by way of analogy [1.16]:
+1.16 a. As is understood by the instances
+b. Of desiring to go and going,
+c. So the wise should understand respectively
+d. The distinction between these two.
+1) The benefits of aspiring mind generation [1.17]:
+1.17a. Although great fruits will arise in cyclic existence
+b. From the mind that wishes for enlightenment,
+c. An uninterrupted flow of merit will not arise
+d. As in the case of the engaging mind .
+2) The benefits of engaging mind generation [1.18 – 1.19]:
+1.18 a. For one who has perfectly adopted this mind
+b. With the thought never to turn away
+c. For the sake of totally liberating
+d. The infinite realms of sentient beings,1.19 a. From that time onwards,
+b. Even while asleep or lacking conscientiousness,
+c. A force of merit equal to the sky
+d. Will continuously ensue.
+i) The power to alleviate the suffering of sentient beings [3.29 – 3.31(ab)]
+1' Destroying migrators' lord of death [3.29(ab)]:
+3.29 a. This is also the supreme ambrosia
+b. That overcomes the lord of death of migrating beings.
+2' Destroying poverty [3.29(cd)]:
+3.29 c. This is also the inexhaustible treasure
+d. That eliminates all poverty of migrating beings.
+iii) The reasons it would be appropriate to make effort in the antidotes to negativities [4.23 – 4.27]
+1' One deceives oneself, if one does not make effort in virtue once one has obtained the leisures and endowments [4.23]:
+4.23 a. If, having found such leisure,
+b. I do not familiarize with virtue,
+c. There can be no [greater] deception other than this;
+d. There can be no [greater] confusion other than this.
+3' If the afflictions are completely uprooted, there is absolutely no place that supports their existence and thus, it is appropriate
+to assert that they can be abandoned [4.47]:
+4.47 a. If these afflictions do not abide within objects,
+b. Not in the collection of sense powers, between the two nor elsewhere,
+c. Then where do they abide and how do they harm all migrating beings?
+d. They are like an illusion. Thus I should dispel the fear within my heart and strive for the sake of wisdom.
+e. For no meaning, why am I harmed in hell and so forth?
+10
+f' Wisdom depends upon the mind [5.17]:
+5.17 a. Even those who wish to obtain happiness and overcome suffering
+b. Will wander with no aim
+c. If they do not comprehend the secret of the mind –
+d. The principal Dharma.
+a' An example of how it is inappropriate to be attached to the body [5.59 – 5.60]:
+5.59 a. If, mind, you are not made unhappy
+b. When this body is dragged here and there and
+c. Taken away by vultures attached to flesh,
+d. Then why do you advise so now?5.60 a. Holding this body as “mine”,
+b. Why, mind, do you guard it so?
+c. Since you and it are separate,
+d. What use can it be to you?
+(1'') The reasons it is inappropriate to cause harm [6.122]:
+6.122 a. Because of their happiness the Munis will be pleased. 
+b. But if they are harmed they will be displeased. 
+c. By making them happy I shall delight the Munis, 
+d. And by harming them I shall harm the Munis.
+1'' Reflecting on the way in which one will be capable of attaining enlightenment if one develops the strength of effort [7.19]:
+7.19 a. Since I have been born human by race 
+b. And recognize what is beneficial and what is harmful, 
+c. If I do not forsake the deeds of enlightenment, 
+d. Why will I not attain enlightenment?
+1' The principal effects of patience [6.133(ab)]:
+6.133 a. Let alone my future attainment of buddhahood,
+b. Which comes from pleasing sentient beings,
+2' The visible effects of patience [6.133(cd)]:
+c. Why do I not see that there will be great glory,
+d. Fame, and happiness in this very life?
+3' Explaining the fully ripened effect of patience [6.134]:
+6.134 a. While in cyclic existence patience causes
+b. Beauty, freedom from sickness, and fame.
+c. Because of these I shall live for a very long time
+d. And win the prosperous pleasures of the wheel-turning kings.
+b) Identifying joyous perseverance [7.2(a)]:
+7.2 a. What is enthusiasm? It is enthusiasm about virtue.
+i) Identifying the class of things that are [discordant] with joyous perseverance [7.2(bcd)]:
+7.2 b. Its discordant classes should be explained.
+c. They are laziness, adherence to what is negative,
+d. And despising oneself out of despondency.
+a' Instructions on making effort in the antidotes to being disheartened [7.16]
+7.16 a. Without despondency, I should gather the masses of army
+b. And diligently take control of myself.
+c. Through equalizing self with others and
+d. Exchanging self for others.
+Gyalwa Ensapa (for Lam Rim meditation):
+In short, whatever great or small realization one generates, 
+This is commensurate with having meditated with little or great faith in one's fully-qualified gurus.
+To the qualified valid gurus, may I be able to complete the commitment without obstacles,
+And look at the gurus’ qualities with no mistakes.
+11

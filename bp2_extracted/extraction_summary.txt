@@ -1,0 +1,40 @@
+BP2 Content Extraction Summary
+Generated: 2026-03-26T22:47:05.169638
+Source: /Volumes/Subhuti Main/Dharma/FPMT Basic Programs/bp2
+
+Total files processed: 988
+Successfully extracted: 406
+Failed to extract: 582
+Skipped (unsupported): 263
+
+By Topic:
+  37 Aspects of Path to Enlightenment:
+    Files: 191
+    Extracted: 127
+  Engaging in the Deeds of a Bodhisattva:
+    Files: 121
+    Extracted: 15
+  HeartSutra:
+    Files: 33
+    Extracted: 10
+  Lamrim:
+    Files: 166
+    Extracted: 19
+  Lorig:
+    Files: 133
+    Extracted: 61
+  SixPerfections:
+    Files: 46
+    Extracted: 2
+  Tantra:
+    Files: 162
+    Extracted: 137
+  Tathagatas Essence:
+    Files: 31
+    Extracted: 31
+  Tenet:
+    Files: 58
+    Extracted: 3
+  WheelWeapon:
+    Files: 47
+    Extracted: 1
