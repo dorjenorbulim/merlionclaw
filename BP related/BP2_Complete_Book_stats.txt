@@ -1,0 +1,17 @@
+BP2 Book Assembly Statistics
+Generated: 2026-03-26T22:56:33.207169
+
+Total characters: 54,076,808
+Total words (approx): 10,815,361
+
+By Topic:
+  37 Aspects of Path to Enlightenment: 17,507,337 chars
+  Lamrim: 9,511,548 chars
+  Engaging in the Deeds of a Bodhisattva: 6,526,540 chars
+  Tantra: 6,002,608 chars
+  Lorig: 5,263,050 chars
+  SixPerfections: 2,876,239 chars
+  Tathagatas Essence: 2,274,024 chars
+  Tenet: 1,840,074 chars
+  WheelWeapon: 1,420,763 chars
+  HeartSutra: 854,625 chars

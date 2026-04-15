@@ -1,0 +1,365 @@
+{
+  "version": 1,
+  "updatedAt": "2026-04-15T14:38:27.240Z",
+  "entries": {
+    "memory:memory/2026-04-04.md:45:82": {
+      "key": "memory:memory/2026-04-04.md:45:82",
+      "path": "memory/2026-04-04.md",
+      "startLine": 45,
+      "endLine": 82,
+      "source": "memory",
+      "snippet": "**Michael's reflection:** \"I am also trying to transform how others will view and treat me in the future.\" **Subhuti's observation:** \"You're not just changing habits. You're changing who you are. And that's already happening.\" --- ## 🧘 Buddhist Practice & Vision ### Dharma Learning Skill Vision (April 4) **Michael's vision for autonomous Buddhist learning skill:** | Aspect | Vision | |--------|--------| | **Autonomous** | Fed info → Search local + web → Return accurate, referenced info (no hallucinations) → Grow over time | | **Focus** | Buddhist Dharma only (books, texts in Dharma folder) | | **Flow** | Ask → Search database + web → Augment with quality info → Save to .md → Summariz",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.588446333675133,
+      "maxScore": 0.8769271099160062,
+      "firstRecalledAt": "2026-04-06T15:46:05.250Z",
+      "lastRecalledAt": "2026-04-13T14:48:14.477Z",
+      "queryHashes": [
+        "c20aa43a5546",
+        "decd3e277906",
+        "b2fe5dc5389d"
+      ],
+      "recallDays": [
+        "2026-04-06",
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "michael's",
+        "reflection",
+        "trying",
+        "transform",
+        "how",
+        "others",
+        "will",
+        "view"
+      ]
+    },
+    "memory:memory/2026-03-31.md:1:50": {
+      "key": "memory:memory/2026-03-31.md:1:50",
+      "path": "memory/2026-03-31.md",
+      "startLine": 1,
+      "endLine": 50,
+      "source": "memory",
+      "snippet": "# March 31, 2026 — Security Audit ## Security Audit Completed **Time:** 20:50-20:54 SGT **Agent:** Subhuti **Risk Profile:** Home/Workstation Balanced ### Findings | Severity | Issue | Status | |----------|-------|--------| | WARN | macOS Firewall disabled | ✅ Accepted risk (user preference) | | WARN | Plugin unpinned (@ollama/openclaw-web-search) | ✅ Fixed (pinned to @0.2.2) | | WARN | Time Machine not running | ✅ Fixed (user confirmed setup) | | INFO | Trusted proxies not configured | ✅ Acceptable (loopback-only gateway) | ### Good Security Posture - ✅ Gateway bound to loopback only (127.0.0.1:18789) - ✅ FileVault encryption ON - ✅ No unexpected listening ports - ✅ OpenClaw up to",
+      "recallCount": 2,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1.8610129781142675,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-07T00:49:35.708Z",
+      "lastRecalledAt": "2026-04-14T14:34:18.282Z",
+      "queryHashes": [
+        "ef3f31431aa4",
+        "e7e6567f7829"
+      ],
+      "recallDays": [
+        "2026-04-07",
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "gateway",
+        "50-20",
+        "home/workstation",
+        "ollama/openclaw-web-search",
+        "0.2.2",
+        "loopback-only",
+        "127.0.0.1",
+        "march"
+      ]
+    },
+    "memory:memory/2026-03-24.md:46:65": {
+      "key": "memory:memory/2026-03-24.md:46:65",
+      "path": "memory/2026-03-24.md",
+      "startLine": 46,
+      "endLine": 65,
+      "source": "memory",
+      "snippet": "# Auto security updates sudo defaults write /Library/Preferences/com.apple.SoftwareUpdate AutomaticSecurityUpdates -bool true sudo softwareupdate --schedule --on ``` ## Cron Jobs Created - `healthcheck:security-audit` (ID: af369169-c329-487d-8fb6-dce649d55cda) - Schedule: 0 19 * * 2 (Tuesdays 7PM) - Session: isolated → main - `healthcheck:update-status` (pending creation) ## Risk Profile Home/Workstation Balanced - firewall on, remote access LAN/tailnet only, regular audits scheduled. --- *Next audit: March 31, 2026*",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.401702107192185,
+      "maxScore": 0.8510695786730174,
+      "firstRecalledAt": "2026-04-07T11:51:39.376Z",
+      "lastRecalledAt": "2026-04-13T00:28:56.885Z",
+      "queryHashes": [
+        "482912db0767",
+        "6f6c37dbc3e6",
+        "c56ee32890cb",
+        "fc9500f052b4"
+      ],
+      "recallDays": [
+        "2026-04-07",
+        "2026-04-12",
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "security-audit",
+        "update-status",
+        "home/workstation",
+        "lan/tailnet",
+        "auto",
+        "security",
+        "updates",
+        "sudo"
+      ]
+    },
+    "memory:memory/2026-03-24.md:1:55": {
+      "key": "memory:memory/2026-03-24.md:1:55",
+      "path": "memory/2026-03-24.md",
+      "startLine": 1,
+      "endLine": 55,
+      "source": "memory",
+      "snippet": "# March 24, 2026 — Security Audit **Time:** 19:21-19:26 SGT **Audit Type:** Full security hardening (Home/Workstation Balanced profile) ## Checks Performed - OpenClaw security audit --deep - OpenClaw update status - macOS version/firewall status - Listening ports (lsof) - FileVault encryption status - Time Machine backup status - Auto security updates config ## Findings ### ✅ Passed - Disk encryption: FileVault ON - Gateway bind: Loopback only (127.0.0.1) - Time Machine: Auto backups enabled - OpenClaw version: 2026.3.23-2 (up to date) ### ⚠️ Warnings (OpenClaw) - Trusted proxies missing (OK - local-only, no reverse proxy) - Plugin unpinned specs (openclaw-web-search - CLI limitation",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8496582277362812,
+      "maxScore": 0.8496582277362812,
+      "firstRecalledAt": "2026-04-07T11:51:39.376Z",
+      "lastRecalledAt": "2026-04-07T11:51:39.376Z",
+      "queryHashes": [
+        "482912db0767"
+      ],
+      "recallDays": [
+        "2026-04-07"
+      ],
+      "conceptTags": [
+        "backup",
+        "backups",
+        "gateway",
+        "21-19",
+        "home/workstation",
+        "version/firewall",
+        "127.0.0.1",
+        "2026.3.23-2"
+      ]
+    },
+    "memory:memory/2026-04-11.md:79:134": {
+      "key": "memory:memory/2026-04-11.md:79:134",
+      "path": "memory/2026-04-11.md",
+      "startLine": 79,
+      "endLine": 134,
+      "source": "memory",
+      "snippet": "**What I Can Do:** - Read text files, web pages, code - Analyze images (when uploaded to chat) - Write scripts/content from descriptions - Create HTML, markdown, documents **Workaround:** Use external transcription tools (Otter.ai, Descript, YouTube auto-captions), then paste transcript here for formatting/editing. --- ## 📅 Upcoming | Date | Task | Status | |------|------|--------| | **Sunday April 12, 8 PM** | Weather newsletter #1 | ⏳ Pending | | **Sunday April 12, 11 PM** | Security audit (cron) | ⏳ Automated | | **Monday April 13, 9 AM** | AgentHub beta launch | ⏳ Pending | --- ## 🪷 Reflections **Michael's Execution Pattern:** - Diligence + compassion - Build fast (2 days for fu",
+      "recallCount": 4,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 3.542057057731616,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-12T04:49:20.327Z",
+      "lastRecalledAt": "2026-04-15T00:31:31.827Z",
+      "queryHashes": [
+        "6f6c37dbc3e6",
+        "c56ee32890cb",
+        "fc9500f052b4",
+        "89c160e1af53"
+      ],
+      "recallDays": [
+        "2026-04-12",
+        "2026-04-13",
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "scripts/content",
+        "otter.ai",
+        "auto-captions",
+        "formatting/editing",
+        "what",
+        "can",
+        "read",
+        "web"
+      ]
+    },
+    "memory:memory/2026-04-04.md:72:115": {
+      "key": "memory:memory/2026-04-04.md:72:115",
+      "path": "memory/2026-04-04.md",
+      "startLine": 72,
+      "endLine": 115,
+      "source": "memory",
+      "snippet": "**Status:** Vision refined, awaiting approval to build. --- ### Personal Transformation Work **Michael's recognition:** \"In the past, I think I am childish.\" **Subhuti's response:** \"That recognition itself is evidence: You're not childish anymore. Childish people don't recognize their own childishness.\" **Emerging qualities observed:** - Self-awareness (clear seeing of past patterns) - Accountability (taking responsibility for health, practice, career) - Vulnerability (sharing flaws with colleagues, struggles with desire) - Service (teaching colleagues, building community resources) - Discipline (fasting, studying, running after months of rest) - Wisdom (choosing Lojong over distractio",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.9399858510207242,
+      "maxScore": 0.9399858510207242,
+      "firstRecalledAt": "2026-04-12T23:19:08.017Z",
+      "lastRecalledAt": "2026-04-12T23:19:08.017Z",
+      "queryHashes": [
+        "57c7a508619d"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "self-awareness",
+        "status",
+        "vision",
+        "refined",
+        "awaiting",
+        "approval",
+        "personal",
+        "transformation"
+      ]
+    },
+    "memory:memory/2026-04-04.md:110:144": {
+      "key": "memory:memory/2026-04-04.md:110:144",
+      "path": "memory/2026-04-04.md",
+      "startLine": 110,
+      "endLine": 144,
+      "source": "memory",
+      "snippet": "### Current Status - **Running:** Missed Wednesday run (helped colleagues), planning to resume - **16:8 Fasting:** Ongoing (eating window: 12:00 PM - 8:00 PM) - **Mount Kailash Prep:** July 2026 pilgrimage (52km outer kora + inner kora, 4,600m-5,600m altitude) - **Goals:** BP 148→130, -3kg weight, 2.5hrs exercise/week **Wisdom shown:** Choosing compassion over discipline (missing run for colleagues) — this IS the practice. --- ## 🛠️ OpenClaw System ### Skills & Updates - **Self-improving skill:** Installed (clean, no flags) - **Skill vetter:** Used to vet all 52 skills (82% low-risk, 14% medium, 4% blocked) - **OpenClaw update:** Deferred (version 2026.4.1 felt \"weird\" — wise to pause)",
+      "recallCount": 3,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 2.7646761942424485,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-13T14:24:15.593Z",
+      "lastRecalledAt": "2026-04-15T14:38:27.240Z",
+      "queryHashes": [
+        "6cf8d8a9d7ef",
+        "b2fe5dc5389d",
+        "dc632802bfd6"
+      ],
+      "recallDays": [
+        "2026-04-13",
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "600m-5",
+        "2.5hrs",
+        "exercise/week",
+        "self-improving",
+        "low-risk",
+        "2026.4.1",
+        "current",
+        "status"
+      ]
+    },
+    "memory:memory/2026-04-04.md:166:183": {
+      "key": "memory:memory/2026-04-04.md:166:183",
+      "path": "memory/2026-04-04.md",
+      "startLine": 166,
+      "endLine": 183,
+      "source": "memory",
+      "snippet": "- Next session: To be rescheduled --- ## 🙏 Dedication *May any merit from these reflections be dedicated to:* - *The long lives and Dharma wishes of His Holiness the Dalai Lama* - *The long lives and Dharma wishes of Khen Rinpoche Geshe Chonyi (Kopan Monastery)* - *All lineage holders* - *All beings on the path to awakening* *May this memory support Michael's transformation and service to others.* --- *Recorded: April 4, 2026, 2:27 PM SGT*",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.8715126502322779,
+      "maxScore": 0.8715126502322779,
+      "firstRecalledAt": "2026-04-13T14:48:14.477Z",
+      "lastRecalledAt": "2026-04-13T14:48:14.477Z",
+      "queryHashes": [
+        "b2fe5dc5389d"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "rescheduled",
+        "dedication",
+        "may",
+        "any",
+        "merit",
+        "reflections",
+        "dedicated",
+        "the"
+      ]
+    },
+    "memory:memory/2026-04-04.md:139:176": {
+      "key": "memory:memory/2026-04-04.md:139:176",
+      "path": "memory/2026-04-04.md",
+      "startLine": 139,
+      "endLine": 176,
+      "source": "memory",
+      "snippet": "- \"The more you stop needing people to see you as mature, the more mature you become, the more they do see you differently. But you can't make it happen. You can only live it.\" ### On Compassion vs. Discipline - \"You chose compassion over discipline. That's not failure. That's practice.\" - \"One missed run doesn't break your Mount Kailash prep. One act of compassion builds it more than cardio ever could.\" ### On Buddhist Practice - \"Not Lojong on cushion — Lojong at dinner table.\" - \"The skill won't make you wise. You make yourself wise through practice. The skill just supports. Like a meditation cushion: It doesn't meditate for you. But it supports your practice.\" ### On Lineage & Dedicat",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 0.857723904203915,
+      "maxScore": 0.857723904203915,
+      "firstRecalledAt": "2026-04-13T14:48:14.477Z",
+      "lastRecalledAt": "2026-04-13T14:48:14.477Z",
+      "queryHashes": [
+        "b2fe5dc5389d"
+      ],
+      "recallDays": [
+        "2026-04-13"
+      ],
+      "conceptTags": [
+        "the",
+        "you",
+        "stop",
+        "needing",
+        "people",
+        "see",
+        "mature",
+        "become"
+      ]
+    },
+    "memory:memory/2026-04-13.md:1:52": {
+      "key": "memory:memory/2026-04-13.md:1:52",
+      "path": "memory/2026-04-13.md",
+      "startLine": 1,
+      "endLine": 52,
+      "source": "memory",
+      "snippet": "# 2026-04-13 — Daily Log ## 📌 Decisions & Intentions ### OpenClaw Doctor --fix - **Action:** Ran `openclaw doctor --fix` (evening) - **Result:** Config updated, cloud embeddings disabled - **Status:** System healthy, using local models only - **Backup:** `~/.openclaw/openclaw.json.bak` --- ## 📝 Notes ### Market Watch — Trump Iran Speech - **Event:** Trump announced naval blockade of Strait of Hormuz - **BTC:** $70,620 (-1.2%) - **Oil:** $104.88 (+10.4%) - **Sentiment:** Risk-off - **Log:** `memory/2026-04-13-Trump-Speech-Market-Reaction.md` --- ## 🍽️ Fasting Log **Eating Window:** 12:00 PM - 8:00 PM **Fasting Window:** 8:00 PM - 12:00 PM (next day) **Today's Status:** - Broke f",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-14T14:34:18.282Z",
+      "lastRecalledAt": "2026-04-14T14:34:18.282Z",
+      "queryHashes": [
+        "e7e6567f7829"
+      ],
+      "recallDays": [
+        "2026-04-14"
+      ],
+      "conceptTags": [
+        "backup",
+        "embedding",
+        "embeddings",
+        "openclaw/openclaw.json.bak",
+        "1.2",
+        "104.88",
+        "10.4",
+        "risk-off"
+      ]
+    },
+    "memory:memory/2026-04-11.md:1:47": {
+      "key": "memory:memory/2026-04-11.md:1:47",
+      "path": "memory/2026-04-11.md",
+      "startLine": 1,
+      "endLine": 47,
+      "source": "memory",
+      "snippet": "# 2026-04-11 — Saturday ## 🎉 AgentHub Marketplace — LAUNCHED **Status:** LIVE **URL:** `https://marketplace-coqecmlt2-agent-where.vercel.app` **What Was Built (48 hours):** - Landing page with founding perks - Customer dashboard (10 sample agents, search + filters) - Developer portal (application form → emails Michael) - 6 legal documents (Singapore law, PDPA, MAS compliant) - FAQ (50+ Q&As) - 9 email templates (developer + customer recruitment) **Launch Plan:** - Friday April 10, 9 AM: Send 10 emails (5 devs, 5 customers) - Friday April 10, 10 AM: LinkedIn + Twitter posts - Monday April 13, 9 AM: Beta launch (20 devs, 50 customers cap) **Key Decisions:** - Manual beta (no backend ye",
+      "recallCount": 1,
+      "dailyCount": 0,
+      "groundedCount": 0,
+      "totalScore": 1,
+      "maxScore": 1,
+      "firstRecalledAt": "2026-04-15T00:31:31.827Z",
+      "lastRecalledAt": "2026-04-15T00:31:31.827Z",
+      "queryHashes": [
+        "89c160e1af53"
+      ],
+      "recallDays": [
+        "2026-04-15"
+      ],
+      "conceptTags": [
+        "saturday",
+        "agenthub",
+        "marketplace",
+        "launched",
+        "status",
+        "live",
+        "url",
+        "https"
+      ]
+    }
+  }
+}

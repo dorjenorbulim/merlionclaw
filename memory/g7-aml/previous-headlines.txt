@@ -1,0 +1,5 @@
+FATF: checked
+FinCEN: checked
+OFAC: checked
+UK: checked
+EU: checked

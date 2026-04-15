@@ -1,0 +1,16 @@
+BP2 Book Refinement Statistics
+Generated: 2026-03-26T23:03:24.360705
+
+Input file: /Users/subhuti/.openclaw/workspace/BP2_Complete_Book.md
+Output file: /Users/subhuti/.openclaw/workspace/BP2_Complete_Book_Refined.md
+Total characters: 54,078,280
+Chunks processed: 6
+
+Refinements applied:
+- Common grammar and spelling errors corrected
+- Buddhist terminology standardized (FPMT style)
+- Punctuation normalized
+- Proper nouns capitalized
+- UK spelling converted to US (where appropriate)
+- Repeated words removed
+- Sentence capitalization fixed

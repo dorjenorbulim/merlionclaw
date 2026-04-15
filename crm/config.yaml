@@ -1,0 +1,26 @@
+# CRM Configuration — Michael's Coaching Practice
+
+pipeline:
+  stages:
+    - new
+    - contacted
+    - discovery_call
+    - proposal_sent
+    - coaching_started
+    - active
+    - completed
+    - paused
+
+labels:
+  - icf-practice-client
+  - paying-client
+  - pro-bono
+  - corporate
+  - individual
+  - referral
+  - inbound
+
+defaults:
+  session_duration: 60
+  currency: SGD
+  timezone: Asia/Singapore

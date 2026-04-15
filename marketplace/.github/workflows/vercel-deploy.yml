@@ -4,9 +4,13 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'marketplace/**'
   pull_request:
     branches:
       - main
+    paths:
+      - 'marketplace/**'
 
 jobs:
   deploy:

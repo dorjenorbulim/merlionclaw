@@ -1,0 +1,28 @@
+{
+  "version": 2,
+  "routes": [
+    {
+      "src": "/developer-portal/?",
+      "dest": "/platform/developer-portal/index.html"
+    },
+    {
+      "src": "/customer-dashboard/?",
+      "dest": "/platform/customer-dashboard/index.html"
+    },
+    {
+      "src": "/legal/(.*)",
+      "dest": "/legal/$1"
+    },
+    {
+      "src": "/emails/(.*)",
+      "dest": "/emails/$1"
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/platform/landing-page/index.html"
+    }
+  ],
+  "github": {
+    "silent": true
+  }
+}

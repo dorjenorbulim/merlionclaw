@@ -1,0 +1,559 @@
+{
+  "completed_topics": [
+    {
+      "topic": "Section 453 Installment Note Dispositions and PTET Credit Recapture Rules for Real Estate Partnerships 2026",
+      "description": "Tax consequences when partnerships sell or dispose of installment notes before full payment after electing PTET: whether PTET credits claimed in year of sale must be recaptured or amended when note is disposed in Year 3-5, impact on partner-level credit carryforwards when accelerated gain recognition occurs due to note disposition, coordination with Section 453B gain/loss on note disposition (fair market value vs. remaining basis), state-specific PTET amendment procedures when installment obligations are satisfied early (CA, NY, NJ, MD procedures), interaction with Section 453(d) election to recognize gain in year of sale after PTET was already paid, documentation requirements for tracking PTET credit adjustments when note dispositions trigger gain acceleration, modeling combined tax impact when partnerships monetize installment notes through third-party buyers while PTET credits remain in carryforward status for partners, and audit defense strategies when PTET credit utilization timelines diverge from federal installment reporting due to mid-stream note dispositions",
+      "completed_at": "2026-04-07T21:16:00+08:00",
+      "output_file": "memory/research/section-453-installment-note-dispositions-ptet-credit-recapture-rules-real-estate-partnerships-2026.md"
+    },
+    {
+      "topic": "Section 453 Installment Sale Reporting and PTET Election Timing Mismatches for Real Estate Partnerships 2026",
+      "description": "How PTET elections interact with Section 453 installment sale reporting for real estate partnerships: whether PTET payments are due in year of sale or year of installment receipt, coordinating PTET elections when partnerships report gain ratably over multiple years, impact on partner K-1 reporting when PTET is paid upfront but installment income is recognized over 5-10+ years, state-specific PTET timing rules for installment sales (CA vs. NY vs. NJ approaches to prepaid PTET on deferred gain), interaction with Section 453(l) interest charge on large installment obligations when PTET creates basis disparities, documentation requirements for tracking PTET credits across installment periods, coordinating PTET revocations if partnerships dispose of installment notes before full payment, and modeling combined tax impact when PTET elections affect both year-of-sale entity-level tax and partner-level installment income recognition for partnerships selling appreciated real estate with seller financing",
+      "completed_at": "2026-04-07T20:09:00+08:00",
+      "output_file": "memory/research/section-453-installment-sale-reporting-ptet-election-timing-mismatches-real-estate-partnerships-2026.md"
+    },
+    {
+      "topic": "Section 1031 Like-Kind Exchange Basis Carryover and PTET Election Coordination for Real Estate Partnerships 2026",
+      "description": "How PTET elections affect Section 1031 like-kind exchange basis calculations for real estate partnerships: whether PTET basis adjustments carry over to replacement property, coordinating PTET elections across multiple exchange cycles, impact on deferred recapture potential when PTET reduces relinquished property basis before exchange, state-specific PTET treatment for multi-state 1031 exchanges (different PTET election statuses in relinquished vs. replacement property states), timing mismatches when PTET is paid in year of relinquished property transfer but replacement property is acquired in subsequent year, documentation requirements for PTET basis tracking through exchange cycles, interaction with boot allocation when PTET creates disparities between federal and state basis calculations, and modeling combined tax impact when PTET elections affect both deferred gain calculations and replacement property depreciation schedules for partnerships executing multi-property 1031 exchanges",
+      "completed_at": "2026-04-07T12:57:00+08:00",
+      "output_file": "memory/research/section-1031-like-kind-exchange-basis-carryover-ptet-election-coordination-real-estate-partnerships-2026.md"
+    },
+    {
+      "topic": "Real Estate Partnership PTET Basis Adjustment Tracking and Depreciation Recapture Coordination 2026",
+      "description": "How PTET elections interact with depreciation recapture (Section 1250/1245) and basis adjustment tracking in real estate partnerships: whether PTET payments reduce depreciable basis before or after recapture calculations, coordinating PTET with cost segregation studies when partnerships have accelerated depreciation, impact on unrecaptured Section 1250 gain calculations when PTET reduces partnership inside basis, state-specific recapture treatment for PTET-electing real estate partnerships (CA vs. NY vs. NJ approaches), timing mismatches when PTET is paid in year 1 but property sales with recapture occur in year 2+, documentation requirements for dual tracking when PTET creates disparities between federal and state depreciation schedules, interaction with like-kind exchanges (Section 1031) when PTET-electing partnerships defer gain, and modeling combined tax impact when PTET elections affect both recapture ordinary income and capital gain characterization for partnerships holding commercial or residential real estate with significant accumulated depreciation",
+      "completed_at": "2026-04-07T11:56:00+08:00",
+      "output_file": "memory/research/real-estate-partnership-ptet-basis-adjustment-tracking-depreciation-recapture-coordination-2026.md"
+    },
+    {
+      "topic": "Section 734(b) and 743(b) Basis Adjustments with PTET Elections: Coordination Rules 2026",
+      "description": "How PTET elections affect optional and mandatory basis adjustments under IRC Sections 734(b) and 743(b): whether PTET payments reduce inside basis before or after basis adjustments on distributions and transfers, coordinating PTET with Section 754 elections when partnerships have multiple built-in gain layers, timing mismatches when PTET is paid in year 1 but distributions/transfers occur in year 2+, impact on transferee partners who purchase interests in PTET-electing partnerships mid-year, state-specific basis adjustment rules for PTET partnerships (CA vs. NY vs. NJ treatment of PTET in basis calculations), documentation requirements for dual tracking when PTET creates disparities between inside basis (Section 734(b)) and outside basis (Section 743(b)), and modeling combined tax impact when PTET elections interact with basis adjustments for partnerships holding appreciated real estate or other Section 704(c) property with layered allocation methodologies",
+      "completed_at": "2026-04-07T10:55:00+08:00",
+      "output_file": "memory/research/section-734b-743b-basis-adjustments-ptet-elections-coordination-rules-2026.md"
+    },
+    {
+      "topic": "Section 704(c) Remedial Allocation Methods and PTET Book-Tax Disparity Tracking 2026",
+      "description": "How PTET elections affect remedial allocation methods under Section 704(c) regulations: whether PTET payments create new book-tax disparities requiring remedial allocations, coordinating PTET with ceiling rule limitations when partnerships hold contributed property with built-in gains, impact on reverse Section 704(c) allocations when PTET reduces book capital accounts differently than tax capital accounts, state-specific book-tax disparity treatment for PTET electing partnerships, documentation requirements for remedial allocation tracking when PTET creates disparities between book and tax depreciation/amortization, and modeling combined tax impact when PTET elections interact with Section 704(c) layered basis tracking for partnerships holding appreciated real estate or other contributed property",
+      "completed_at": "2026-04-07T09:54:00+08:00",
+      "output_file": "memory/research/section-704c-remedial-allocation-methods-ptet-book-tax-disparity-tracking-2026.md"
+    },
+    {
+      "topic": "Section 754 Election Timing and PTET Basis Adjustment Coordination 2026",
+      "description": "Strategic timing of Section 754 elections relative to PTET elections and partnership distributions: whether to make Section 754 elections before or after PTET payments, impact on transferee partners purchasing interests in PTET-electing partnerships, coordinating Section 743(b) and Section 734(b) adjustments when PTET reduces outside basis, state-specific Section 754 recognition rules for PTET partnerships, documentation requirements for dual elections (PTET + Section 754), and modeling combined tax impact when both elections affect basis tracking for partnerships holding appreciated real estate or other Section 704(c) property",
+      "completed_at": "2026-04-07T08:53:00+08:00",
+      "output_file": "memory/research/section-754-election-timing-ptet-basis-adjustment-coordination-2026.md"
+    },
+    {
+      "topic": "IRC Section 734(b) Basis Adjustments and PTET Distribution Interactions 2026",
+      "description": "How PTET elections affect optional basis adjustments under IRC Section 734(b) when partnerships make distributions: whether PTET payments reduce the amount of basis adjustment available on distributions, coordination with Section 754 elections when partnerships hold appreciated assets, timing mismatches when PTET is paid in one year but distributions occur in subsequent years, impact on transferee partners who purchase partnership interests mid-year, state-specific basis adjustment rules for PTET electing partnerships (CA vs. NY vs. NJ approaches), and documentation requirements for Section 734(b) tracking when PTET creates disparities between inside basis and outside basis in partnerships with significant unrealized appreciation",
+      "completed_at": "2026-04-07T07:53:00+08:00",
+      "output_file": "memory/research/irc-section-734b-basis-adjustments-ptet-distribution-interactions-2026.md"
+    },
+    {
+      "topic": "Reverse Section 704(c) Allocations and PTET Revaluation Events 2026",
+      "description": "How PTET elections affect partnership revaluations under Section 704(b) regulations and reverse Section 704(c) allocations: whether PTET payments trigger revaluation events, coordinating PTET with book-ups on partner admissions/withdrawals, impact on built-in gain tracking when partnerships hold appreciated assets, interaction with disguised sale rules when PTET allocations shift economic burdens, state-specific revaluation requirements for PTET electing partnerships, and documentation standards for reverse Section 704(c) tracking when PTET creates new book-tax disparities",
+      "completed_at": "2026-04-07T06:52:00+08:00",
+      "output_file": "memory/research/reverse-section-704c-allocations-ptet-revaluation-events-2026.md"
+    },
+    {
+      "topic": "Section 704(c) Property Contributions and PTET Allocation Methodologies 2026",
+      "description": "How PTET elections interact with Section 704(c) property contributions (traditional, remedial, and curative allocation methods): whether PTET benefits should be allocated proportionally among all partners or specially allocated to partners who bear the state tax burden, impact on book-tax disparities when PTET reduces federal taxable income but not book income, coordinating PTET with reverse Section 704(c) allocations on revaluation events, documentation requirements for special PTET allocations in partnership agreements, and audit defense strategies when PTET allocations diverge from standard profit-sharing ratios in partnerships holding appreciated real estate or other Section 704(c) property",
+      "completed_at": "2026-04-07T05:51:00+08:00",
+      "output_file": "memory/research/section-704c-property-contributions-ptet-allocation-methodologies-2026.md"
+    },
+    {
+      "topic": "Multi-Tier Partnership PTET Basis Adjustment Timing and IRC Section 705 Coordination 2026",
+      "description": "When tiered partnerships elect PTET at multiple levels, tracking partner basis adjustments under IRC Section 705(a) and 705(b): whether PTET payments by lower-tier partnerships increase upper-tier partnership's basis in lower-tier interest (as deemed contributions) or decrease basis (as distributions), timing mismatches when lower-tier PTET is paid in one tax year but upper-tier K-1 is issued in subsequent year, interaction with Section 704(c) reverse Section 704(c) allocations in tiered structures, coordinating basis adjustments when PTET credits are claimed by ultimate partners vs. carried forward at entity level, state-specific basis treatment for tiered PTET (CA vs. NY vs. NJ approaches), and documenting basis tracking methodologies for audit defense when partnerships use different accounting methods (cash vs. accrual) across tiers",
+      "completed_at": "2026-04-07T04:50:00+08:00",
+      "output_file": "memory/research/multi-tier-partnership-ptet-basis-adjustment-timing-irc-705-2026.md"
+    },
+    {
+      "topic": "Tiered Partnership PTET Allocation and Credit Cascading Rules 2026",
+      "description": "PTET treatment for tiered partnership structures (upper-tier partnerships owning interests in lower-tier partnerships): which entity level makes PTET election, cascading credit allocation through multiple tiers, avoiding double taxation when both tiers elect PTET, state-specific rules for tiered PTET treatment (NY, CA, NJ variations), Section 704(b) capital account tracking through tiers, and coordinating PTET elections when upper-tier and lower-tier partnerships have different partner compositions and state nexus profiles",
+      "completed_at": "2026-04-07T03:47:00+08:00",
+      "output_file": "memory/research/tiered-partnership-ptet-allocation-credit-cascading-rules-2026.md"
+    },
+    {
+      "topic": "PTET Basis Adjustments and Partner Capital Account Tracking 2026",
+      "description": "How PTET payments affect partner basis calculations under IRC Section 705: whether PTET payments increase partner basis (as deemed contributions) or decrease basis (as distributions), timing of basis adjustments (payment date vs. K-1 issuance), interaction with Section 704(c) built-in gains, capital account maintenance under Section 704(b) regulations, state-specific basis treatment variations, and coordinating basis adjustments when PTET credits are claimed vs. carried forward vs. refunded",
+      "completed_at": "2026-04-07T02:46:00+08:00",
+      "output_file": "memory/research/ptet-basis-adjustments-partner-capital-account-tracking-2026.md"
+    },
+    {
+      "topic": "PTET Credit Allocation and K-1 Reporting for Multi-Owner Coaching Practices 2026",
+      "description": "Best practices for allocating PTET credits among multiple practice owners on Schedule K-1: proportional vs. special allocation methods, state-specific K-1 reporting requirements (CA Schedule K-1 568, NY IT-204-IP, NJ Schedule NJ-K-1), coordinating PTET credits when owners have different resident states, documentation requirements for owner-level tax preparers, and handling PTET credit mismatches when owners file in non-PTET states",
+      "completed_at": "2026-04-06T23:39:00+08:00",
+      "output_file": "memory/research/ptet-credit-allocation-k1-reporting-multi-owner-coaching-practices-2026.md"
+    },
+    {
+      "topic": "Multi-State PTET Election Optimization for Coaching Practices with Variable Income 2026",
+      "description": "Dynamic PTET election strategies for coaching practices with fluctuating income: modeling optimal election thresholds based on income volatility, coordinating PTET elections with quarterly estimated tax payments, handling PTET true-ups when actual income diverges from projections, state-specific amendment procedures for increasing/decreasing PTET elections mid-year, and risk management for practices that over-elect PTET relative to final tax liability",
+      "completed_at": "2026-04-06T22:36:00+08:00",
+      "output_file": "memory/research/multi-state-ptet-election-optimization-coaching-practices-variable-income-2026.md"
+    },
+    {
+      "topic": "PTET Unused Credit Carryforward and Refund Coordination Across States 2026",
+      "description": "Handling excess PTET credits when entity-level tax payments exceed owner-level tax liability: state-by-state carryforward rules (some states allow 5-year carryforward, others no carryforward), refund procedures for departing owners, coordinating carryforwards when owners reside in different states than the entity, interaction with composite filing credits, and documentation requirements for tracking unused PTET credits across multiple tax years",
+      "completed_at": "2026-04-06T21:35:00+08:00",
+      "output_file": "memory/research/ptet-unused-credit-carryforward-refund-coordination-across-states-2026.md"
+    },
+    {
+      "topic": "PTET Payment Acceleration and Year-End Planning Strategies 2026",
+      "description": "Timing PTET payments to optimize tax benefits across years: accelerating payments into current year vs deferring to next year, interaction with estimated tax safe harbors, coordinating PTET payments with owner-level cash flow needs, state-specific payment timing rules (quarterly vs annual), and strategies for practices with variable income to maximize PTET deduction value while avoiding cash flow crunches",
+      "completed_at": "2026-04-06T20:34:00+08:00",
+      "output_file": "memory/research/ptet-payment-acceleration-year-end-planning-strategies-2026.md"
+    },
+    {
+      "topic": "PTET Revocation and Amendment Procedures Across States 2026",
+      "description": "State-by-state procedures for revoking or amending PTET elections after initial filing: revocation deadlines (vary by state), amended return requirements, handling overpayments and refunds, coordinating revocations across multiple states when business circumstances change, and IRS guidance on PTET election reversals for audit defense",
+      "completed_at": "2026-04-06T19:33:00+08:00",
+      "output_file": "memory/research/ptet-revocation-amendment-procedures-across-states-2026.md"
+    },
+    {
+      "topic": "SALT Cap Workaround Layering: PTET + DAF + CRT Coordination Strategies 2026",
+      "description": "Advanced multi-layer SALT cap avoidance for high-income coaching practices: sequencing PTET elections with DAF contributions and charitable remainder trust funding, optimizing combined federal deduction impact, state-by-state analysis of stacked workaround effectiveness, avoiding AMT triggers when layering multiple strategies, and documentation requirements for audit defense when using coordinated SALT avoidance structures",
+      "completed_at": "2026-04-06T18:31:00+08:00",
+      "output_file": "memory/research/salt-cap-workaround-layering-ptet-daf-crt-coordination-strategies-2026.md"
+    },
+    {
+      "topic": "PTET Payment Timing and Estimated Tax Coordination for Multi-State Coaching Practices 2026",
+      "description": "Strategic timing of PTET elections and payments to optimize estimated tax obligations: quarterly vs annual payment options by state, safe harbor rule interactions, avoiding underpayment penalties when PTET credits reduce resident state tax due, coordinating PTET payments with federal estimated tax calculations (Form 1040-ES), and year-end PTET acceleration strategies for high-income years",
+      "completed_at": "2026-04-06T17:31:00+08:00",
+      "output_file": "memory/research/ptet-payment-timing-estimated-tax-coordination-multi-state-coaching-practices-2026.md"
+    },
+    {
+      "topic": "DAF Grant Distribution Timing and Multi-State Tax Apportionment for Coaching Practices 2026",
+      "description": "How DAF contributions and grant distributions interact with multi-state income apportionment: which states allow DAF contribution deductions, timing strategies for maximizing state-level tax benefits, coordinating DAF grants with nexus thresholds, and whether DAF grant recommendations create charitable activity nexus in recipient states for coaching practices with multi-state operations",
+      "completed_at": "2026-04-06T16:30:00+08:00",
+      "output_file": "memory/research/daf-grant-distribution-timing-multi-state-tax-apportionment-coaching-practices-2026.md"
+    },
+    {
+      "topic": "PTET Refundable Tax Credit Coordination Across Resident and Non-Resident State Filings 2026",
+      "description": "How multi-state coaching practices claim PTET credits on resident state returns: credit calculation methodologies (dollar-for-dollar vs. tax-due limitation), avoiding double taxation when multiple states have PTET elections, resident state conformity variations (some states don't recognize PTET credits), Schedule K-1 credit allocation among owners, and documentation requirements for audit defense when claiming cross-state PTET credits",
+      "completed_at": "2026-04-06T15:29:00+08:00",
+      "output_file": "memory/research/ptet-refundable-tax-credit-coordination-resident-nonresident-state-filings-2026.md"
+    },
+    {
+      "topic": "QBI Deduction Optimization and PTET Coordination for Multi-State Coaching Practices 2026",
+      "description": "Modeling the interaction between Section 199A QBI deductions and PTET elections: how entity-level tax payments reduce K-1 income and QBI base, threshold planning for SSTB phase-ins, coordinating PTET with W-2 wage and UBIA limitations, and determining optimal PTET payment levels that maximize combined QBI + SALT savings for coaching practices operating across multiple states",
+      "completed_at": "2026-04-06T14:28:00+08:00",
+      "output_file": "memory/research/qbi-deduction-optimization-ptet-coordination-multi-state-coaching-practices-2026.md"
+    },
+    {
+      "topic": "Donor-Advised Fund Cryptocurrency Contribution Strategies 2026",
+      "description": "Maximizing tax benefits when contributing appreciated cryptocurrency to donor-advised funds (DAFs): fair market valuation requirements, avoiding private inurement issues, DAF provider comparison (Fidelity Charitable, Schwab, Vanguard, crypto-native options), timing strategies for volatile assets, and integrating DAF giving with CRT exit planning for comprehensive philanthropic tax optimization",
+      "completed_at": "2026-04-06T13:27:00+08:00",
+      "output_file": "memory/research/donor-advised-fund-cryptocurrency-contribution-strategies-2026.md"
+    },
+    {
+      "topic": "Pass-Through Entity Tax (PTET) Elections and SALT Cap Workarounds for Multi-State Coaching Practices 2026",
+      "description": "State-level PTET elections as federal SALT deduction workaround: which states offer PTETs (CA, NY, NJ, MA, CT, etc.), election deadlines and revocation procedures, benefit vs cost analysis for coaching practices, coordinating PTETs across multiple states, and impact on shareholder-level tax credits and composite filing strategies",
+      "completed_at": "2026-04-06T12:27:00+08:00",
+      "output_file": "memory/research/pass-through-entity-tax-ptet-elections-salt-cap-workarounds-multi-state-coaching-2026.md"
+    },
+    {
+      "topic": "Cryptocurrency Trust Charitable Remainder Trust (CRT) Conversion Strategies 2026",
+      "description": "Using charitable remainder trusts to defer or eliminate capital gains tax on appreciated cryptocurrency holdings: CRT setup requirements, payout rate optimization (5-7% standard), tax-free asset sale inside CRT, income stream characterization to beneficiaries, remainder charity selection, and comparing CRTs vs IDGT installment sale strategies for digital asset portfolios exceeding $500,000 in unrealized gains",
+      "completed_at": "2026-04-06T11:26:00+08:00",
+      "output_file": "memory/research/cryptocurrency-trust-charitable-remainder-trust-crt-conversion-strategies-2026.md"
+    },
+    {
+      "topic": "S-Corp State Franchise Tax Minimization Strategies for Multi-State Coaching Practices 2026",
+      "description": "Advanced planning to minimize state-level franchise taxes and minimum fees across jurisdictions: California $800 minimum + 1.5% net income tax, New York fixed dollar minimums based on NY source income, composite filing cost-benefit analysis, entity structuring (LLC vs S-Corp vs C-Corp) by state, and strategies for coaches operating in high-franchise-tax states while maintaining multi-state compliance",
+      "completed_at": "2026-04-06T10:26:00+08:00",
+      "output_file": "memory/research/s-corp-state-franchise-tax-minimization-strategies-multi-state-coaching-practices-2026.md"
+    },
+    {
+      "topic": "Cryptocurrency Trust Distribution Timing and Tax Bracket Optimization 2026",
+      "description": "Strategic timing of crypto trust distributions to beneficiaries across tax years: coordinating with beneficiary income levels to minimize aggregate tax burden, leveraging 0% long-term capital gains brackets, avoiding trust compressed tax rates, and sequencing distributions of high-basis vs low-basis assets for optimal after-tax outcomes",
+      "completed_at": "2026-04-06T08:26:00+08:00",
+      "output_file": "memory/research/cryptocurrency-trust-distribution-timing-tax-bracket-optimization-2026.md"
+    },
+    {
+      "topic": "State-Level S-Corp Recognition Rules and Entity Classification Elections 2026",
+      "description": "How states differ in recognizing S-Corp elections: states requiring separate S-Corp elections (CA, NY, NJ, DC), built-in gains tax variations, composite tax filing requirements for nonresident shareholders, and strategies for coaching practices operating in non-conforming states",
+      "completed_at": "2026-04-06T07:26:00+08:00",
+      "output_file": "memory/research/state-level-s-corp-recognition-rules-entity-classification-elections-2026.md"
+    },
+    {
+      "topic": "Cryptocurrency Trust Partial Termination and Decanting Strategies 2026",
+      "description": "When to terminate portions of crypto trusts vs full termination: decanting assets to new trusts in favorable jurisdictions, partial termination thresholds under state law, retaining vs distributing appreciated assets, and sequencing distributions to minimize aggregate tax burden across multiple beneficiaries",
+      "completed_at": "2026-04-06T05:25:00+08:00",
+      "output_file": "memory/research/cryptocurrency-trust-partial-termination-decanting-strategies-2026.md"
+    },
+    {
+      "topic": "Multi-State Payroll Tax Withholding Optimization for S-Corp Coaching Practices 2026",
+      "description": "Advanced strategies for S-Corp owners serving clients across state lines: withholding rate optimization, avoiding double withholding, reciprocal agreement utilization, state unemployment insurance (SUI) rate management, and quarterly reconciliation processes for multi-state payroll compliance",
+      "completed_at": "2026-04-06T04:24:00+08:00",
+      "output_file": "memory/research/multi-state-payroll-tax-withholding-optimization-s-corp-2026.md"
+    },
+    {
+      "topic": "Cryptocurrency Trust Termination and Distribution Strategies 2026",
+      "description": "When and how to terminate crypto trusts: partial vs full termination, in-kind distribution of digital assets to beneficiaries, basis implications, wallet transfer protocols, and coordinating distributions across multiple jurisdictions with varying tax treatments",
+      "completed_at": "2026-04-06T03:23:00+08:00",
+      "output_file": "memory/research/cryptocurrency-trust-termination-distribution-strategies-2026.md"
+    },
+    {
+      "topic": "S-Corp Election Timing and Reasonable Compensation for Multi-State Coaching Practices 2026",
+      "description": "When coaches should elect S-Corp status based on multi-state income patterns: reasonable compensation benchmarks by state, payroll tax savings vs compliance complexity, state-level S-Corp recognition rules, and integrated tax planning for coaches exceeding $150K net income",
+      "completed_at": "2026-04-06T02:21:00+08:00",
+      "output_file": "memory/research/s-corp-election-timing-reasonable-compensation-multi-state-coaching-2026.md"
+    },
+    {
+      "topic": "Cryptocurrency Trust Decanting and Migration Strategies 2026",
+      "description": "Moving existing crypto trusts to more favorable jurisdictions, decanting outdated trust terms to new instruments, trustee removal and replacement procedures, and tax consequences of trust migration for digital asset holders",
+      "completed_at": "2026-04-06T01:20:00+08:00",
+      "output_file": "memory/research/cryptocurrency-trust-decanting-migration-strategies-2026.md"
+    },
+    {
+      "topic": "Quarterly Estimated Tax Planning for Multi-State Coaching Income 2026",
+      "description": "Safe harbor rules, penalty avoidance strategies, and state-by-state estimated tax payment requirements for coaches with income sourced to multiple jurisdictions: Form 1040-ES optimization, state voucher systems, and timing strategies for variable coaching income",
+      "completed_at": "2026-04-06T00:18:00+08:00",
+      "output_file": "memory/research/quarterly-estimated-tax-planning-multi-state-coaching-income-2026.md"
+    },
+    {
+      "topic": "GDPR Consent Management and Preference Centers for Coaching Practices 2026",
+      "description": "Implementing compliant consent capture, granular preference management, and withdrawal mechanisms for coaching email lists: consent record-keeping requirements, double opt-in best practices, preference center design, and automated suppression list management under GDPR Article 7",
+      "completed_at": "2026-04-05T23:17:00+08:00",
+      "output_file": "memory/research/gdpr-consent-management-preference-centers-coaching-practices-2026.md"
+    },
+    {
+      "topic": "GDPR Data Protection Impact Assessments for Coaching Practices 2026",
+      "description": "When coaches must conduct DPIAs under GDPR Article 35: systematic monitoring of clients, processing sensitive data (health/biometric), large-scale data processing, step-by-step DPIA templates, risk assessment methodologies, and when to consult supervisory authorities",
+      "completed_at": "2026-04-05T22:17:00+08:00",
+      "output_file": "memory/research/gdpr-data-protection-impact-assessments-coaching-practices-2026.md"
+    },
+    {
+      "topic": "EU-U.S. Data Privacy Framework Certification Verification for Coaching Tools 2026",
+      "description": "How coaches can verify and monitor their SaaS vendors' DPF certification status, understanding DPF vs SCCs interaction, backup strategies if DPF is invalidated (as Privacy Shield was), and maintaining a compliant vendor registry with certification expiry tracking",
+      "completed_at": "2026-04-05T21:15:00+08:00",
+      "output_file": "memory/research/eu-us-data-privacy-framework-certification-verification-coaching-tools-2026.md"
+    },
+    {
+      "topic": "Dynasty Trust Structures for Multi-Generational Cryptocurrency Wealth 2026",
+      "description": "Using perpetual trusts in South Dakota, Nevada, and Delaware to hold cryptocurrency across generations: GST tax exemption allocation, distribution standards, trustee succession planning, and avoiding estate tax inclusion at each generation",
+      "completed_at": "2026-04-05T20:13:00+08:00",
+      "output_file": "memory/research/dynasty-trust-structures-multi-generational-cryptocurrency-wealth-2026.md"
+    },
+    {
+      "topic": "Home Office Deduction Optimization for Multi-State Coaching Practices 2026",
+      "description": "Maximizing home office deductions when serving clients across multiple states: simplified vs regular method, allocation formulas, state-specific apportionment rules, documentation requirements, and audit defense strategies for coaches working from home offices",
+      "completed_at": "2026-04-05T19:12:00+08:00",
+      "output_file": "memory/research/home-office-deduction-optimization-multi-state-coaching-practices-2026.md"
+    },
+    {
+      "topic": "GDPR Standard Contractual Clauses and Cross-Border Data Transfers for Coaches 2026",
+      "description": "Requirements for transferring EU client data outside the EEA: SCC modules, transfer impact assessments, supplementary measures, Schrems II compliance, and practical implementation for coaches using U.S.-based SaaS platforms",
+      "completed_at": "2026-04-05T18:11:00+08:00",
+      "output_file": "memory/research/gdpr-scc-cross-border-data-transfers-coaches-2026.md"
+    },
+    {
+      "topic": "Cryptocurrency Estate Tax Valuation and Step-Up in Basis for Trust Beneficiaries 2026",
+      "description": "Valuation methodologies for crypto assets in estate tax calculations, IRC Section 1014 step-up basis application for trust beneficiaries, appraisal requirements for illiquid tokens, and strategies for minimizing estate tax exposure on digital asset inheritances",
+      "completed_at": "2026-04-05T17:09:00+08:00",
+      "output_file": "memory/research/cryptocurrency-estate-tax-valuation-step-up-basis-trust-beneficiaries-2026.md"
+    },
+    {
+      "topic": "Multi-State Coaching Compliance and Nexus Rules 2026",
+      "description": "When coaches serving clients across state lines create tax nexus, business registration requirements, state-specific licensing rules, and strategies for compliant multi-jurisdictional practice without over-registering",
+      "completed_at": "2026-04-05T16:08:00+08:00",
+      "output_file": "memory/research/multi-state-coaching-compliance-nexus-rules-2026.md"
+    },
+    {
+      "topic": "Data Processing Agreements and Vendor Risk Assessment for Coaches 2026",
+      "description": "GDPR/CCPA requirements for contracts with service providers (processors): mandatory clauses, data processing agreement templates, vendor security assessment questionnaires, and liability allocation for third-party breaches",
+      "completed_at": "2026-04-05T15:07:00+08:00",
+      "output_file": "memory/research/data-processing-agreements-vendor-risk-assessment-coaches-2026.md"
+    },
+    {
+      "topic": "IRS Cryptocurrency Audit Triggers and Defense Strategies for Trust Structures 2026",
+      "description": "Common red flags that trigger IRS audits for offshore trust holders: mismatched Form 3520/8938 filings, cost basis discrepancies, PFIC reporting gaps, reasonable cause documentation, and audit defense playbooks",
+      "completed_at": "2026-04-05T14:07:00+08:00",
+      "output_file": "memory/research/irs-cryptocurrency-audit-triggers-defense-strategies-trust-structures-2026.md"
+    },
+    {
+      "topic": "GDPR/CCPA Data Breach Incident Response Playbook for Coaches 2026",
+      "description": "Step-by-step incident response procedures for coaching practices: detection and containment, forensic preservation, regulatory notification timelines (72-hour GDPR window), client communication templates, and post-incident review processes to prevent recurrence",
+      "completed_at": "2026-04-05T13:06:00+08:00",
+      "output_file": "memory/research/gdpr-ccpa-data-breach-incident-response-playbook-coaches-2026.md"
+    },
+    {
+      "topic": "Encryption Standards and Data Security Requirements for Coaching Practices 2026",
+      "description": "Technical and organizational measures for protecting client data: encryption at rest and in transit, secure storage solutions, access controls, multi-factor authentication, and encryption as a safe harbor under GDPR/CCPA breach notification rules",
+      "completed_at": "2026-04-05T12:06:00+08:00",
+      "output_file": "memory/research/encryption-standards-data-security-coaching-practices-2026.md"
+    },
+    {
+      "topic": "Independent Contractor Classification for Coaches 2026",
+      "description": "IRS and DOL guidelines on coach vs employee classification, misclassification risks, Form 1099-NEC requirements, state-level ABC tests, and how coaches can structure engagements to avoid employee reclassification",
+      "completed_at": "2026-04-05T11:05:00+08:00",
+      "output_file": "memory/research/independent-contractor-classification-coaches-2026.md"
+    },
+    {
+      "topic": "IRS FBAR and Form 3520 Compliance for Offshore Crypto Trusts 2026",
+      "description": "Tax reporting requirements for U.S. persons holding cryptocurrency in foreign trusts: Form 3520 filing, FBAR thresholds, Form 8938 requirements, cost basis tracking, and penalties for non-compliance",
+      "completed_at": "2026-04-05T10:04:00+08:00",
+      "output_file": "memory/research/irs-fbar-form-3520-compliance-offshore-crypto-trusts-2026.md"
+    },
+    {
+      "topic": "Data Breach Notification Requirements for Coaches Under GDPR and CCPA 2026",
+      "description": "Timeline, content, and recipient requirements for mandatory breach notifications: 72-hour GDPR supervisory authority reporting, CCPA consumer notification thresholds, encryption safe harbors, and documentation requirements to avoid penalties",
+      "completed_at": "2026-04-05T09:04:00+08:00",
+      "output_file": "memory/research/data-breach-notification-requirements-coaches-gdpr-ccpa-2026.md"
+    },
+    {
+      "topic": "GDPR and CCPA Compliance for Coaches Storing Client Biometric Data 2026",
+      "description": "Step-by-step compliance framework for coaches handling EU/California client data: lawful basis for processing, data subject access requests, cross-border transfer requirements, data protection impact assessments, and appointment of data protection officers",
+      "completed_at": "2026-04-05T08:04:00+08:00",
+      "output_file": "memory/research/gdpr-ccpa-compliance-coaches-biometric-data-2026.md"
+    },
+    {
+      "topic": "Cyber Liability Insurance for Coaches Handling Biometric Data 2026",
+      "description": "Analysis of cyber liability and data breach insurance options for coaches collecting wearable data: coverage scope, typical exclusions, premium costs, and whether standard E&O policies include privacy violation coverage",
+      "completed_at": "2026-04-05T07:04:00+08:00",
+      "output_file": "memory/research/cyber-liability-insurance-coaches-biometric-data-2026.md"
+    },
+    {
+      "topic": "Coaching Contract Clauses for Liability Protection 2026",
+      "description": "Essential contract language for coaching agreements: limitation of liability clauses, scope of practice disclaimers, mandatory arbitration provisions, refund policies, and enforceability across jurisdictions",
+      "completed_at": "2026-04-05T06:04:00+08:00",
+      "output_file": "memory/research/coaching-contract-clauses-liability-protection-2026.md"
+    },
+    {
+      "topic": "International Trust Structures for Digital Asset Protection 2026",
+      "description": "How offshore trusts (Cook Islands, Nevis, BVI) can protect digital assets from creditors, lawsuits, and forced heirship claims; setup costs, maintenance requirements, and compatibility with cryptocurrency holdings",
+      "completed_at": "2026-04-05T03:04:00+08:00",
+      "output_file": "memory/research/international-trust-structures-digital-asset-protection-2026.md"
+    },
+    {
+      "topic": "Wearable Data Privacy and Client Consent Frameworks 2026",
+      "description": "Legal and ethical guidelines for coaches collecting, storing, and using client biometric data from wearables: GDPR/CCPA compliance, data retention policies, consent forms, and liability for data breaches",
+      "completed_at": "2026-04-05T02:04:00+08:00",
+      "output_file": "memory/research/wearable-data-privacy-client-consent-frameworks-2026.md"
+    },
+    {
+      "topic": "Biofeedback Integration Protocols for Virtual Coaching Sessions 2026",
+      "description": "Step-by-step workflows for incorporating live HRV/biofeedback data into remote coaching sessions: screen-sharing setups, real-time intervention adjustment, tech troubleshooting, and maintaining presence while monitoring metrics",
+      "completed_at": "2026-04-05T00:04:00+08:00",
+      "output_file": "memory/research/biofeedback-integration-protocols-virtual-coaching-sessions-2026.md"
+    },
+    {
+      "topic": "Coach Liability Insurance Coverage and Claims Defense 2026",
+      "description": "Analysis of professional liability insurance options for coaches, coverage scope, exclusions, claims processes, and how insurance intersects with ICF ethics complaints and legal disputes",
+      "completed_at": "2026-04-04T23:04:00+08:00",
+      "output_file": "memory/research/coach-liability-insurance-coverage-claims-defense-2026.md"
+    },
+    {
+      "topic": "ICF Ethics Complaint Navigation and Risk Management 2026",
+      "description": "Understanding ICF ethics complaint processes, common violations that trigger complaints, defensive documentation practices, and how to respond if a client files an ethics grievance",
+      "completed_at": "2026-04-04T22:04:00+08:00",
+      "output_file": "memory/research/icf-ethics-complaint-navigation-risk-management-2026.md"
+    },
+    {
+      "topic": "Cross-Border Digital Estate Administration 2026",
+      "description": "Navigating multi-jurisdictional challenges when deceased held digital assets across different countries—conflicting laws, international probate recognition, and coordinating with foreign executors",
+      "completed_at": "2026-04-04T21:04:00+08:00",
+      "output_file": "memory/research/cross-border-digital-estate-administration-2026.md"
+    },
+    {
+      "topic": "Nervous System Assessment Tools for Coaches 2026",
+      "description": "Review of biofeedback devices, HRV monitors, and somatic tracking apps (HeartMath, Oura, Whoop, Elite HRV, Muse) that provide real-time autonomic state data for coaches and clients to track regulation progress",
+      "completed_at": "2026-04-04T20:04:00+08:00",
+      "output_file": "memory/research/nervous-system-assessment-tools-coaches-2026.md"
+    },
+    {
+      "topic": "Polyvagal-Informed Coaching Interventions 2026",
+      "description": "Application of Porges' Polyvagal Theory in coaching: identifying dorsal vagal, sympathetic, and ventral vagal states in clients, co-regulation techniques, and nervous system mapping for breakthrough work",
+      "completed_at": "2026-04-04T19:03:00+08:00",
+      "output_file": "memory/research/polyvagal-informed-coaching-interventions-2026.md"
+    },
+    {
+      "topic": "Vagus Nerve Stimulation Devices for Coaches 2026",
+      "description": "Review of tVNS devices (Apollo Neuro, Sensate, Pulsetto, Truvaga) for coaches integrating vagal tone enhancement with HRV biofeedback and somatic practices",
+      "completed_at": "2026-04-04T18:02:00+08:00",
+      "output_file": "memory/research/vagus-nerve-stimulation-devices-coaches-2026.md"
+    },
+    {
+      "topic": "AI Session Transcription Tools for Coaches 2026 – Accuracy, Privacy, and Integration Comparison",
+      "description": "Comparison of Fathom, Grain, Otter, Fireflies, and coach-specific platforms for session transcription, insight extraction, and privacy compliance in coaching practices",
+      "completed_at": "2026-04-04T17:00:00+08:00",
+      "output_file": "memory/research/ai-session-transcription-tools-coaches-2026-comparison.md"
+    },
+    {
+      "topic": "Executor Access Rights and Digital Asset Recovery Protocols 2026",
+      "description": "Legal authority and practical steps for executors to access deceased clients' digital accounts, including platform-specific death policies, court order requirements, and expedited access pathways for time-sensitive assets",
+      "completed_at": "2026-04-04T15:59:00+08:00",
+      "output_file": "memory/research/executor-access-rights-digital-asset-recovery-protocols-2026.md"
+    },
+    {
+      "topic": "Legal Validity and Enforceability of Digital Wills and Afterlife Messages 2026",
+      "description": "Analysis of how courts treat digital wills, video messages, and dead man's switch outputs in probate; jurisdictional differences; best practices for ensuring legal recognition of digital legacy instructions",
+      "completed_at": "2026-04-04T14:58:00+08:00",
+      "output_file": "memory/research/legal-validity-enforceability-digital-wills-afterlife-messages-2026.md"
+    },
+    {
+      "topic": "Afterlife Messaging Platforms Comparison 2026",
+      "description": "Feature analysis of services like LastWithYou, SafeBeyond, Dead Man's Switch, and legacy contact features for coaches guiding clients through end-of-life message creation",
+      "completed_at": "2026-04-04T13:57:00+08:00",
+      "output_file": "memory/research/afterlife-messaging-platforms-comparison-2026.md"
+    },
+    {
+      "topic": "HRV Biofeedback Tools for Coaching Practice 2026",
+      "description": "Review of wearable devices and apps that provide real-time heart rate variability feedback for coaches and clients, including Oura, Whoop, Elite HRV, and integration with breathwork protocols",
+      "completed_at": "2026-04-04T12:56:00+08:00",
+      "output_file": "memory/research/hrv-biofeedback-tools-coaching-practice-2026.md"
+    },
+    {
+      "topic": "ICF Audit Defense Strategies and Documentation Best Practices 2026",
+      "description": "Step-by-step guidance for coaches selected for ICF audit: documentation requirements, common rejection reasons, appeal processes, and pre-emptive risk reduction strategies",
+      "completed_at": "2026-04-04T11:55:00+08:00",
+      "output_file": "memory/research/icf-audit-defense-strategies-documentation-best-practices-2026.md"
+    },
+    {
+      "topic": "ICF and EMCC AI Supervision Guidelines 2026-2027",
+      "description": "Analysis of emerging credential body position statements on AI-assisted supervision, CCE credit eligibility, and ethical boundaries for AI tools in coach professional development",
+      "completed_at": "2026-04-04T10:55:00+08:00",
+      "output_file": "memory/research/icf-emcc-ai-supervision-guidelines-2026-2027.md"
+    },
+    {
+      "topic": "ICF Core Competencies 2025 Updates",
+      "description": "Latest changes to ICF coaching competencies and exam requirements",
+      "completed_at": "2026-04-03T13:37:00+08:00",
+      "output_file": "memory/research/icf-core-competencies-2025-updates.md"
+    },
+    {
+      "topic": "Buddhist-Informed Coaching Approaches",
+      "description": "Research on integrating Buddhist philosophy with modern coaching practices",
+      "completed_at": "2026-04-03T14:37:00+08:00",
+      "output_file": "memory/research/buddhist-informed-coaching-approaches.md"
+    },
+    {
+      "topic": "Grief Support for Families with Terminal Illness",
+      "description": "Best practices for supporting families dealing with late-stage cancer",
+      "completed_at": "2026-04-03T15:37:00+08:00",
+      "output_file": "memory/research/grief-support-families-terminal-illness.md"
+    },
+    {
+      "topic": "Singapore Coaching Market Trends 2026",
+      "description": "Local market rates, demand, and opportunities for ICF coaches",
+      "completed_at": "2026-04-03T16:37:00+08:00",
+      "output_file": "memory/research/singapore-coaching-market-trends-2026.md"
+    },
+    {
+      "topic": "Palliative Care Communication Strategies",
+      "description": "How to communicate effectively with terminally ill patients and their families",
+      "completed_at": "2026-04-03T17:37:00+08:00",
+      "output_file": "memory/research/palliative-care-communication-strategies.md"
+    },
+    {
+      "topic": "Mindfulness-Based Interventions for Coach Burnout",
+      "description": "Evidence-based practices for preventing and recovering from compassion fatigue in coaching professionals",
+      "completed_at": "2026-04-03T18:37:00+08:00",
+      "output_file": "memory/research/mindfulness-based-interventions-coach-burnout.md"
+    },
+    {
+      "topic": "ICF Supervisor and Mentor Coach Requirements 2026",
+      "description": "Qualifications, standards, and best practices for coaching supervision and mentor coaching under updated ICF framework",
+      "completed_at": "2026-04-03T19:38:00+08:00",
+      "output_file": "memory/research/icf-supervisor-mentor-coach-requirements-2026.md"
+    },
+    {
+      "topic": "Cultural Variations in Grief Expression and Family Therapy",
+      "description": "How different cultures approach grief, death rituals, and family therapy adaptations for diverse populations",
+      "completed_at": "2026-04-03T20:39:00+08:00",
+      "output_file": "memory/research/cultural-variations-grief-expression-family-therapy.md"
+    },
+    {
+      "topic": "Assessment Certification ROI for APAC Coaches",
+      "description": "Cost-benefit analysis of MBTI, CliftonStrengths, DISC, and MCode certifications for coaches in Asia-Pacific markets",
+      "completed_at": "2026-04-03T21:40:00+08:00",
+      "output_file": "memory/research/assessment-certification-roi-apac-coaches.md"
+    },
+    {
+      "topic": "Legacy Work and Life Review Techniques in End-of-Life Coaching",
+      "description": "Methods for helping terminally ill patients and families create meaning, process life stories, and prepare emotionally for death",
+      "completed_at": "2026-04-03T22:41:00+08:00",
+      "output_file": "memory/research/legacy-work-life-review-techniques-end-of-life-coaching.md"
+    },
+    {
+      "topic": "Digital Coaching Platform Comparison for APAC Market 2026",
+      "description": "Feature analysis, pricing, and user experience review of coaching platforms (CoachAccountable, Paperbell, Satori, etc.) for coaches serving Asia-Pacific clients",
+      "completed_at": "2026-04-03T23:41:00+08:00",
+      "output_file": "memory/research/digital-coaching-platform-comparison-apac-2026.md"
+    },
+    {
+      "topic": "ICF Credential Maintenance and CCE Requirements 2026",
+      "description": "Continuing Coach Education (CCE) units, renewal cycles, and professional development tracking for maintaining ACC/PCC/MCC credentials under updated ICF standards",
+      "completed_at": "2026-04-04T00:43:00+08:00",
+      "output_file": "memory/research/icf-credential-maintenance-cce-requirements-2026.md"
+    },
+    {
+      "topic": "Intergenerational Trauma and Healing in Family Systems Coaching",
+      "description": "Research on how unresolved ancestral trauma affects family dynamics and coaching interventions that address transgenerational patterns",
+      "completed_at": "2026-04-04T01:44:00+08:00",
+      "output_file": "memory/research/intergenerational-trauma-healing-family-systems-coaching.md"
+    },
+    {
+      "topic": "Somatic Experiencing and Body-Based Trauma Release for Coaches",
+      "description": "Evidence-based somatic techniques for coaches to help clients release stored trauma from the nervous system, including SE, TRE, and polyvagal-informed practices",
+      "completed_at": "2026-04-04T02:44:00+08:00",
+      "output_file": "memory/research/somatic-experiencing-body-based-trauma-release-coaches.md"
+    },
+    {
+      "topic": "Video Legacy Creation Tools and Platforms for End-of-Life Work",
+      "description": "Comparison of apps, services, and DIY approaches for recording and storing video/audio legacy messages, including SafeBeyond, StoryCorps, and privacy/security considerations",
+      "completed_at": "2026-04-04T03:46:00+08:00",
+      "output_file": "memory/research/video-legacy-creation-tools-platforms-end-of-life-work.md"
+    },
+    {
+      "topic": "AI Integration in Coaching Platforms 2026-2027",
+      "description": "Emerging AI features in coaching software (session transcription, insight extraction, client progress prediction) and ethical considerations for AI-assisted coaching practices",
+      "completed_at": "2026-04-04T04:47:00+08:00",
+      "output_file": "memory/research/ai-integration-coaching-platforms-2026-2027.md"
+    },
+    {
+      "topic": "AI-Powered Coach Supervision and Peer Learning Tools 2026",
+      "description": "Platforms and methods for using AI to enhance coach supervision sessions, peer coaching feedback, and continuous professional development through session analysis and pattern recognition",
+      "completed_at": "2026-04-04T06:50:00+08:00",
+      "output_file": "memory/research/ai-powered-coach-supervision-peer-learning-tools-2026.md"
+    },
+    {
+      "topic": "CCE Tracking Systems and Digital Tools for ICF Coaches 2026",
+      "description": "Review of apps, spreadsheets, and platforms for tracking Continuing Coach Education credits, audit preparedness, and renewal timeline management",
+      "completed_at": "2026-04-04T07:52:00+08:00",
+      "output_file": "memory/research/cce-tracking-systems-digital-tools-icf-coaches-2026.md"
+    },
+    {
+      "topic": "Breathwork Protocols for Nervous System Regulation in Coaching Sessions",
+      "description": "Evidence-based breathwork techniques (box breathing, coherent breathing, Wim Hof, holotropic) for shifting client states, managing anxiety, and enhancing session outcomes",
+      "completed_at": "2026-04-04T08:53:00+08:00",
+      "output_file": "memory/research/breathwork-protocols-nervous-system-regulation-coaching.md"
+    },
+    {
+      "topic": "Digital Estate Planning Integration for Coaches",
+      "description": "How coaches can guide clients through digital asset inventories, legacy contact setup, and integrating video/audio legacy tools with traditional estate planning documents",
+      "completed_at": "2026-04-04T09:54:00+08:00",
+      "output_file": "memory/research/digital-estate-planning-integration-coaches.md"
+    }
+  ],
+  "pending_topics": [
+    {
+      "topic": "Section 453B Disposition Gain Character and PTET Allocation Methodologies for Real Estate Partnerships 2026",
+      "description": "Character of gain recognized under Section 453B when installment notes are disposed (ordinary income vs. capital gain vs. Section 1250 recapture) and how PTET allocations should be characterized on partner K-1s: whether PTET credits retain character from original sale (capital gain from real estate) or follow Section 453B gain character (potentially ordinary income if note is dealer property), impact on partner-level net investment income tax (NIIT) calculations when PTET credits are claimed against ordinary income vs. capital gain, state-specific character rules for PTET (CA vs. NY vs. NJ treatment of PTET on ordinary vs. capital income), coordinating PTET allocations when partnerships have mixed-character gains from note dispositions, documentation requirements for character tracking on Schedule K-1 (Box 4 vs. Box 9 coding), interaction with Section 751(a) hot assets when partnerships dispose of installment notes received for depreciable real estate, and modeling combined tax impact when PTET credit character diverges from federal gain character due to Section 453B disposition rules"
+    }
+  ],
+      "description": "How PTET elections interact with Section 453 installment sale reporting for real estate partnerships: whether PTET payments are due in year of sale or year of installment receipt, coordinating PTET elections when partnerships report gain ratably over multiple years, impact on partner K-1 reporting when PTET is paid upfront but installment income is recognized over 5-10+ years, state-specific PTET timing rules for installment sales (CA vs. NY vs. NJ approaches to prepaid PTET on deferred gain), interaction with Section 453(l) interest charge on large installment obligations when PTET creates basis disparities, documentation requirements for tracking PTET credits across installment periods, coordinating PTET revocations if partnerships dispose of installment notes before full payment, and modeling combined tax impact when PTET elections affect both year-of-sale entity-level tax and partner-level installment income recognition for partnerships selling appreciated real estate with seller financing"
+    }
+  ],
+  "stats": {
+    "total_completed": 88,
+    "total_generated": 71,
+    "last_completed_at": "2026-04-07T12:57:00+08:00"
+  },
+  "config": {
+    "interval_minutes": 60,
+    "max_research_time_minutes": 15,
+    "new_topics_per_completion": 1,
+    "output_format": "markdown",
+    "save_location": "/Volumes/Subhuti Main/openclaw-workspace/memory/research/"
+  }
+}

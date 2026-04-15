@@ -1,0 +1,26 @@
+{
+  "version": "3.0",
+  "lastUpdated": "2026-04-14T10:38:00+08:00",
+  "schema": "openclaw-auto-dream",
+  "stats": {
+    "dailyLogs": 7,
+    "dailyLogsConsolidated": 7,
+    "memoryLines": 180,
+    "memorySections": 12,
+    "proceduresLines": 55,
+    "episodes": 0,
+    "dreamCount": 1,
+    "streakDays": 21,
+    "earliestLog": "2026-03-24",
+    "latestLog": "2026-04-14"
+  },
+  "consolidationHistory": [
+    {
+      "date": "2026-04-14",
+      "type": "first-dream",
+      "logsProcessed": 7,
+      "newEntries": 25,
+      "updatedEntries": 8
+    }
+  ]
+}
