@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentHub — The App Store for Autonomous AI</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+        
+        /* Header */
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 80px 0; text-align: center; }
+        header h1 { font-size: 3.5rem; margin-bottom: 20px; font-weight: 700; }
+        header p { font-size: 1.4rem; opacity: 0.9; max-width: 600px; margin: 0 auto 40px; }
+        .cta-buttons { display: flex; gap: 20px; justify-content: center; flex-wrap: wrap; }
+        .btn { padding: 16px 32px; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: transform 0.2s; }
+        .btn:hover { transform: translateY(-2px); }
+        .btn-primary { background: white; color: #667eea; }
+        .btn-secondary { background: rgba(255,255,255,0.2); color: white; border: 2px solid white; }
+        
+        /* Features */
+        .features { padding: 80px 0; background: #f8f9fa; }
+        .features h2 { text-align: center; font-size: 2.5rem; margin-bottom: 60px; }
+        .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .feature { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); }
+        .feature h3 { font-size: 1.5rem; margin-bottom: 15px; color: #667eea; }
+        .feature-icon { font-size: 3rem; margin-bottom: 20px; }
+        
+        /* How It Works */
+        .how-it-works { padding: 80px 0; }
+        .how-it-works h2 { text-align: center; font-size: 2.5rem; margin-bottom: 60px; }
+        .steps { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 40px; }
+        .step { text-align: center; }
+        .step-number { width: 60px; height: 60px; background: #667eea; color: white; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 1.5rem; font-weight: 700; margin: 0 auto 20px; }
+        .step h3 { font-size: 1.3rem; margin-bottom: 10px; }
+        
+        /* Pricing */
+        .pricing { padding: 80px 0; background: #f8f9fa; }
+        .pricing h2 { text-align: center; font-size: 2.5rem; margin-bottom: 60px; }
+        .pricing-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px; }
+        .pricing-card { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); text-align: center; }
+        .pricing-card h3 { font-size: 1.8rem; margin-bottom: 10px; }
+        .price { font-size: 3rem; font-weight: 700; color: #667eea; margin: 20px 0; }
+        .price span { font-size: 1rem; color: #666; }
+        .pricing-card ul { list-style: none; text-align: left; margin: 30px 0; }
+        .pricing-card li { padding: 10px 0; border-bottom: 1px solid #eee; }
+        .pricing-card li:last-child { border-bottom: none; }
+        
+        /* CTA Section */
+        .cta-section { padding: 80px 0; text-align: center; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .cta-section h2 { font-size: 2.5rem; margin-bottom: 20px; }
+        .cta-section p { font-size: 1.2rem; margin-bottom: 40px; opacity: 0.9; }
+        
+        /* Footer */
+        footer { background: #1a1a1a; color: white; padding: 40px 0; text-align: center; }
+        footer p { opacity: 0.7; }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 { font-size: 2.5rem; }
+            header p { font-size: 1.1rem; }
+            .cta-buttons { flex-direction: column; align-items: center; }
+            .btn { width: 100%; max-width: 300px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <h1>🤖 AgentHub</h1>
+            <p>The App Store for Autonomous AI Agents</p>
+            <div class="cta-buttons">
+                <a href="customer-dashboard/" class="btn btn-primary">Browse Agents</a>
+                <a href="developer-portal/" class="btn btn-secondary">List Your Agent</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Features -->
+    <section class="features">
+        <div class="container">
+            <h2>Why AgentHub?</h2>
+            <div class="feature-grid">
+                <div class="feature">
+                    <div class="feature-icon">🚀</div>
+                    <h3>For Developers</h3>
+                    <p>Build once, distribute infinitely. We handle billing, customer support, and infrastructure. You keep 70% of revenue.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🛒</div>
+                    <h3>For Businesses</h3>
+                    <p>One-stop shop for AI agents. Browse, compare, and deploy in minutes. No custom development needed.</p>
+                </div>
+                <div class="feature">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Enterprise-Grade</h3>
+                    <p>Verified agents, SLA guarantees, and Singapore-based compliance. Trusted by FinTechs and enterprises.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works">
+        <div class="container">
+            <h2>How It Works</h2>
+            <div class="steps">
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <h3>Developers List</h3>
+                    <p>Submit your AI agent with pricing and documentation</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <h3>Customers Browse</h3>
+                    <p>Search, compare, and read reviews from verified users</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <h3>One-Click Deploy</h3>
+                    <p>Subscribe and deploy instantly via API or dashboard</p>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <h3>We Handle Everything</h3>
+                    <p>Billing, support, updates. You focus on building.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section class="pricing" id="developers">
+        <div class="container">
+            <h2>Simple, Fair Pricing</h2>
+            <div class="pricing-grid">
+                <div class="pricing-card">
+                    <h3>Developers</h3>
+                    <div class="price">Free<span> to list</span></div>
+                    <ul>
+                        <li>✅ List unlimited agents</li>
+                        <li>✅ Keep 70% of revenue</li>
+                        <li>✅ We handle billing & support</li>
+                        <li>✅ Analytics dashboard</li>
+                        <li>✅ Automatic updates</li>
+                        <li style="background: #f0fff4; padding: 10px; border-radius: 6px; margin-top: 10px;"><strong>🎁 Founding Developer Perk:</strong> Lock in 70/30 split forever (never go to 60/40)</li>
+                    </ul>
+                    <a href="mailto:dorjenorbulim@gmail.com?subject=Developer%20Application" class="btn btn-primary">Apply as Developer</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Customers</h3>
+                    <div class="price">Pay<span> per agent</span></div>
+                    <ul>
+                        <li>✅ Browse 100+ agents</li>
+                        <li>✅ Free 14-day trials</li>
+                        <li>✅ One-click deployment</li>
+                        <li>✅ 7-day money-back guarantee</li>
+                        <li>✅ Priority support</li>
+                        <li style="background: #f0fff4; padding: 10px; border-radius: 6px; margin-top: 10px;"><strong>🎁 Founding Customer Perk:</strong> Lock in beta pricing forever + 20% off after Year 1</li>
+                    </ul>
+                    <a href="mailto:dorjenorbulim@gmail.com?subject=Customer%20Inquiry" class="btn btn-primary">Request Access</a>
+                </div>
+                <div class="pricing-card">
+                    <h3>Enterprise</h3>
+                    <div class="price">Custom</div>
+                    <ul>
+                        <li>✅ Custom agent development</li>
+                        <li>✅ Private marketplace</li>
+                        <li>✅ SLA guarantees</li>
+                        <li>✅ Dedicated support</li>
+                        <li>✅ White-label options</li>
+                    </ul>
+                    <a href="mailto:dorjenorbulim@gmail.com?subject=Enterprise%20Inquiry" class="btn btn-primary">Contact Sales</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Get Started?</h2>
+            <p>Join the first marketplace for autonomous AI agents.</p>
+            <div class="cta-buttons">
+                <a href="mailto:dorjenorbulim@gmail.com?subject=Developer%20Application" class="btn btn-primary">List Your Agent</a>
+                <a href="mailto:dorjenorbulim@gmail.com?subject=Beta%20Access" class="btn btn-secondary">Request Beta Access</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 AgentHub. Built in Singapore. 🇸🇬</p>
+            <p style="margin-top: 10px; font-size: 0.9rem;">
+                <a href="legal/terms-of-service.md" style="color: white; margin: 0 10px;">Terms</a>
+                <a href="legal/privacy-policy.md" style="color: white; margin: 0 10px;">Privacy</a>
+                <a href="legal/refund-policy.md" style="color: white; margin: 0 10px;">Refunds</a>
+                <a href="legal/acceptable-use-policy.md" style="color: white; margin: 0 10px;">Acceptable Use</a>
+                <a href="legal/developer-agreement.md" style="color: white; margin: 0 10px;">Developer Agreement</a>
+            </p>
+        </div>
+    </footer>
+</body>
+</html>

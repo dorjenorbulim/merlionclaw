@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AgentHub — Developer Portal</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; line-height: 1.6; color: #1a1a1a; background: #f8f9fa; }
+        .container { max-width: 1000px; margin: 0 auto; padding: 40px 20px; }
+        
+        /* Header */
+        header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; padding: 60px 0; text-align: center; margin-bottom: 40px; }
+        header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        header p { font-size: 1.2rem; opacity: 0.9; }
+        
+        /* Form */
+        .form-section { background: white; padding: 40px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); margin-bottom: 30px; }
+        .form-section h2 { font-size: 1.8rem; margin-bottom: 10px; color: #667eea; }
+        .form-section p { color: #666; margin-bottom: 30px; }
+        
+        .form-group { margin-bottom: 25px; }
+        .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: #333; }
+        .form-group input, .form-group textarea, .form-group select { width: 100%; padding: 12px; border: 2px solid #e0e0e0; border-radius: 8px; font-size: 1rem; transition: border-color 0.2s; }
+        .form-group input:focus, .form-group textarea:focus, .form-group select:focus { outline: none; border-color: #667eea; }
+        .form-group textarea { min-height: 120px; resize: vertical; }
+        .form-group small { display: block; margin-top: 5px; color: #666; font-size: 0.9rem; }
+        
+        .checkbox-group { display: flex; align-items: flex-start; gap: 10px; }
+        .checkbox-group input[type="checkbox"] { width: auto; margin-top: 4px; }
+        .checkbox-group label { font-weight: normal; }
+        
+        .btn { display: inline-block; padding: 16px 32px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border: none; border-radius: 8px; font-size: 1.1rem; font-weight: 600; cursor: pointer; transition: transform 0.2s; text-decoration: none; }
+        .btn:hover { transform: translateY(-2px); }
+        .btn:disabled { opacity: 0.6; cursor: not-allowed; transform: none; }
+        
+        /* Benefits */
+        .benefits { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; margin-bottom: 30px; }
+        .benefit { background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #667eea; }
+        .benefit h3 { font-size: 1.1rem; margin-bottom: 8px; color: #667eea; }
+        .benefit p { font-size: 0.95rem; color: #666; }
+        
+        /* Success Message */
+        .success-message { display: none; background: #d4edda; border: 2px solid #28a745; color: #155724; padding: 30px; border-radius: 12px; text-align: center; }
+        .success-message h2 { margin-bottom: 15px; }
+        .success-message p { margin-bottom: 10px; }
+        
+        /* Footer */
+        footer { text-align: center; padding: 40px 0; color: #666; font-size: 0.9rem; }
+        footer a { color: #667eea; text-decoration: none; }
+        
+        @media (max-width: 768px) {
+            .form-section { padding: 25px; }
+            header h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container" style="padding: 0 20px;">
+            <h1>🤖 Developer Portal</h1>
+            <p>List your AI agent on AgentHub — reach thousands of customers</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Benefits -->
+        <div class="benefits">
+            <div class="benefit">
+                <h3>💰 Keep 70% Revenue</h3>
+                <p>You set the price. We take 30% for distribution, billing, and support.</p>
+            </div>
+            <div class="benefit">
+                <h3>🚀 Instant Distribution</h3>
+                <p>Access to our customer base of businesses seeking AI solutions.</p>
+            </div>
+            <div class="benefit">
+                <h3>🔒 You Own Your IP</h3>
+                <p>Retain full ownership of your agent. Non-exclusive license to distribute.</p>
+            </div>
+            <div class="benefit">
+                <h3>📊 Analytics Dashboard</h3>
+                <p>Track downloads, revenue, usage, and customer feedback in real-time.</p>
+            </div>
+        </div>
+
+        <!-- Application Form -->
+        <div class="form-section" id="application-form">
+            <h2>Submit Your Agent</h2>
+            <p>Fill out the form below. We'll review within 48 hours and contact you at your email.</p>
+            
+            <form id="developerForm" onsubmit="handleSubmit(event)">
+                <!-- Developer Info -->
+                <div class="form-group">
+                    <label for="name">Full Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="John Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" required placeholder="john@example.com">
+                    <small>We'll send application status and payout details to this email.</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="company">Company Name (Optional)</label>
+                    <input type="text" id="company" name="company" placeholder="Your Company Ltd.">
+                </div>
+                
+                <div class="form-group">
+                    <label for="website">Website / Portfolio (Optional)</label>
+                    <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+                </div>
+
+                <!-- Agent Info -->
+                <div class="form-group">
+                    <label for="agentName">Agent Name *</label>
+                    <input type="text" id="agentName" name="agentName" required placeholder="AI Compliance Checker">
+                </div>
+                
+                <div class="form-group">
+                    <label for="category">Category *</label>
+                    <select id="category" name="category" required>
+                        <option value="">Select a category...</option>
+                        <option value="compliance">Compliance & Regulatory</option>
+                        <option value="finance">Finance & Trading</option>
+                        <option value="research">Research & Analysis</option>
+                        <option value="content">Content Creation</option>
+                        <option value="productivity">Productivity & Automation</option>
+                        <option value="customer-support">Customer Support</option>
+                        <option value="data">Data Processing</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                
+                <div class="form-group">
+                    <label for="description">Agent Description *</label>
+                    <textarea id="description" name="description" required placeholder="Describe what your agent does, key features, and target users..."></textarea>
+                    <small>Be clear and specific. This will be shown to customers.</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="pricing">Pricing Model *</label>
+                    <select id="pricing" name="pricing" required onchange="togglePricingFields()">
+                        <option value="">Select pricing model...</option>
+                        <option value="subscription">Monthly Subscription</option>
+                        <option value="one-time">One-Time Purchase</option>
+                        <option value="usage">Usage-Based (per API call)</option>
+                        <option value="freemium">Freemium (free + paid tiers)</option>
+                        <option value="enterprise">Enterprise (custom pricing)</option>
+                    </select>
+                </div>
+                
+                <div class="form-group" id="priceField" style="display: none;">
+                    <label for="price">Price (USD) *</label>
+                    <input type="text" id="price" name="price" placeholder="e.g., $99/month or $0.01 per call">
+                    <small>Specify amount and billing frequency.</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="demo">Demo URL / Video (Optional)</label>
+                    <input type="url" id="demo" name="demo" placeholder="https://youtube.com/watch?v=... or https://demo.youragent.com">
+                    <small>Show us your agent in action.</small>
+                </div>
+                
+                <div class="form-group">
+                    <label for="github">GitHub / Code Repository (Optional)</label>
+                    <input type="url" id="github" name="github" placeholder="https://github.com/yourusername/your-agent">
+                    <small>For technical review (not public unless you choose).</small>
+                </div>
+
+                <!-- Terms -->
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">
+                        I agree to the <a href="../legal/developer-agreement.md" target="_blank">Developer Agreement</a> and <a href="../legal/terms-of-service.md" target="_blank">Terms of Service</a>. I confirm that I own or have rights to distribute this agent.
+                    </label>
+                </div>
+                
+                <div class="form-group checkbox-group">
+                    <input type="checkbox" id="marketing" name="marketing">
+                    <label for="marketing">
+                        I agree to receive occasional emails about AgentHub updates, promotions, and opportunities (opt-in, can unsubscribe anytime).
+                    </label>
+                </div>
+
+                <button type="submit" class="btn" id="submitBtn">Submit Application</button>
+            </form>
+        </div>
+
+        <!-- Success Message -->
+        <div class="success-message" id="successMessage">
+            <h2>✅ Application Submitted!</h2>
+            <p><strong>Thank you for applying to AgentHub.</strong></p>
+            <p>We've received your application and will review it within 48 hours.</p>
+            <p>You'll receive an email at <strong id="confirmationEmail"></strong> with next steps.</p>
+            <p style="margin-top: 20px;"><strong>Questions?</strong> Email us at dorjenorbulim@gmail.com</p>
+            <button class="btn" onclick="location.reload()" style="margin-top: 20px;">Submit Another Agent</button>
+        </div>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                <a href="../legal/developer-agreement.md">Developer Agreement</a> • 
+                <a href="../legal/terms-of-service.md">Terms of Service</a> • 
+                <a href="../legal/privacy-policy.md">Privacy Policy</a>
+            </p>
+            <p style="margin-top: 10px;">
+                &copy; 2026 AgentHub Pte. Ltd. Built in Singapore. 🇸🇬
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        function togglePricingFields() {
+            const pricing = document.getElementById('pricing').value;
+            const priceField = document.getElementById('priceField');
+            priceField.style.display = pricing ? 'block' : 'none';
+        }
+
+        function handleSubmit(event) {
+            event.preventDefault();
+            
+            // Get form data
+            const formData = new FormData(event.target);
+            const data = Object.fromEntries(formData.entries());
+            
+            // For Manual Beta: Create mailto link
+            const subject = encodeURIComponent('🤖 Developer Application: ' + data.agentName);
+            const body = encodeURIComponent(`
+DEVELOPER APPLICATION
+=====================
+
+Developer Info:
+- Name: ${data.name}
+- Email: ${data.email}
+- Company: ${data.company || 'N/A'}
+- Website: ${data.website || 'N/A'}
+
+Agent Info:
+- Name: ${data.agentName}
+- Category: ${data.category}
+- Description: ${data.description}
+- Pricing: ${data.pricing} - ${data.price || 'TBD'}
+
+Links:
+- Demo: ${data.demo || 'Not provided'}
+- GitHub: ${data.github || 'Not provided'}
+
+Terms: ${data.terms ? 'Agreed' : 'Not Agreed'}
+Marketing: ${data.marketing ? 'Opted In' : 'Opted Out'}
+`);
+            
+            // Open email client
+            window.location.href = `mailto:dorjenorbulim@gmail.com?subject=${subject}&body=${body}`;
+            
+            // Show success message
+            document.getElementById('application-form').style.display = 'none';
+            document.getElementById('successMessage').style.display = 'block';
+            document.getElementById('confirmationEmail').textContent = data.email;
+        }
+    </script>
+</body>
+</html>
