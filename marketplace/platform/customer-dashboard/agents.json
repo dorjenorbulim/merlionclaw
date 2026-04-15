@@ -149,6 +149,21 @@
       "features": ["Multi-platform", "Brand Voice", "Auto-scheduling", "Analytics"],
       "trial": "14-day free trial",
       "status": "beta"
+    },
+    {
+      "id": "agent-012",
+      "name": "Harness CLI — DevOps Automation",
+      "developer": "Michael K C Lim (AgentHub)",
+      "category": "devops",
+      "description": "Command-line interface for Harness.io CI/CD platform. Manage pipelines, trigger deployments, monitor execution status, and control feature flags. Automate your software delivery workflow.",
+      "price": "$49",
+      "pricing": "subscription",
+      "pricingDetail": "/month",
+      "rating": 5.0,
+      "reviews": 0,
+      "features": ["Pipeline Management", "Automated Deployments", "Feature Flags", "Execution Monitoring", "API Integration"],
+      "trial": "14-day free trial",
+      "status": "beta"
     }
   ]
 }
