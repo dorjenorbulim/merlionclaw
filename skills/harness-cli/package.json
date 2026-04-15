@@ -1,0 +1,21 @@
+{
+  "name": "harness-cli",
+  "version": "1.0.0",
+  "description": "Harness.io CLI for managing pipelines, deployments, and feature flags",
+  "main": "src/harness.js",
+  "bin": {
+    "harness-cli": "./src/cli.js"
+  },
+  "scripts": {
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "harness",
+    "ci-cd",
+    "devops",
+    "pipelines",
+    "deployments"
+  ],
+  "author": "Michael K C Lim",
+  "license": "MIT"
+}
